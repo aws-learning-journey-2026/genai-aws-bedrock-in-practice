@@ -26,7 +26,7 @@ This is **Swamy's personal learning** repository, knowledge-sharing repository a
 * [Who This Is For](#-who-this-is-for)
 * [Learning Philosophy](#-learning-philosophy--in-practice)
 * [Session Roadmap](#session-roadmap---9-sessions)
-* [Repository Structure](#-repository-structure)
+* [Repository Structure](#repository-structure)
 * [Principles](#-principles-non-negotiables)
 * [Where to Start](#-where-to-start)
 * [Organization Context](#-organization-context)
@@ -128,53 +128,7 @@ graph LR
 
 ## 📁 Repository Structure
 
-For complete repository structure details, see **[`docs/02_repository-structure.md`](docs/02_repository-structure.md)** (single source of truth).
-
-### Current Structure
-
-```text
-genai-aws-bedrock-in-practice/
-├── .copilot/                              # Copilot configuration
-│   └── settings.json
-├── .cursor/                               # Cursor AI configuration
-│   └── rules/                             # Project rules and guidelines
-│       ├── 01_educational-content-rules.mdc
-│       ├── 02_repository-structure.mdc
-│       ├── 03_quality-assurance.mdc
-│       ├── 04_markdown-standards.mdc
-│       ├── 05_primary-directives.mdc
-│       ├── 06_cross-domain-integration.mdc
-│       ├── 07_file-naming-conventions.mdc
-│       └── README.md
-├── .github/                               # GitHub configuration
-│   ├── copilot-instructions.md            # GitHub Copilot instructions
-│   ├── ISSUE_TEMPLATE/                    # Issue templates
-│   ├── prompts/                           # Reusable prompt templates
-│   └── PULL_REQUEST_TEMPLATE.md          # PR template
-├── docs/                                  # Documentation hub
-│   ├── 01_master-plan.md                  # Master plan and roadmap
-│   ├── 02_repository-structure.md         # Single source of truth for structure
-│   ├── sessions/                           # Session content (30-min format)
-│   │   ├── _session-template.md           # Session template
-│   │   └── ... (session files as created)
-│   ├── meetup/                             # Meetup materials and slides
-│   └── images/                            # Diagrams and visual assets
-├── src/                                    # Minimal runnable labs/examples
-├── source-material/                        # Staging area for imported content (git-ignored)
-├── CODE_OF_CONDUCT.md                     # Code of conduct
-├── CONTRIBUTING.md                        # Contribution guidelines
-├── SECURITY.md                            # Security policy
-├── LICENSE                                # MIT License
-├── README.md                              # This file
-└── .gitignore                             # Git ignore rules
-```
-
-### Directory Descriptions
-
-* **`docs/sessions/`** - Individual session content files following the 30-minute format
-* **`docs/meetup/`** - Materials for live meetup delivery (slides, notes, etc.)
-* **`src/`** - Minimal runnable labs/examples that add learning value
-* **`source-material/`** - Staging area for imported/raw content (git-ignored)
+For complete repository structure details, see **[`docs/03_repository-structure.md`](docs/03_repository-structure.md)** (single source of truth).
 
 ---
 
@@ -328,7 +282,7 @@ You can connect with the community to:
 **Related Resources**:
 
 * [Master Plan](docs/01_master-plan.md) - Complete learning roadmap
-* [Repository Structure](docs/02_repository-structure.md) - Single source of truth for structure
+* [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
 * [Session Template](docs/sessions/_session-template.md) - Standard session format
 
 ---

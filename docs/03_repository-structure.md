@@ -24,7 +24,7 @@ genai-aws-bedrock-in-practice/
 │       └── README.md
 ├── docs/                                  # Documentation hub
 │   ├── 01_master-plan.md                  # Master plan and roadmap
-│   ├── 02_repository-structure.md         # This file - single source of truth
+│   ├── 03_repository-structure.md         # This file - single source of truth
 │   ├── sessions/                           # Session content (30-min format)
 │   │   ├── _session-template.md           # Session template for consistency
 │   │   ├── 01_bedrock-mental-models.md
@@ -57,7 +57,7 @@ genai-aws-bedrock-in-practice/
 **Purpose**: Primary documentation hub  
 **Contents**:
 - **`01_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
-- **`02_repository-structure.md`**: This file - single source of truth for repository structure
+- **`03_repository-structure.md`**: This file - single source of truth for repository structure
 - **`sessions/`**: Individual session content files following the 30-minute format
 - **`meetup/`**: Materials for live meetup delivery (slides, notes, etc.)
 - **`images/`**: Visual assets, diagrams, and architecture illustrations
@@ -126,7 +126,7 @@ genai-aws-bedrock-in-practice/
 ## 🔄 Content Organization Principles
 
 1. **Session-based**: All learning content organized as 30-minute sessions
-2. **Single Source of Truth**: This file (`02_repository-structure.md`) is the authoritative reference
+2. **Single Source of Truth**: This file (`03_repository-structure.md`) is the authoritative reference
 3. **Minimal Code**: Code examples should be minimal, illustrative, and teaching-focused
 4. **Production-aware**: Even small examples should consider security, cost, and observability
 5. **Architecture-first**: Content emphasizes mental models before APIs
