@@ -1,0 +1,129 @@
+# Repository Structure & Context
+
+**Version**: 1.0  
+**Last Updated**: December 27, 2025
+
+---
+
+## 🧭 Repository Context
+
+**genai-aws-bedrock-in-practice** is a practical, architecture-first learning repository for creating Generative AI solutions on AWS using Amazon Bedrock. It provides:
+
+- Session-based learning (30-minute format) optimized for self-study and meetups
+- Architecture-first approach: mental models → APIs → systems
+- Production-aware content: security, cost, observability, and failure modes
+- Original content focused on system design thinking, not demo-only
+
+**Target Audience**: 
+- Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS
+- Architects/TPMs who need clarity on trade-offs, governance, and readiness
+
+**Learning Framework**: 9-session progressive roadmap from Bedrock foundations to production readiness
+
+### 🚨 CRITICAL: Repository Purpose & Code Separation
+
+**This repository (`genai-aws-bedrock-in-practice`) is EXCLUSIVELY for educational content:**
+
+- ✅ **Educational Content Only**: Markdown documentation, session materials, concepts, and illustrative code examples
+- ✅ **Minimal Code Examples**: Code snippets should be minimal, illustrative, and focused on teaching concepts
+- ✅ **Minimal Runnable Labs**: The `src/` directory is reserved for minimal runnable labs/examples that add learning value
+- ❌ **NO Full Implementations**: Complete, production-ready code projects are NOT stored in this repository
+- ❌ **NO Code Repositories**: This repository does not contain language-specific code implementations
+
+**Code Examples in Educational Content:**
+
+When including code examples in educational content:
+
+- ✅ Use minimal, illustrative snippets to demonstrate concepts
+- ✅ Focus on teaching, not complete implementations
+- ✅ Reference full implementations in separate code repositories if needed
+- ❌ Do not include complete, production-ready code
+- ❌ Do not create runnable projects beyond minimal learning examples
+
+---
+
+## 📁 Repository Structure
+
+### Current Structure (As of December 27, 2025)
+
+```text
+genai-aws-bedrock-in-practice/
+├── .copilot/                              # Copilot configuration
+│   └── settings.json
+├── .cursor/                               # Cursor AI configuration
+│   └── rules/                             # Project rules (this directory)
+│       ├── 01_educational-content-rules.mdc
+│       ├── 02_repository-structure.mdc
+│       ├── 03_quality-assurance.mdc
+│       ├── 04_markdown-standards.mdc
+│       ├── 05_primary-directives.mdc
+│       ├── 06_cross-domain-integration.mdc
+│       ├── 07_file-naming-conventions.mdc
+│       └── README.md
+├── docs/                                  # Documentation hub
+│   ├── 01_master-plan.md                  # Master plan and roadmap
+│   ├── sessions/                           # Session content (30-min format)
+│   │   ├── _session-template.md           # Session template
+│   │   ├── 01_bedrock-mental-models.md
+│   │   ├── 02_bedrock-platform-deep-dive.md
+│   │   └── ... (additional sessions)
+│   ├── meetup/                             # Meetup materials and slides
+│   └── images/                             # Diagrams and visual assets
+├── src/                                    # Minimal runnable labs/examples
+├── source-material/                        # Staging area for imported content (git-ignored)
+├── LICENSE                                 # MIT License
+├── README.md                               # Main repository documentation
+└── .gitignore                             # Git ignore rules
+```
+
+---
+
+## 📁 Source Materials Staging Area
+
+**Location**: `source-material/` (at repository root, git-ignored)
+
+**Purpose**: **Staging folder for migration** - Permanent staging area where source content is placed before review and transformation into session content.
+
+**Critical Workflow**:
+
+1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder (at repository root)
+2. **Review and migrate**: AI assistant reviews ALL files, identifies unique content, and migrates/transforms following Educational Content Rules
+3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
+4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
+
+**Important**:
+
+- Files in `source-material/` are **NOT required to be compliant** - they are raw source materials
+- The `source-material/` folder itself is **permanent** - it's a staging area for ongoing migrations
+- After migration, **keep source files** in `source-material/` folder - user will delete manually
+
+### Session Content Structure
+
+**Important**: Session content is organized under `docs/sessions/` as individual markdown files following the 30-minute format.
+
+**Policy**:
+
+- ✅ Use `_session-template.md` as the starting point for new sessions
+- ✅ Each session should produce a single primary artifact (notes, diagram, checklist, or minimal code)
+- ✅ Follow the master plan structure: Objective → Core Concepts → Hands-on → Artifact
+- ✅ Keep sessions focused and timeboxed to ~30 minutes
+
+## 📞 Support & Escalation
+
+**Questions about content placement?** → Check `docs/01_master-plan.md`
+
+**Content too long?** → Break into multiple sessions or create multi-part structure
+
+**Encoding issues?** → Search for, replace with Unicode equivalents
+
+**Link broken?** → Update URLs or fix internal file references
+
+**Structure outdated?** → Update `README.md` and `docs/01_master-plan.md` immediately
+
+---
+
+## For More Information
+
+- **Master Plan**: `docs/01_master-plan.md`
+- **Session Template**: `docs/sessions/_session-template.md`
+- **Repository README**: `README.md`

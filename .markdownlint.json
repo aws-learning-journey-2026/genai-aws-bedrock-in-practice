@@ -1,0 +1,14 @@
+{
+    "default": true,
+    "MD004": {
+        "style": "asterisk"
+    },
+    "MD013": false,
+    "MD033": {
+        "allowed_elements": [
+            "sub",
+            "sup"
+        ]
+    },
+    "MD060": false
+}
