@@ -134,46 +134,75 @@ They exist to **align vocabulary**, not to teach internals.
 
 ## 3. Terminology Clarification
 
-### Foundation Models vs Base Models vs Language Models
+### Foundation Models vs Base Models vs Language Models vs Large Language Models
 
-These terms are often used interchangeably, but they describe **different dimensions** of a model.
+These terms are often used interchangeably, but they describe **different dimensions of a model**, not different products.
 
-Think of them as answering **different questions**:
+Each term answers a **different question**:
 
-* **Base Model** → *What training state is this model in?*
-* **Foundation Model** → *How broadly can this model be reused?*
-* **Language Model** → *What type of data does this model work with?*
+* **Base Model** → *What training state is the model in?*
+* **Foundation Model** → *How broadly can the model be reused?*
+* **Language Model (LM)** → *What type of data does the model work with?*
+* **Large Language Model (LLM)** → *How large and capable is the language model?*
 
-Understanding this distinction prevents confusion when working with Amazon Bedrock.
+Understanding these distinctions is critical to using **Amazon Bedrock correctly and confidently**.
 
 ---
 
 ### Practical Definitions
 
-| Term                           | One-liner                                                            | What It Describes |
-| ------------------------------ | -------------------------------------------------------------------- | ----------------- |
-| **Base Model**                 | A raw, pre-trained model before task-specific tuning or alignment    | Training state    |
-| **Foundation Model**           | A large, reusable model designed to support many tasks               | Reusability       |
-| **Language Model (LM)**        | A model that understands and generates text                          | Text modality     |
-| **Large Language Model (LLM)** | A large-scale language model with strong generalization capabilities | Scale             |
+| Term                           | One-liner                                                                     | What It Describes  |
+| ------------------------------ | ----------------------------------------------------------------------------- | ------------------ |
+| **Base Model**                 | A raw, pre-trained model before task-specific tuning or alignment             | Training state     |
+| **Foundation Model**           | A large, reusable model designed to support many downstream tasks             | Reusability        |
+| **Language Model (LM)**        | A model that understands and generates human language                         | Text modality      |
+| **Large Language Model (LLM)** | A large-scale language model with strong generalization and reasoning ability | Scale & capability |
 
-**Important Relationships:**
+---
 
-* Not all foundation models are language models
-* Foundation models may be base models or aligned/fine-tuned models
-* LLMs are a subset of language models
-* Amazon Bedrock uses **“Foundation Models”** because it supports text, image, embedding, and multimodal models
+### How These Terms Relate
+
+* **Base model** describes *where the model is in its training lifecycle*
+* **Foundation model** describes *how broadly the model can be applied*
+* **Language model** describes *what kind of data the model works with*
+* **LLM** describes *the size and capability of a language model*
+
+Important clarifications:
+
+* Not all foundation models are language models (some generate images or embeddings)
+* Many foundation models are **aligned or fine-tuned versions** of base models
+* LLMs are a **subset of language models**, not a separate category
+* Amazon Bedrock uses **"Foundation Models"** as the umbrella term because it supports:
+
+  * Text models
+  * Image models
+  * Embedding models
+  * Multimodal models
 
 ---
 
 ### Architect Takeaway
 
-When designing systems with Bedrock:
+When designing systems with Amazon Bedrock:
 
-* You **consume foundation models**
-* You do **not manage base models**
-* You may use **language models**, but not always
-* Think in terms of **capabilities, cost, and constraints**, not training internals
+* You **consume foundation models** via a managed service
+* You do **not manage base models or training pipelines**
+* You may use **LLMs**, but also non-language models (embeddings, images)
+* Design decisions should focus on **capabilities, cost, latency, and constraints**, not training internals
+
+> In Bedrock, the question is not *"How is the model trained?"*
+> It is *"Is this the right capability for my system design?"*
+
+---
+
+### Why This Matters for Bedrock
+
+This terminology clarity prevents common mistakes such as:
+
+* Treating all models as chat-based LLMs
+* Over-engineering with frameworks before understanding capabilities
+* Choosing models based on hype instead of task fit
+* Confusing training responsibilities with inference responsibilities
 
 ---
 
