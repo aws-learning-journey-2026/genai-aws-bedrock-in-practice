@@ -4,7 +4,7 @@ A hands-on, session-driven learning repository focused on understanding and buil
 
 ![License](https://img.shields.io/badge/License-MIT-purple)
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![Sessions](https://img.shields.io/badge/Sessions-9%20Sessions-orange)
+![Sessions](https://img.shields.io/badge/Sessions-9%20Sessions-ff9900)
 ![Format](https://img.shields.io/badge/Format-30%20Minutes-yellow)
 ![Built with](https://img.shields.io/badge/Built%20with-AWS%20Bedrock-brown)
 ![Maintainer](https://img.shields.io/badge/Maintainer-Viswanatha%20Swamy%20P%20K-blue)
