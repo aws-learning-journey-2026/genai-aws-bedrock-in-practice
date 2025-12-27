@@ -142,7 +142,7 @@ Tokens are the **basic unit of text processing** in language models. Understandi
 
 #### How Tokenization Works
 
-![Tokenizer Process](../images/Tokenizer.PNG)
+![Tokenizer Process](../images/S1/Tokenizer.PNG)
 
 #### What a Tokenizer Actually Is
 
@@ -478,7 +478,7 @@ Correct mental models prevent these failures.
 
 This demonstration shows a basic interaction with Amazon Bedrock using a simple prompt. It illustrates the concepts we've covered: models, tokens, and probabilistic outputs.
 
-![Simple Prompt Example](../images/SimplePrompt.PNG)
+![Simple Prompt Example](../images/S1/SimplePrompt.PNG)
 
 **Key Observations:**
 
