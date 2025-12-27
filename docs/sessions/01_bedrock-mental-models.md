@@ -251,6 +251,57 @@ This is fundamentally different from deterministic APIs.
 
 ---
 
+### 4.1 Prompt Engineering (Awareness Only)
+
+Prompt engineering refers to the practice of **structuring inputs to foundation models** so that they produce useful, reliable, and cost-effective outputs.
+
+At a high level, a prompt acts as:
+
+* An **instruction**
+* A **context boundary**
+* A **behavioral constraint**
+
+In Amazon Bedrock, prompts directly influence:
+
+* Output quality
+* Token consumption (cost)
+* Consistency and variability
+* Hallucination risk
+
+> Prompt engineering is not about clever wording — it is about **designing an interface to a probabilistic system**.
+
+#### What We Will *Not* Cover Here
+
+This session does **not** cover:
+
+* Prompt patterns (zero-shot, few-shot, chain-of-thought)
+* Prompt templates
+* Guardrails and system prompts
+* RAG-specific prompt design
+
+These are intentionally deferred to later sessions.
+
+#### Why Prompt Engineering Matters (At 10,000 Feet)
+
+Prompt engineering becomes critical because:
+
+* Foundation models are **probabilistic**, not deterministic
+* Longer prompts increase **token cost**
+* Poor prompts amplify **hallucinations**
+* Prompt design determines how well **retrieved context (RAG)** is used
+
+This is why prompt engineering is tightly coupled with:
+
+* Cost optimization
+* RAG design
+* Production stability
+
+> We will revisit prompt engineering in depth once we understand **models, tokens, and system boundaries**.
+>
+> **Architect-level framing:** "Prompt engineering is not a trick — it's an architectural concern. We'll treat it seriously, but not today."
+
+---
+
 ## 5. Foundation Models
 
 A **foundation model** is a large, pre-trained model that can be adapted to many tasks **without training from scratch**.
