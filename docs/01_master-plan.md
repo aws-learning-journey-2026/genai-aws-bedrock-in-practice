@@ -8,21 +8,21 @@ Build a practical, architecture-first learning repository for creating Generativ
 
 This repo is optimized for:
 
-- Self-study in timeboxed sessions
-- Small-group meetup delivery
-- “Explain and defend the design” style learning (not demo-only)
+* Self-study in timeboxed sessions
+* Small-group meetup delivery
+* “Explain and defend the design” style learning (not demo-only)
 
 ## Principles (Non-Negotiables)
 
-- Architecture-first: start from mental models, then APIs, then systems.
-- Practice-oriented: each session produces an artifact (notes, diagram, checklist, or minimal code).
-- Production-aware: security, cost, observability, and failure modes are first-class.
-- Original content: no course-clone structure or copied marketing text.
+* Architecture-first: start from mental models, then APIs, then systems.
+* Practice-oriented: each session produces an artifact (notes, diagram, checklist, or minimal code).
+* Production-aware: security, cost, observability, and failure modes are first-class.
+* Original content: no course-clone structure or copied marketing text.
 
 ## Intended Audience
 
-- Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS.
-- Architects/TPMs who need clarity on trade-offs, governance, and readiness.
+* Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS.
+* Architects/TPMs who need clarity on trade-offs, governance, and readiness.
 
 ## Session Format (30 minutes)
 
@@ -37,9 +37,9 @@ Recommended structure per session:
 
 ## Repository Layout (Current)
 
-- `docs/` — plans, meetup material, and session write-ups
-- `src/` — reserved for minimal runnable labs/examples (currently empty)
-- `source-material/` — staging area for imported/raw notes (git-ignored)
+* `docs/` — plans, meetup material, and session write-ups
+* `src/` — reserved for minimal runnable labs/examples (currently empty)
+* `source-material/` — staging area for imported/raw notes (git-ignored)
 
 ## Learning Roadmap (Sessions)
 
@@ -103,9 +103,8 @@ The simplest starting point is to keep session content under `docs/sessions/`.
 
 Example:
 
-- `docs/sessions/01_bedrock-mental-models.md`
-- `docs/sessions/02_bedrock-platform-deep-dive.md`
-- …
+* `docs/sessions/01_bedrock-mental-models.md`
+* `docs/sessions/02_bedrock-platform-deep-dive.md`
 
 ## Next Steps
 

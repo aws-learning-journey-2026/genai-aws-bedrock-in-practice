@@ -2,13 +2,37 @@
 
 A hands-on, session-driven learning repository focused on understanding and building **Generative AI systems on AWS using Amazon Bedrock**, with emphasis on **mental models, architecture decisions, and production readiness**.
 
+![License](https://img.shields.io/badge/License-MIT-purple)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Sessions](https://img.shields.io/badge/Sessions-9%20Sessions-orange)
+![Format](https://img.shields.io/badge/Format-30%20Minutes-blue)
+![Built with](https://img.shields.io/badge/Built%20with-AWS%20Bedrock-green)
+![Maintainer](https://img.shields.io/badge/Maintainer-Viswanatha%20Swamy%20P%20K-blue)
+
 This repository is part of the **aws-learning-journey-2026** organization and documents a structured, practical exploration of Generative AI on AWS — learned in public and built incrementally.
 
 ---
 
 ## 📌 Disclaimer
 
-This is **Swamy's personal learning**, knowledge-sharing repository and reference workspace, not official course material or a packaged curriculum. It is not official AWS training material and does not represent Amazon or its affiliates.
+This is **Swamy's personal learning** repository, knowledge-sharing repository and reference workspace, not official course material or a packaged curriculum. It is **not official AWS training material** and does not represent Amazon or its affiliates.
+
+---
+
+## 📘 Table of Contents
+
+* [Disclaimer](#-disclaimer)
+* [Purpose of This Repository](#-purpose-of-this-repository)
+* [Who This Is For](#-who-this-is-for)
+* [Learning Philosophy](#-learning-philosophy--in-practice)
+* [Session Roadmap](#session-roadmap---9-sessions)
+* [Repository Structure](#-repository-structure)
+* [Principles](#-principles-non-negotiables)
+* [Where to Start](#-where-to-start)
+* [Organization Context](#-organization-context)
+* [Contributing](#-contributing)
+* [About & Community](#-about--community)
+* [License](#-license)
 
 ---
 
@@ -21,30 +45,30 @@ This repository exists to:
 * Understand **trade-offs**: cost, latency, security, accuracy
 * Capture learnings in a **session-based, reusable format**
 
-This is **not a packaged course** or certification guide.
+This is **not a packaged course** or certification guide.  
 It is a **living learning journey**, shaped by experimentation, mistakes, and architectural reasoning.
 
 ---
 
 ## 👥 Who This Is For
 
-* Developers exploring Generative AI on AWS
-* Cloud engineers moving into GenAI workloads
-* Software architects designing GenAI systems
-* Learners who prefer **understanding over memorization**
+* **Builders** who can write basic code (any language) but want stronger GenAI system design skills on AWS
+* **Architects/TPMs** who need clarity on trade-offs, governance, and readiness
+* **Cloud engineers** moving into GenAI workloads
+* **Learners** who prefer **understanding over memorization**
 
 Basic familiarity with AWS concepts is helpful, but **no prior GenAI experience is required**.
 
 ---
 
-## 🧠 Learning Philosophy — “In Practice”
+## 🧠 Learning Philosophy — "In Practice"
 
-“In practice” means:
+"In practice" means:
 
-* Mental models before APIs
-* Architecture before frameworks
-* Why before how
-* Production thinking, even in small examples
+* **Mental models before APIs** — Understand concepts before diving into code
+* **Architecture before frameworks** — Design thinking precedes tool selection
+* **Why before how** — Reasoning drives implementation
+* **Production thinking** — Security, cost, observability, and failure modes are first-class
 
 Each session is designed to fit into **~30 minutes**, making it suitable for:
 
@@ -54,21 +78,51 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 ---
 
-## 🗂️ Session Structure (30 Minutes Each)
+## 🗂️ Session Roadmap - 9 Sessions
 
-| Session | Topic                                                   | Deliverable                                    |
-| ------- | ------------------------------------------------------- | ---------------------------------------------- |
-| 01      | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          |
-| 02      | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         |
-| 03      | Model Exploration & Prompt Behavior                     | Prompt experiment log                          |
-| 04      | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling |
-| 05      | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    |
-| 06      | Embeddings & Vector Thinking                            | Chunking strategy guide                        |
-| 07      | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist |
-| 08      | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      |
-| 09      | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 |
+The learning journey progresses through **9 focused sessions**, each building on previous concepts and producing a concrete artifact.
+
+### Session Progression
+
+```mermaid
+graph LR
+    S1["01️⃣ Mental Models<br/><small>Foundations & Vocabulary</small>"]
+    --> S2["02️⃣ Platform Deep Dive<br/><small>Console & Constraints</small>"]
+    --> S3["03️⃣ Model Exploration<br/><small>Prompt Behavior</small>"]
+    --> S4["04️⃣ APIs & SDKs<br/><small>Integration Patterns</small>"]
+    --> S5["05️⃣ Backend Design<br/><small>Architecture on AWS</small>"]
+    --> S6["06️⃣ Embeddings<br/><small>Vector Thinking</small>"]
+    --> S7["07️⃣ RAG Systems<br/><small>Retrieval-Augmented</small>"]
+    --> S8["08️⃣ Advanced Features<br/><small>Knowledge Bases & Agents</small>"]
+    --> S9["09️⃣ Production Ready<br/><small>Security, Cost, Ops</small>"]
+
+    style S1 fill:#E3F2FD,stroke:#64B5F6,stroke-width:2px,color:#0D47A1
+    style S9 fill:#E8F5E9,stroke:#66BB6A,stroke-width:2px,color:#1B5E20
+```
+
+### Session Details
+
+| Session | Topic                                                   | Deliverable                                    | Focus Area                    |
+| ------- | ------------------------------------------------------- | ---------------------------------------------- | ----------------------------- |
+| **01**  | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          | Vocabulary & conceptual clarity |
+| **02**  | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         | Service operation & constraints |
+| **03**  | Model Exploration & Prompt Behavior                     | Prompt experiment log                          | Prompt behavior & determinism |
+| **04**  | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling | Request/response anatomy |
+| **05**  | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    | Lambda/API Gateway integration |
+| **06**  | Embeddings & Vector Thinking                            | Chunking strategy guide                        | Embeddings & similarity search |
+| **07**  | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist | Ingestion → retrieval → generation |
+| **08**  | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      | Managed vs custom orchestration |
+| **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring |
 
 > Additional sessions may be added as the platform evolves.
+
+### Learning Flow
+
+**Foundation Sessions (1-3)**: Build mental models and understand the platform  
+**Integration Sessions (4-6)**: Connect Bedrock to systems and work with embeddings  
+**Advanced Sessions (7-9)**: Build production-ready GenAI systems
+
+**Total Duration**: ~4.5 hours of focused learning (9 sessions × 30 minutes)
 
 ---
 
@@ -76,26 +130,105 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 For complete repository structure details, see **[`docs/02_repository-structure.md`](docs/02_repository-structure.md)** (single source of truth).
 
-**Quick Overview**:
+### Current Structure
 
-* `docs/sessions/` - Session content (30-minute format)
-* `docs/meetup/` - Meetup materials and slides
-* `src/` - Minimal runnable labs/examples
-* `source-material/` - Staging area for imported content (git-ignored)
+```text
+genai-aws-bedrock-in-practice/
+├── .copilot/                              # Copilot configuration
+│   └── settings.json
+├── .cursor/                               # Cursor AI configuration
+│   └── rules/                             # Project rules and guidelines
+│       ├── 01_educational-content-rules.mdc
+│       ├── 02_repository-structure.mdc
+│       ├── 03_quality-assurance.mdc
+│       ├── 04_markdown-standards.mdc
+│       ├── 05_primary-directives.mdc
+│       ├── 06_cross-domain-integration.mdc
+│       ├── 07_file-naming-conventions.mdc
+│       └── README.md
+├── .github/                               # GitHub configuration
+│   ├── copilot-instructions.md            # GitHub Copilot instructions
+│   ├── ISSUE_TEMPLATE/                    # Issue templates
+│   ├── prompts/                           # Reusable prompt templates
+│   └── PULL_REQUEST_TEMPLATE.md          # PR template
+├── docs/                                  # Documentation hub
+│   ├── 01_master-plan.md                  # Master plan and roadmap
+│   ├── 02_repository-structure.md         # Single source of truth for structure
+│   ├── sessions/                           # Session content (30-min format)
+│   │   ├── _session-template.md           # Session template
+│   │   └── ... (session files as created)
+│   ├── meetup/                             # Meetup materials and slides
+│   └── images/                            # Diagrams and visual assets
+├── src/                                    # Minimal runnable labs/examples
+├── source-material/                        # Staging area for imported content (git-ignored)
+├── CODE_OF_CONDUCT.md                     # Code of conduct
+├── CONTRIBUTING.md                        # Contribution guidelines
+├── SECURITY.md                            # Security policy
+├── LICENSE                                # MIT License
+├── README.md                              # This file
+└── .gitignore                             # Git ignore rules
+```
 
-Session content is organized under `docs/sessions/` as individual markdown files. Each session follows a consistent 30-minute format and includes:
+### Directory Descriptions
 
-* Core concepts and mental models
-* Hands-on reasoning and applied examples
-* Deliverable artifacts (notes, diagrams, checklists, or minimal code)
+* **`docs/sessions/`** - Individual session content files following the 30-minute format
+* **`docs/meetup/`** - Materials for live meetup delivery (slides, notes, etc.)
+* **`src/`** - Minimal runnable labs/examples that add learning value
+* **`source-material/`** - Staging area for imported/raw content (git-ignored)
+
+---
+
+## 📋 Principles (Non-Negotiables)
+
+* **Architecture-first**: Start from mental models, then APIs, then systems
+* **Practice-oriented**: Each session produces an artifact (notes, diagram, checklist, or minimal code)
+* **Production-aware**: Security, cost, observability, and failure modes are first-class
+* **Original content**: No course-clone structure or copied marketing text
+
+---
+
+## 🚀 Where to Start
+
+Begin with:
+
+👉 **`docs/sessions/01_bedrock-mental-models.md`**
+
+Everything else builds on that foundation.
+
+**Recommended Learning Path**:
+
+1. **Start with Session 01** — Build your mental model of Bedrock
+2. **Follow sequentially** — Each session builds on previous concepts
+3. **Complete the artifacts** — Each session produces a deliverable
+4. **Review Session 09** — Production readiness ties everything together
+
+---
+
+## 🏢 Organization Context
+
+This repository is part of the **aws-learning-journey-2026** GitHub organization, which hosts structured learning journeys for AWS technologies.
+
+**Organization**: [aws-learning-journey-2026](https://github.com/aws-learning-journey-2026)
+
+### Related Repositories
+
+This repository focuses specifically on **Generative AI with Amazon Bedrock**. Other repositories in the organization may cover:
+
+* AWS fundamentals and services
+* Cloud architecture patterns
+* DevOps and infrastructure
+* Other AWS learning paths
+
+> **Note**: This repository contains educational content and minimal code examples focused on learning, not full production implementations.
 
 ---
 
 ## 🔍 What This Repository Does *Not* Aim to Do
 
-* ❌ Replicate of official AWS documentation
+* ❌ Replicate official AWS documentation
 * ❌ Cover every Bedrock feature exhaustively
 * ❌ Provide copy-paste production code
+* ❌ Be a certification study guide
 
 Instead, it focuses on **understanding how to think about GenAI systems on AWS**.
 
@@ -113,25 +246,99 @@ Expect refinement, reorganization, and occasional rewrites.
 
 ---
 
-## 🚀 Where to Start
+## 🧑‍💻 Developer Setup
 
-Begin with:
+### Git Configuration
 
-👉 **`docs/sessions/01_bedrock-mental-models.md`**
+For consistent commit authorship, configure your global Git identity:
 
-Everything else builds on that foundation.
+```bash
+git config --global user.email "yourname@youremail.com"
+git config --global user.name "Your Name"
+```
+
+You only need to run these commands once per machine.
+
+### Prerequisites
+
+* **AWS Account** with Bedrock access (may require enablement in some regions)
+* **Basic AWS CLI** knowledge (helpful but not required)
+* **Text editor** or IDE for markdown files
+* **Git** for version control
+
+### Local Development
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/aws-learning-journey-2026/genai-aws-bedrock-in-practice.git
+   cd genai-aws-bedrock-in-practice
+   ```
+
+2. **Review the master plan**:
+
+   ```bash
+   # Read the master plan to understand the structure
+   cat docs/01_master-plan.md
+   ```
+
+3. **Start with Session 01**:
+
+   ```bash
+   # Navigate to sessions
+   cd docs/sessions
+   # Open the first session (when created)
+   ```
 
 ---
 
-## 📋 Principles (Non-Negotiables)
+## 🤝 Contributing
 
-* **Architecture-first**: Start from mental models, then APIs, then systems
-* **Practice-oriented**: Each session produces an artifact (notes, diagram, checklist, or minimal code)
-* **Production-aware**: Security, cost, observability, and failure modes are first-class
-* **Original content**: No course-clone structure or copied marketing text
+Contributions are welcome and encouraged! You may contribute in the following ways:
+
+* **Session content** - New sessions or improvements to existing ones
+* **Documentation** - Improvements to guides and explanations
+* **Code examples** - Minimal, illustrative examples that add learning value
+* **Diagrams** - Visual aids and architecture diagrams
+* **Bug fixes** - Corrections and clarifications
+
+Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+
+**Quick Checklist**:
+
+* [ ] Read the [Master Plan](docs/01_master-plan.md)
+* [ ] Review [Contributing Guidelines](CONTRIBUTING.md)
+* [ ] Follow the [Session Template](docs/sessions/_session-template.md)
+* [ ] Ensure content aligns with repository principles
 
 ---
 
-## 📚 Learning Roadmap
+## 📞 About & Community
 
-See `docs/01_master-plan.md` for the complete learning roadmap and session details.
+### [Swamy's Tech Skills Academy](https://www.linkedin.com/company/swamy-s-tech-skills-academy) & [ShyvnTech](https://www.linkedin.com/company/shyvntech)
+
+This repository is part of the **AWS Learning Journey 2026** initiative, stewarded and supported by `Swamy's Tech Skills Academy` and `ShyvnTech`. It is focused on helping developers and architects build practical GenAI solutions on AWS through structured, architecture-first learning.
+
+You can connect with the community to:
+
+* Follow structured learning journeys and deep-dive content
+* Participate in knowledge-sharing discussions
+* Explore mentoring, workshops, and custom training opportunities
+
+**Related Resources**:
+
+* [Master Plan](docs/01_master-plan.md) - Complete learning roadmap
+* [Repository Structure](docs/02_repository-structure.md) - Single source of truth for structure
+* [Session Template](docs/sessions/_session-template.md) - Standard session format
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+
+---
+
+> 🧠 **genai-aws-bedrock-in-practice** — Designed and maintained by `Viswanatha Swamy P K`  
+> Empowering builders to design production-ready GenAI systems on AWS.  
+> © 2025 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions
