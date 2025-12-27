@@ -22,25 +22,13 @@ By the end of this session, you should be able to:
 
 > **These are very common assumptions — I’ve made them myself.**
 
-Many challenges with Generative AI on AWS begin `before any code is written`:
+Many challenges with Generative AI on AWS begin **before any code is written**:
 
 * Amazon Bedrock is frequently misunderstood in relation to SageMaker
 * LLMs are often approached as deterministic APIs rather than probabilistic systems
 * System designs may overlook token-based cost and variability in outputs
 
 Without the right mental model, early design decisions can lead to unnecessary complexity, higher costs, or fragile systems. This session exists to establish that foundation before moving into tools and implementation.
-
----
-
-Below is a **clean, updated version** of the sections you shared, with the following improvements applied:
-
-* Explicitly defines **“Model”** (this removes ambiguity early)
-* Keeps the hierarchy **Bedrock-centric**
-* Tightens language without adding theory
-* Maintains a calm, architect-grade tone
-* Ready to paste directly into your document
-
-No new concepts were introduced—only clarified.
 
 ---
 
@@ -279,8 +267,7 @@ A team wants to build a **document summarization feature**.
 ### When NOT to Use Bedrock
 
 * Need to train custom models → SageMaker
-* Need deterministic outputs → traditional services
-* Hard real-time constraints → caching or alternative designs
+* Hard real-time or fully deterministic requirements → traditional services or precomputed responses
 
 ---
 
@@ -307,11 +294,6 @@ Create a **one-page Bedrock Mental Model note** containing:
 3. Key vocabulary
 4. Core decision principles
 
-Suggested filename:
-
-```
-bedrock-mental-model.md
-```
 
 ---
 
@@ -325,9 +307,9 @@ bedrock-mental-model.md
 
 ---
 
-## 15. What’s Next
+## 15. What's Next
 
-**Session 02 – Amazon Bedrock Platform Deep Dive (Console-First)**
+### Session 02 – Amazon Bedrock Platform Deep Dive (Console-First)
 
 * Bedrock architecture
 * Model catalog and selection
