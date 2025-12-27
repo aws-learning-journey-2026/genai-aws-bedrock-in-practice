@@ -175,9 +175,13 @@ genai-aws-bedrock-in-practice/
 │   ├── 02_repository-structure.md         # Single source of truth for structure
 │   ├── sessions/                           # Session content (30-min format)
 │   │   ├── _session-template.md           # Session template
-│   │   ├── 01_bedrock-mental-models.md
+│   │   ├── 01_bedrock-mental-models.md    # Learning session content
+│   │   ├── 01_meetup-bedrock-mental-models.md  # Meetup session content
+│   │   ├── 02_bedrock-platform-deep-dive.md
+│   │   ├── 02_meetup-bedrock-platform-deep-dive.md
 │   │   └── ... (additional sessions as created)
-│   ├── meetup/                             # Meetup materials and slides
+│   ├── meetup/                             # Meetup index and materials
+│   │   └── sessions.md                    # Index of meetup sessions
 │   └── images/                            # Architecture diagrams and assets
 ├── src/                                    # Minimal runnable labs/examples
 ├── source-material/                        # Staging area (at repository root, git-ignored)
@@ -210,6 +214,14 @@ genai-aws-bedrock-in-practice/
 - Sessions organized under `docs/sessions/` following 30-minute format
 - Each session produces a single primary artifact
 - Template available at `docs/sessions/_session-template.md`
+
+**Meetup Sessions**:
+
+- Meetup sessions are stored as individual files in `docs/sessions/` with naming pattern `NN_meetup-{session-name}.md`
+- Each meetup session file contains: organization, date, duration, type, deliverable, agenda, and related content links
+- Meetup sessions are based on learning sessions but include meetup-specific details for live delivery
+- Index file: `docs/meetup/sessions.md` provides an overview and links to all meetup session files
+- Example: `01_meetup-bedrock-mental-models.md` corresponds to learning session `01_bedrock-mental-models.md`
 
 ---
 

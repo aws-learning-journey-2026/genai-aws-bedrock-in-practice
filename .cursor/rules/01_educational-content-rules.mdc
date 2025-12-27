@@ -23,11 +23,12 @@
 - ✅ **YAML frontmatter**: Required
 - ✅ **Line limits**: Recommended ≤150 lines
 
-### Meetup Materials (`docs/meetup/`)
-- ✅ **File naming**: Semantic names preferred (e.g., `interview-overview.md`, `study-roadmap.md`)
-- ✅ **Structure**: Use folders for grouping (e.g., `azure-architect/`, `devops-architect/`)
-- ✅ **YAML frontmatter**: Required
-- ✅ **Line limits**: Recommended ≤150 lines
+### Meetup Materials (`docs/sessions/` and `docs/meetup/`)
+- ✅ **File naming**: Meetup sessions use pattern `NN_meetup-{session-name}.md` in `docs/sessions/`
+- ✅ **Structure**: Each meetup session is a separate file in `docs/sessions/` (e.g., `01_meetup-bedrock-mental-models.md`)
+- ✅ **Index file**: `docs/meetup/sessions.md` provides an index linking to all meetup session files
+- ⚠️ **YAML frontmatter**: Not required for meetup sessions (they use markdown headers instead)
+- ✅ **Line limits**: Recommended ≤150 lines per meetup session file
 
 ### Documentation (`docs/`)
 - ✅ **File naming**: Logical names (date-based for reports, descriptive for guides)
