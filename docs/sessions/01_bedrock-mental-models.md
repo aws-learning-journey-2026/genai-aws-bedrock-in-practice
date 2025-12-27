@@ -76,7 +76,49 @@ Artificial Intelligence
 
 **Important Note**: While this hierarchy shows the progression from AI to Bedrock, **Bedrock abstracts away the implementation details** (neural networks, deep learning internals). As Bedrock users, we focus on **using foundation models effectively**, not understanding how they're trained.
 
-**Important**: This session focuses on **using Bedrock**, not understanding how models are trained. Bedrock deliberately abstracts away implementation details like neural networks, backpropagation, and training pipelines.
+#### Terminology Clarification: Foundation Models vs Base Models vs Language Models
+
+These terms are often used interchangeably, but they describe **different dimensions**. Understanding the distinction prevents confusion when working with Bedrock.
+
+**Think of them as answering different questions:**
+
+* **Base Model** → *How was the model trained?*
+* **Foundation Model** → *How broadly can it be reused?*
+* **Language Model** → *What kind of data does it work on?*
+
+**Practical Definitions:**
+
+| Term | One-Liner | What It Answers |
+|------|-----------|-----------------|
+| **Base Model** | A raw, pre-trained model before task-specific tuning | Training state (original, unadapted) |
+| **Foundation Model** | A large, reusable model designed to support many tasks | Reusability across applications |
+| **Language Model (LM)** | A model that understands and generates text | Data type (text modality) |
+| **Large Language Model (LLM)** | A large-scale language model with strong generalization capabilities | Scale of language model |
+
+**Key Relationships:**
+
+* Not all foundation models are language models (some are image, multimodal, or embedding models)
+* Foundation models can be base models, but are often fine-tuned or aligned
+* LLMs are a subset of language models (large-scale ones)
+* Bedrock uses **"Foundation Models"** as the umbrella term because it supports multiple modalities
+
+**Why Bedrock Uses "Foundation Models":**
+
+AWS intentionally uses "Foundation Models" (not "LLMs" or "Chatbots") because Bedrock supports:
+
+* Text models (language models)
+* Image models
+* Embedding models
+* Multimodal models
+
+**Architect-Level Takeaway:**
+
+When designing systems with Bedrock:
+
+* You **consume foundation models** (the service abstraction)
+* You do **not manage base models** (training state is abstracted)
+* You often use **language models**, but not always (embeddings, images)
+* Think in terms of **capabilities, cost, and constraints**, not training details
 
 #### Generative AI (Practically Defined)
 
