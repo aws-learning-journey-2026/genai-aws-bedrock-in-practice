@@ -1,3 +1,17 @@
+---
+learning_level: "Beginner"  # Beginner | Intermediate | Advanced
+prerequisites: []
+estimated_time: "30 minutes"
+learning_objectives:
+	- "[Objective 1: measurable outcome]"
+	- "[Objective 2: measurable outcome]"
+related_topics:
+	prerequisites: []
+	builds_upon: []
+	enables: []
+	cross_refs: []
+---
+
 # Session XX: [Session Title]
 
 **Duration**: ~30 minutes  
