@@ -37,20 +37,44 @@ This session focuses on **understanding**, not tooling.
 
 For **Bedrock usage**, you only need to understand this simple hierarchy:
 
-```text
-Artificial Intelligence
-   └── Generative AI
-         └── Foundation Models (via Amazon Bedrock)
+```mermaid
+graph TD
+    A[Artificial Intelligence<br/>Systems that perceive, reason, and act] --> B[Machine Learning<br/>Learn patterns from data]
+    B --> C[Neural Networks<br/>Function approximators]
+    C --> D[Deep Learning<br/>Large networks, complex representations]
+    D --> E[Generative AI<br/>Generate new content]
+    E --> F[Foundation Models<br/>Pre-trained, reusable]
+    F --> G[Amazon Bedrock<br/>Managed inference platform]
+    
+    style A fill:#E3F2FD,stroke:#1976D2,stroke-width:2px
+    style G fill:#E8F5E9,stroke:#388E3C,stroke-width:3px
+    style E fill:#FFF3E0,stroke:#F57C00,stroke-width:2px
 ```
 
-**One-liners for orientation:**
+**Text Hierarchy (ASCII fallback):**
+
+```text
+Artificial Intelligence
+   └── Machine Learning
+         └── Neural Networks
+               └── Deep Learning
+                     └── Generative AI
+                           └── Foundation Models (via Amazon Bedrock)
+```
+
+**Essential Concepts (One-liners for orientation):**
 
 | Concept | Definition |
 |---------|------------|
-| **Artificial Intelligence** | The broad goal of building systems that can perceive, reason, and act intelligently |
-| **Generative AI** | AI systems that generate new content (text, images, code) rather than only making predictions |
+| **Artificial Intelligence (AI)** | The broad goal of building systems that can perceive, reason, and act intelligently |
+| **Machine Learning (ML)** | Systems that learn patterns from data instead of being explicitly programmed |
+| **Neural Networks** | Function approximators inspired by the brain, forming the foundation of modern ML |
+| **Deep Learning** | Uses large neural networks to automatically learn complex representations from massive data |
+| **Generative AI** | Uses large pre-trained models to generate new content such as text, images, or code |
 | **Foundation Models** | Large, pre-trained models reused across many tasks without training from scratch |
 | **Amazon Bedrock** | A managed AWS service for running foundation models via APIs |
+
+**Important Note**: While this hierarchy shows the progression from AI to Bedrock, **Bedrock abstracts away the implementation details** (neural networks, deep learning internals). As Bedrock users, we focus on **using foundation models effectively**, not understanding how they're trained.
 
 **Important**: This session focuses on **using Bedrock**, not understanding how models are trained. Bedrock deliberately abstracts away implementation details like neural networks, backpropagation, and training pipelines.
 
