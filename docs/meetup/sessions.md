@@ -4,6 +4,34 @@ This document tracks meetup sessions conducted by Dot Net Learners House based o
 
 ---
 
+Exploring Amazon Bedrock Models — Playground-First Learning - Session 2
+
+Thu, Jan 8, 2026 · 9:00 PM to 10:00 PM IST
+
+Duration: 30 minutes
+Type: Live demo + guided experimentation
+
+Why this session
+You should feel model behavior before writing code.
+
+Agenda
+
+1. Bedrock Console & Model Catalog
+
+2. Text & Chat Playground Deep Dive
+
+Same prompt, different models
+Parameter tuning and output changes
+3. Image Generation Playground
+
+Prompt patterns
+Practical use cases
+4. Responsible AI & Guardrails
+
+1. Key Takeaways
+
+---
+
 ## Session 1
 
 **Title**: Amazon Bedrock — The Right Mental Model for Generative AI on AWS - Session 1
@@ -18,31 +46,50 @@ This document tracks meetup sessions conducted by Dot Net Learners House based o
 
 Before tools, you need clarity. This session eliminates confusion about what Bedrock is and how to think about it.
 
+Most failures with Generative AI on AWS happen **before code is written**:
+
+* Teams confuse Bedrock with SageMaker
+* Developers treat LLMs like deterministic APIs
+* Architects design systems without understanding token costs or model behavior
+
+Without the right mental model, every design decision downstream is flawed. This session establishes the conceptual foundation required for **all subsequent sessions**.
+
 ### Agenda
 
 #### 1. Generative AI on AWS: The Big Picture
 
 * AWS AI/ML service landscape
+* Where Bedrock fits: High-level APIs → Bedrock → SageMaker
 * Bedrock vs OpenAI vs Azure OpenAI vs SageMaker
 
-#### 2. What Amazon Bedrock Actually Is (and Isn't)
+#### 2. The AI Hierarchy (Minimal Mental Model)
 
-* Managed foundation model platform
-* Serverless inference, model choice, enterprise controls
-* Common misconceptions
+* Artificial Intelligence → Machine Learning → Neural Networks → Deep Learning → Generative AI → Foundation Models → Amazon Bedrock
+* Essential concepts and terminology
+* What Bedrock abstracts away (and why it matters)
 
 #### 3. Foundation Models & Trade-offs
 
+* What foundation models are (and aren't)
 * Text, chat, image, embeddings
 * Cost, latency, quality, determinism
+* Generality vs. control trade-offs
 
-#### 4. Prompting as an Interface
+#### 4. What Amazon Bedrock Actually Is (and Isn't)
 
-* Prompt = API contract
-* Parameters and output control
+* Managed foundation model platform
+* Serverless inference, model choice, enterprise controls
+* What Bedrock is NOT (common misconceptions)
+* The "Power Grid" analogy
 
-#### 5. Mini Demo & Wrap-up
+#### 5. Key Vocabulary & Wrap-up
+
+* Essential terms: Generative AI, Foundation Model, Inference, Token, Prompt, Bedrock
+* Architecture considerations
+* Deliverable: Create your one-page mental model note + glossary
 
 ---
 
 **Related Session Content**: [`docs/sessions/01_bedrock-mental-models.md`](../sessions/01_bedrock-mental-models.md)
+
+**Master Plan Reference**: [`docs/01_master-plan.md`](../01_master-plan.md) - Session 01
