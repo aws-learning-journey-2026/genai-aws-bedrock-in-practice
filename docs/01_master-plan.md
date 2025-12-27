@@ -1,244 +1,114 @@
-Perfect. I see exactly what you are doing now.
+# Master Plan — genai-aws-bedrock-in-practice
 
-What you pasted is **course-marketing material** (Udemy-style).
-What you need for your repo is a **clean, architect-grade learning breakdown** that:
+Date: 27 Dec 2025
 
-* Is **not a course clone**
-* Fits **30-minute sessions**
-* Starts with **01-bedrock-mental-models**
-* Scales to **9+ sessions**
-* Maps cleanly to folders in GitHub
+## Purpose
 
-Below is a **refined, repo-ready session plan** that converts all that content into a **learning journey**, not a sales page.
+Build a practical, architecture-first learning repository for creating Generative AI solutions on AWS using Amazon Bedrock.
 
----
+This repo is optimized for:
 
-# `genai-aws-bedrock-in-practice`
+- Self-study in timeboxed sessions
+- Small-group meetup delivery
+- “Explain and defend the design” style learning (not demo-only)
 
-## Session Structure (30 minutes each)
+## Principles (Non-Negotiables)
 
-This is intentionally **architecture-first and practice-oriented**.
+- Architecture-first: start from mental models, then APIs, then systems.
+- Practice-oriented: each session produces an artifact (notes, diagram, checklist, or minimal code).
+- Production-aware: security, cost, observability, and failure modes are first-class.
+- Original content: no course-clone structure or copied marketing text.
 
----
+## Intended Audience
 
-## 01. Bedrock Mental Models & GenAI Foundations
+- Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS.
+- Architects/TPMs who need clarity on trade-offs, governance, and readiness.
 
-**Goal:** Fix confusion before tools
+## Session Format (30 minutes)
 
-**Key Topics**
+Each session should fit in 30 minutes and ship with a single primary artifact.
 
-* What Generative AI *is* vs *is not*
-* Foundation Models explained simply
-* Where Amazon Bedrock fits in AWS
-* Bedrock vs SageMaker vs OpenAI
-* Prompt, inference, tokens, context window
+Recommended structure per session:
 
-**Outcome**
+1. Objective (1–2 minutes)
+2. Core concepts (10–12 minutes)
+3. Hands-on / applied reasoning (12–15 minutes)
+4. Output artifact + recap (2–5 minutes)
 
-> You understand Bedrock conceptually, not mechanically.
+## Repository Layout (Current)
 
----
+- `docs/` — plans, meetup material, and session write-ups
+- `src/` — reserved for minimal runnable labs/examples (currently empty)
+- `source-material/` — staging area for imported/raw notes (git-ignored)
 
-## 02. Amazon Bedrock Service Deep Dive (Console First)
+## Learning Roadmap (Sessions)
 
-**Goal:** Understand the platform before coding
+### 01. Bedrock Mental Models & GenAI Foundations
 
-**Key Topics**
+Focus: vocabulary and conceptual clarity.
 
-* Bedrock architecture
-* Model catalog & providers
-* Inference parameters (temperature, top-p, max tokens)
-* Pricing model (how you actually get billed)
-* Security guarantees & data handling
+Deliverable: a one-page “Bedrock mental model” note + glossary.
 
-**Outcome**
+### 02. Bedrock Platform Deep Dive (Console-First)
 
-> You can reason about cost, safety, and model choice.
+Focus: what the service is, how it’s operated, and what constraints matter.
 
----
+Deliverable: a decision checklist for model selection + risk notes.
 
-## 03. Model Exploration & Prompt Behavior (Playground)
+### 03. Model Exploration & Prompt Behavior
 
-**Goal:** Build intuition
+Focus: prompt behavior, determinism vs creativity, and prompt-as-contract.
 
-**Key Topics**
+Deliverable: a prompt experiment log (same prompt across models + observations).
 
-* Text vs Chat vs Image models
-* Same prompt, different models
-* Determinism vs creativity
-* Prompt as an interface contract
+### 04. Bedrock APIs & SDKs
 
-**Outcome**
+Focus: request/response anatomy, errors, retries, and integration patterns.
 
-> You stop treating models as black boxes.
+Deliverable: minimal “hello inference” snippets + error-handling notes.
 
----
+### 05. Designing a Minimal GenAI Backend on AWS
 
-## 04. Using Amazon Bedrock via APIs & SDKs
+Focus: Lambda/API Gateway integration, sync vs async inference, statelessness.
 
-**Goal:** Move from console to code
+Deliverable: an architecture diagram + API contract sketch.
 
-**Key Topics**
+### 06. Embeddings & Vector Thinking
 
-* Bedrock Runtime APIs
-* Request/response anatomy
-* Python (boto3) mental model
-* TypeScript / JavaScript overview
-* Error handling & retries
+Focus: embeddings, chunking, similarity search intuition, failure modes.
 
-**Outcome**
+Deliverable: a chunking strategy guide (rules of thumb + pitfalls).
 
-> You can wire Bedrock into real applications.
+### 07. Retrieval-Augmented Generation (RAG) with Bedrock
 
----
+Focus: ingestion → embeddings → retrieval → generation, grounding techniques.
 
-## 05. Building Your First GenAI Backend on AWS
+Deliverable: RAG reference architecture + anti-pattern checklist.
 
-**Goal:** From API to system
+### 08. Advanced Capabilities (Knowledge Bases / Agents)
 
-**Key Topics**
+Focus: when to use managed capabilities vs custom orchestration.
 
-* Simple GenAI backend architecture
-* Lambda + API Gateway + Bedrock
-* Sync vs async inference
-* Stateless design
+Deliverable: “choose your orchestration” decision tree.
 
-**Outcome**
+### 09. Production Readiness: Security, Cost, Observability
 
-> You can design a minimal GenAI service.
+Focus: IAM least privilege, networking, token/cost controls, monitoring.
 
----
+Deliverable: production readiness checklist (security + cost + ops).
 
-## 06. Embeddings & Vector Thinking (Critical Session)
+## Folder Mapping (Planned)
 
-**Goal:** Prepare for RAG
+The simplest starting point is to keep session content under `docs/sessions/`.
 
-**Key Topics**
+Example:
 
-* What embeddings really are
-* Chunking strategies
-* Similarity search intuition
-* When embeddings fail
+- `docs/sessions/01_bedrock-mental-models.md`
+- `docs/sessions/02_bedrock-platform-deep-dive.md`
+- …
 
-**Outcome**
+## Next Steps
 
-> You understand why RAG exists.
-
----
-
-## 07. Retrieval-Augmented Generation (RAG) with Bedrock
-
-**Goal:** Enterprise-grade GenAI
-
-**Key Topics**
-
-* RAG architecture (end to end)
-* Ingestion → embeddings → retrieval → generation
-* Bedrock + vector DB (FAISS / OpenSearch – conceptually)
-* Prompt grounding techniques
-* RAG anti-patterns
-
-**Outcome**
-
-> You can design a real-world RAG system.
-
----
-
-## 08. Advanced Bedrock Capabilities
-
-**Goal:** Move beyond basics
-
-**Key Topics**
-
-* Bedrock Knowledge Bases
-* Bedrock Agents (mental model)
-* When to use Agents vs custom orchestration
-* LangChain: where it fits, where it hurts
-
-**Outcome**
-
-> You know what *not* to over-engineer.
-
----
-
-## 09. Production Readiness: Security, Cost, Observability
-
-**Goal:** Avoid demo-only systems
-
-**Key Topics**
-
-* IAM & least privilege
-* VPC endpoints
-* Token budgeting & cost control
-* Logging & monitoring
-* Responsible AI considerations
-
-**Outcome**
-
-> You can defend your architecture in a review.
-
----
-
-## 10. (Optional) Capstone Architecture Walkthrough
-
-**Goal:** Integration & confidence
-
-**Key Topics**
-
-* One end-to-end GenAI system
-* Trade-offs explained
-* What you’d change at scale
-
-**Outcome**
-
-> You think like a GenAI architect.
-
----
-
-# Why This Structure Is Better Than a Course
-
-| Udemy Course    | Your Repo               |
-| --------------- | ----------------------- |
-| Feature-heavy   | Mental-model driven     |
-| Tool-first      | Architecture-first      |
-| Long videos     | Focused 30-min sessions |
-| Sales narrative | Learning narrative      |
-
-This fits **GitHub**, **meetups**, and **interview prep**.
-
----
-
-## Repo Folder Mapping (Ready to Create)
-
-```
-genai-aws-bedrock-in-practice/
-├── 01-bedrock-mental-models/
-├── 02-bedrock-service-deep-dive/
-├── 03-model-exploration/
-├── 04-bedrock-apis-and-sdks/
-├── 05-genai-backend-architecture/
-├── 06-embeddings-and-vectors/
-├── 07-rag-with-bedrock/
-├── 08-advanced-bedrock-capabilities/
-├── 09-production-readiness/
-└── README.md
-```
-
----
-
-## Strong Recommendation (Next Step)
-
-Do **not** write code yet.
-
-👉 Next best step:
-
-* Write **Session 01 README**
-  *“Bedrock Mental Models & GenAI Foundations”*
-
-If you want, I will:
-
-* Write **01-bedrock-mental-models/README.md** fully
-* Create a **standard session template**
-* Draft the **main README.md**
-
-Just tell me what to do next.
+1. Convert Session 01 into a concrete write-up under `docs/sessions/`.
+2. Add a small, consistent session template (so every session feels uniform).
+3. Expand the root README once Session 01 exists (so the repo has a solid entry point).
