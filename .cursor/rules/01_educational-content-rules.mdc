@@ -268,7 +268,7 @@ class ProductFactory:
         return ProductB()
 ```
 
-> **Full Implementation**: See complete Factory Pattern implementation in [Python repository](https://github.com/SwamysArchitectJourney-2026/Python/tree/main/design-patterns/factory)
+> **Full Implementation**: See complete implementation in separate code repository (if applicable)
 ```
 
 ### Source Materials Staging Area

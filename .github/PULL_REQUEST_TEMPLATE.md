@@ -101,5 +101,5 @@ Any additional context, questions, or notes for reviewers.
 
 ---
 
-**Thank you for contributing to ArchitectJourney!** 🎉
+**Thank you for contributing to genai-aws-bedrock-in-practice!** 🎉
 

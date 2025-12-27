@@ -178,10 +178,10 @@ Check for presence of:
 
 ```json
 {
-  "repo_name": "ArchitectJourney",
+  "repo_name": "genai-aws-bedrock-in-practice",
   "total_files_checked": 0,
   "total_issues_found": 0,
-  "architect_journey_compliance_percentage": 0.0,
+  "compliance_percentage": 0.0,
   "high_severity_count": 0,
   "medium_severity_count": 0,
   "low_severity_count": 0,
@@ -320,7 +320,7 @@ Deliverables:
 
 Behavioral expectations:
 
-- **ArchitectJourney-First Approach**: Prioritize learning effectiveness and alignment with 9-level and 9-phase structures
+- **genai-aws-bedrock-in-practice-First Approach**: Prioritize learning effectiveness and alignment with session-based structure
 - **Educational Quality Focus**: Flag content that doesn't meet architectural excellence standards
 - **Learning Path Integrity**: Ensure content fits logically within levels and phases with proper prerequisites
 - **Practical Relevance**: Verify content provides actionable architectural guidance and decision-making frameworks
@@ -345,7 +345,7 @@ Behavioral expectations:
 
 ## Deliverables
 
-1. Complete JSON report following ArchitectJourney output requirements
+1. Complete JSON report following genai-aws-bedrock-in-practice output requirements
 2. Compliance scoring and educational quality assessment
 3. Learning path analysis and gap identification
 4. Cross-reference validation results
@@ -356,4 +356,4 @@ Behavioral expectations:
 
 ## Start Now
 
-Open every file in the repository tree, run ArchitectJourney-specific checks, and produce the structured JSON report following these requirements. Focus on learning effectiveness, content quality, architectural soundness, and alignment with the 9-level and 9-phase structure.
+Open every file in the repository tree, run genai-aws-bedrock-in-practice-specific checks, and produce the structured JSON report following these requirements. Focus on learning effectiveness, content quality, architectural soundness, and alignment with the session-based structure and production-readiness principles.

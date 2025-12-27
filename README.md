@@ -77,6 +77,7 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 For complete repository structure details, see **[`docs/02_repository-structure.md`](docs/02_repository-structure.md)** (single source of truth).
 
 **Quick Overview**:
+
 * `docs/sessions/` - Session content (30-minute format)
 * `docs/meetup/` - Meetup materials and slides
 * `src/` - Minimal runnable labs/examples
@@ -109,13 +110,6 @@ This repository will evolve as:
 * Real-world lessons are learned
 
 Expect refinement, reorganization, and occasional rewrites.
-
----
-
-## 📌 Disclaimer
-
-This is a **personal learning and knowledge-sharing repository**.
-It is **not official AWS training material** and does not represent Amazon or its affiliates.
 
 ---
 

@@ -1,6 +1,6 @@
 # S.M.A.R.T. Prompt Framework for GitHub Copilot Coding Agents
 
-**ArchitectJourney Edition** - Framework for creating high-quality coding agent instructions aligned with architectural excellence standards and progressive learning levels.
+**genai-aws-bedrock-in-practice Edition** - Framework for creating high-quality coding agent instructions aligned with GenAI system design excellence and session-based learning progression.
 
 ---
 
@@ -18,11 +18,11 @@ T - Task-Oriented Constraints (Technology stack, architectural patterns, forbidd
 
 ---
 
-## 🏛️ **ArchitectJourney Alignment**
+## 🏛️ **genai-aws-bedrock-in-practice Alignment**
 
 When creating prompts, consider:
 
-- **Learning Level Context**: Is this for Level 1-3 (foundational), Level 4-6 (enterprise), or Level 7-9 (strategic)?
+- **Session Context**: Is this for Sessions 1-3 (foundations), Sessions 4-6 (integration), or Sessions 7-9 (advanced & production)?
 - **Domain Integration**: How does this task span across 13 reference domains?
 - **Architectural Patterns**: Which design/architecture patterns should be applied?
 - **Progressive Complexity**: Is the implementation scoped appropriately for the team's level?
