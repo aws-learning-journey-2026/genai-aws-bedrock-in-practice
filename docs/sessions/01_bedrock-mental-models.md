@@ -72,7 +72,47 @@ As Bedrock users, we design **systems and workflows**, not **models or training 
 
 ---
 
-### 2.2 Essential Concepts (Orientation Only)
+### 2.2 What Is a Model? (Practically Defined)
+
+> A **model** is a mathematical function that has learned patterns from data and can use those patterns to produce outputs for new inputs.
+
+**Key point:** Humans write code. Models learn behavior.
+
+#### Model as a "Learned Mapping"
+
+Think of a model as:
+
+```text
+Input  ──► Learned Mapping ──► Output
+```
+
+**Examples:**
+
+* Text → next likely words
+* Question → answer
+* Image prompt → image
+* Document → summary
+* Text → vector (embedding)
+
+The "mapping" is learned during training, not programmed.
+
+#### What a Model Is NOT
+
+Clarifying this avoids confusion later:
+
+* ❌ Not an API
+* ❌ Not a chatbot
+* ❌ Not a database
+* ❌ Not a rules engine
+* ❌ Not deterministic logic
+
+A model produces **probabilistic outputs**, not guaranteed results.
+
+> **Architect-level framing:** "A model is not software logic — it's learned behavior. That's why we design guardrails around it."
+
+---
+
+### 2.3 Essential Concepts (Orientation Only)
 
 These definitions are intentionally concise.
 They exist to **align vocabulary**, not to teach internals.
@@ -294,7 +334,6 @@ Create a **one-page Bedrock Mental Model note** containing:
 3. Key vocabulary
 4. Core decision principles
 
-
 ---
 
 ## 14. Key Takeaways
@@ -320,7 +359,3 @@ Create a **one-page Bedrock Mental Model note** containing:
 ---
 
 **Session Status:** Complete ✅
-
----
-
-If you want, the next logical step is to **design Session 02** with the same consolidation and delivery discipline.
