@@ -268,16 +268,13 @@ In Amazon Bedrock, prompts directly influence:
 * Consistency and variability
 * Hallucination risk
 
+In Amazon Bedrock, prompts are the primary control surface developers have over model behavior.
+
 > Prompt engineering is not about clever wording — it is about **designing an interface to a probabilistic system**.
 
 #### What We Will *Not* Cover Here
 
-This session does **not** cover:
-
-* Prompt patterns (zero-shot, few-shot, chain-of-thought)
-* Prompt templates
-* Guardrails and system prompts
-* RAG-specific prompt design
+This session intentionally does **not** cover prompt patterns, templates, guardrails, or RAG-specific prompt design.
 
 These are intentionally deferred to later sessions.
 
