@@ -154,6 +154,7 @@ Tokens are the **basic unit of text processing** in language models. Understandi
 **Practical Example:**
 
 The phrase "Hello, world!" might be tokenized as:
+
 * `["Hello", ",", " world", "!"]` (4 tokens)
 * Or `["Hello", ",", "world", "!"]` (4 tokens)
 * Depending on the model's tokenizer
@@ -382,30 +383,7 @@ Correct mental models prevent these failures.
 
 ---
 
-## 13. Output Artifact
-
-### Deliverable
-
-Create a **one-page Bedrock Mental Model note** containing:
-
-1. What Bedrock is and is not
-2. The power grid analogy
-3. Key vocabulary
-4. Core decision principles
-
----
-
-## 14. Key Takeaways
-
-* Generative AI is probabilistic by nature
-* Foundation models are powerful but not magic
-* Amazon Bedrock provides managed access, not training
-* Mental models matter more than tools
-* Understanding precedes optimization
-
----
-
-## 15. Mini Demo
+## 13. Mini Demo
 
 ### Simple Prompt Example
 
@@ -428,6 +406,29 @@ This demonstration shows a basic interaction with Amazon Bedrock using a simple 
 * **Bedrock abstraction** — The complexity of model internals is hidden
 
 > This simple example sets the foundation for understanding more complex interactions in subsequent sessions.
+
+---
+
+## 14. Output Artifact
+
+### Deliverable
+
+Create a **one-page Bedrock Mental Model note** containing:
+
+1. What Bedrock is and is not
+2. The power grid analogy
+3. Key vocabulary
+4. Core decision principles
+
+---
+
+## 15. Key Takeaways
+
+* Generative AI is probabilistic by nature
+* Foundation models are powerful but not magic
+* Amazon Bedrock provides managed access, not training
+* Mental models matter more than tools
+* Understanding precedes optimization
 
 ---
 
