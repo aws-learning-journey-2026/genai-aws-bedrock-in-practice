@@ -1,7 +1,7 @@
-﻿# GitHub Copilot Instructions for ArchitectJourney
+﻿# GitHub Copilot Instructions for genai-aws-bedrock-in-practice
 
-**Version**: 3.3  
-**Last Updated**: December 24, 2025  
+**Version**: 1.0  
+**Last Updated**: December 27, 2025  
 **Critical Principle**: Update this file IMMEDIATELY when repository structure changes
 
 ---
@@ -148,7 +148,7 @@ Interleave thinking with action in iterative cycles:
 ### **Actual Current Structure** (verify with: `tree /F /A`)
 
 ```text
-ArchitectJourney/
+genai-aws-bedrock-in-practice/
 ├── .copilot/                              # Copilot configuration
 │   └── settings.json
 ├── .cursor/                               # Cursor AI configuration
@@ -167,26 +167,24 @@ ArchitectJourney/
 │       ├── smart-prompt-framework-guide.md
 │       └── task-prompt.md
 ├── docs/                                  # Documentation hub
-│   ├── 01_GitHub-Organization-Strategy.md  # GitHub organization setup guide
-│   ├── 02_Workspace-Review-2025-11-23.md   # Workspace review and recommendations
-│   ├── review-reports/                     # All review reports (migration, content review, etc.)
-│   │   └── [DDMonYYYY.md]                 # Example: 24Nov2025.md (date-based naming)
+│   ├── 01_master-plan.md                  # Master plan and roadmap
+│   ├── 02_repository-structure.md         # Single source of truth for structure
+│   ├── sessions/                           # Session content (30-min format)
+│   │   ├── _session-template.md           # Session template
+│   │   └── ... (session files)
+│   ├── meetup/                             # Meetup materials and slides
 │   └── images/                            # Architecture diagrams and assets
-│       └── .gitkeep
+├── src/                                    # Minimal runnable labs/examples
+├── source-material/                        # Staging area (at repository root, git-ignored)
 ├── LICENSE                                 # MIT License
 ├── README.md                               # Main repository documentation
-├── source-material/                        # Staging area (at repository root, git-ignored)
-├── src/                                    # Source content (organized)
-│   ├── 01_Reference/                      # Reference library
-│   ├── 02_Learning/                       # Learning paths
-│   └── 03_Interview-Prep/                 # Interview preparation
 └── .gitignore                             # Git ignore rules
 ```
 
-### **Actual Current Structure** (Updated November 24, 2025)
+### **Actual Current Structure** (Updated December 27, 2025)
 
 ```text
-ArchitectJourney/
+genai-aws-bedrock-in-practice/
 ├── .copilot/                              # Copilot configuration
 ├── .cursor/                               # Cursor AI configuration
 ├── .github/                               # GitHub configuration
@@ -232,41 +230,32 @@ ArchitectJourney/
 
 ## 🧭 Repository Context & Purpose
 
-**ArchitectJourney** is a comprehensive learning and reference repository for aspiring software architects. It provides:
+**genai-aws-bedrock-in-practice** is a practical, architecture-first learning repository for creating Generative AI solutions on AWS using Amazon Bedrock. It provides:
 
-- Structured learning roadmap from foundational programming to architectural mastery
-- Reference materials for design patterns, principles, and best practices
-- Practical project examples and implementation guides
-- Leadership and strategic frameworks for technical decision-making
+- Session-based learning (30-minute format) optimized for self-study and meetups
+- Architecture-first approach: mental models → APIs → systems
+- Production-aware content: security, cost, observability, and failure modes
+- Original content focused on system design thinking, not demo-only
 
-**Target Audience**: Developers → Software Architects → Lead Architects → Technology Directors
+**Target Audience**: 
+- Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS
+- Architects/TPMs who need clarity on trade-offs, governance, and readiness
 
-**Learning Framework**: 9-stage unified progression combining core architecture fundamentals with leadership development
+**Learning Framework**: 9-session progressive roadmap from Bedrock foundations to production readiness
 
 ---
 
-## 📋 Educational Content Rules (ArchitectJourney Knowledge Base)
+## 📋 Educational Content Rules (genai-aws-bedrock-in-practice)
 
 ### 🚨 CRITICAL: Repository Purpose & Code Separation
 
-**This repository (`ArchitectJourney`) is EXCLUSIVELY for educational content:**
+**This repository (`genai-aws-bedrock-in-practice`) is EXCLUSIVELY for educational content:**
 
-- ✅ **Educational Content Only**: Markdown documentation, learning materials, concepts, and illustrative code examples
-- ✅ **Minimal Code Examples**: Code snippets in educational content should be minimal, illustrative, and focused on teaching concepts
-- ❌ **NO Full Implementations**: Complete, runnable code projects are NOT stored in this repository
+- ✅ **Educational Content Only**: Markdown documentation, session materials, concepts, and illustrative code examples
+- ✅ **Minimal Code Examples**: Code snippets should be minimal, illustrative, and focused on teaching concepts
+- ✅ **Minimal Runnable Labs**: The `src/` directory is reserved for minimal runnable labs/examples that add learning value
+- ❌ **NO Full Implementations**: Complete, production-ready code projects are NOT stored in this repository
 - ❌ **NO Code Repositories**: This repository does not contain language-specific code implementations
-
-**Code Implementations Location:**
-
-All full code implementations, projects, and runnable examples are stored in **separate GitHub repositories** within the same organization (`SwamysArchitectJourney-2026`):
-
-- `Python` - Python implementations
-- `CSharp` - C# and .NET projects
-- `JavaScript` - JavaScript/TypeScript projects
-- `Java` - Java and Spring Boot
-- `Go` - Go projects
-- `Cloud` - Infrastructure as Code
-- `AI-ML` - AI/ML implementations
 
 **Code Examples in Educational Content:**
 
@@ -293,10 +282,10 @@ When including code examples in educational content:
 **Step-by-step process for creating original educational content**:
 
 1. **Source Intake**: Skim for intent and big ideas; don't copy notes verbatim
-2. **Concept Map**: Create fresh outline with different sectioning tailored to ArchitectJourney
+2. **Concept Map**: Create fresh outline with different sectioning tailored to genai-aws-bedrock-in-practice
 3. **Teach Differently**: Use new analogies, scenarios, datasets, use-cases (avoid source examples)
 4. **Produce Original Artifacts**: Explanations, Mermaid diagrams (with ASCII fallback), minimal examples
-5. **Cross-Link in ArchitectJourney**: Add prerequisites/builds-upon/enables across tracks
+5. **Cross-Link in sessions**: Add prerequisites/builds-upon/enables across sessions
 6. **Similarity Audit**: Ensure no sentences/structures resemble source
 7. **Optional References**: Add "References/Inspired by" links (no copied phrasing)
 
@@ -363,7 +352,7 @@ When including code examples in educational content:
 
 ### 📋 Required Content Structure
 
-#### 5 Required ArchitectJourney Metadata Fields
+#### 5 Required Session Metadata Fields
 
 Every educational content file MUST include:
 
@@ -709,13 +698,13 @@ All content must demonstrate:
 
 **Location**: `source-material/` (at repository root, git-ignored)
 
-**Purpose**: **Staging folder for migration** - Temporary staging area where source content is placed before review and transformation into ArchitectJourney educational content.
+**Purpose**: **Staging folder for migration** - Temporary staging area where source content is placed before review and transformation into session content.
 
 **Critical Workflow**:
 
 1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder (at repository root)
 2. **Review and migrate**: AI assistant reviews content, identifies unique topics, and migrates/transforms following Educational Content Rules
-3. **Verify migration**: Confirm all unique content has been migrated to `01_Reference/` or `02_Learning/`
+3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
 4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
 
 **Important Notes**:
@@ -907,7 +896,7 @@ All content must demonstrate:
 
 **Before ANY content creation or modification**:
 
-### Content Quality (ArchitectJourney Educational Standards)
+### Content Quality (genai-aws-bedrock-in-practice Educational Standards)
 
 - [ ] **Zero-Copy Policy Verified**: No verbatim text from sources; completely transformed
 - [ ] **Transformative Workflow Applied**: Fresh outline, new examples, original explanations
@@ -1100,9 +1089,9 @@ ASCII Fallback:
 
 ## 📚 Document Information
 
-**Version**: 3.2  
-**Last Updated**: November 10, 2025  
-**Maintained By**: ArchitectJourney Learning System  
+**Version**: 1.0  
+**Last Updated**: December 27, 2025  
+**Maintained By**: genai-aws-bedrock-in-practice Learning System  
 **Review Cycle**: After every structural change (immediate) + quarterly review  
 **Audience**: GitHub Copilot agents, content creators, maintainers
 
@@ -1125,9 +1114,7 @@ ASCII Fallback:
 
 ## For More Information
 
-- **Repository**: <https://github.com/Swamy-s-Tech-Skills-Academy/ArchitectJourney>
-- **Master Roadmap**: `docs/01_UnifiedArchitectMasteryRoadmap.md`
-- **Structure Reference**: `docs/02_repository-structure.md`
-- **Learning vs Reference Strategy**: `docs/03_Learning-vs-Reference-Strategy.md`
-- **Automation Scripts**: `tools/psscripts/README.md`
-- **Debugging Commands**: `docs/debugging/README.md`
+- **Master Plan**: `docs/01_master-plan.md`
+- **Structure Reference**: `docs/02_repository-structure.md` (single source of truth)
+- **Session Template**: `docs/sessions/_session-template.md`
+- **Repository README**: `README.md`

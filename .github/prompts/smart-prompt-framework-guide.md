@@ -650,29 +650,29 @@ Before submitting ANY coding agent PR or task completion:
 
 ---
 
-## 🎓 **ArchitectJourney Learning Integration**
+## 🎓 **genai-aws-bedrock-in-practice Learning Integration**
 
-Align your coding agent tasks with the learning progression:
+Align your coding agent tasks with the session-based learning progression:
 
-### **For Levels 1-3 (Foundation & Patterns):**
+### **For Sessions 1-3 (Bedrock Foundations):**
 
-- Focus on design pattern application
-- SOLID principles demonstration
-- Clean code and testing practices
-- Language-specific idioms and best practices
+- Focus on Bedrock mental models and conceptual clarity
+- Model exploration and prompt behavior understanding
+- Platform deep dive and console-first exploration
+- Vocabulary and foundational concepts
 
-### **For Levels 4-6 (Enterprise & Cloud):**
+### **For Sessions 4-6 (APIs & Integration):**
 
-- Microservices architecture implementation
-- Cloud platform integration (Azure, AWS, GCP)
-- DevOps and CI/CD pipeline design
-- System scalability and resilience patterns
+- Bedrock APIs and SDKs integration
+- GenAI backend architecture on AWS
+- Embeddings and vector thinking
+- RAG implementation with Bedrock
 
-### **For Levels 7-9 (Strategy & AI/ML):**
+### **For Sessions 7-9 (Advanced & Production):**
 
-- AI/ML system architecture
-- Enterprise security and governance
-- Strategic technology decisions
-- Leadership and organizational transformation
+- Advanced Bedrock capabilities (Knowledge Bases, Agents)
+- Production readiness: security, cost, observability
+- System design thinking and trade-offs
+- Real-world failure modes and mitigation
 
-This framework ensures consistent, high-quality results from GitHub Copilot coding agents while preventing common issues and maintaining enterprise-grade architectural standards aligned with ArchitectJourney learning levels.
+This framework ensures consistent, high-quality results from GitHub Copilot coding agents while preventing common issues and maintaining production-aware architectural standards aligned with genai-aws-bedrock-in-practice session progression.

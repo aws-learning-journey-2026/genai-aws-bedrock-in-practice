@@ -8,7 +8,7 @@ This repository is part of the **aws-learning-journey-2026** organization and do
 
 ## 📌 Disclaimer
 
-This is **Swamy's personal learning** repository and reference workspace, not official course material or a packaged curriculum.
+This is **Swamy's personal learning** repository, knowledge-sharing repository and reference workspace, not official course material or a packaged curriculum. It is not official AWS training material and does not represent Amazon or its affiliates.
 
 ---
 

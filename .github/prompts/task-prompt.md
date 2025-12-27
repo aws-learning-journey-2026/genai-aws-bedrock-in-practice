@@ -1,26 +1,27 @@
-# ArchitectJourney Repository Verification and Content Enhancement
+# genai-aws-bedrock-in-practice Repository Verification and Content Enhancement
 
 ## Context
 
-You are working with **ArchitectJourney**, a comprehensive learning and reference repository for aspiring software architects. The repository combines development principles, AI/ML, DevOps, leadership frameworks, and strategic insights across:
+You are working with **genai-aws-bedrock-in-practice**, a practical, architecture-first learning repository for creating Generative AI solutions on AWS using Amazon Bedrock. The repository provides:
 
-- **9 Progressive Levels** (Foundation Mastery → Leadership, Strategy & Innovation)
-- **9-Phase LeadArchitect Program** (Reboot → Leadership Impact)
-- **13 Reference Library Domains** (Development Fundamentals, Programming Languages, AI/ML, Data Science, Cloud Platforms, DevOps, Security & Governance, Enterprise Architecture, Product Delivery, Leadership & Strategy, Networking & Infrastructure, Emerging Technologies, Professional Growth)
+- **9 Session-Based Learning Path** (Bedrock Mental Models → Production Readiness)
+- **Session Format**: 30-minute timeboxed sessions optimized for self-study and meetups
+- **Architecture-First Approach**: Mental models → APIs → systems
+- **Production-Aware Content**: Security, cost, observability, and failure modes
 
 Target Folders for Verification:
 
-- `01_ReferenceLibrary/`
-- `02_LeadArchitect-Learning/`
+- `docs/sessions/`
+- `src/`
 - `docs/`
 - `.github/`
 
 Primary Objective:
-Perform a COMPREHENSIVE audit of the repository using ArchitectJourney-specific educational standards and quality criteria. Verify file contents, run structured checks, and produce actionable reports with suggestions and fixes.
+Perform a COMPREHENSIVE audit of the repository using genai-aws-bedrock-in-practice educational standards and quality criteria. Verify file contents, run structured checks, and produce actionable reports with suggestions and fixes.
 
 ---
 
-## ArchitectJourney-Specific Verification Checks
+## genai-aws-bedrock-in-practice-Specific Verification Checks
 
 ### A. **File Content Inspection**
 
@@ -42,7 +43,7 @@ Perform a COMPREHENSIVE audit of the repository using ArchitectJourney-specific 
 - Check alignment with architectural best practices and design patterns
 - Validate examples are current, relevant, and runnable
 
-### D. **ArchitectJourney Metadata Requirements**
+### D. **Session Metadata Requirements**
 
 Check for presence of:
 
@@ -133,21 +134,21 @@ Check for presence of:
 
 ---
 
-## ArchitectJourney Content Standards
+## genai-aws-bedrock-in-practice Content Standards
 
 ### Learning Structure
 
-- **9-Level Foundation**: Progressive from Level 1 (Foundation Mastery) to Level 9 (Leadership, Strategy & Innovation)
-- **9-Phase LeadArchitect**: Intensive program organized into 9 phases, each with 9 specialized clusters
-- **13 Reference Domains**: Comprehensive coverage of essential architectural knowledge areas
-- **Progressive Complexity**: Content builds from foundational concepts to advanced strategic decision-making
+- **9-Session Roadmap**: Progressive from Session 01 (Bedrock Mental Models) to Session 09 (Production Readiness)
+- **30-Minute Format**: Each session designed for focused learning within timeboxed sessions
+- **Architecture-First**: Content emphasizes mental models before APIs, systems before frameworks
+- **Production-Aware**: Security, cost, observability, and failure modes are first-class considerations
 
 ### Content Organization
 
-- **By Level**: Content clearly indicates which level(s) it addresses
-- **By Domain**: Content properly categorized in 01_ReferenceLibrary under correct domain
-- **By Phase**: LeadArchitect content organized by phase and cluster
-- **By Learning Modality**: Mix of conceptual explanation, code examples, diagrams, and practical projects
+- **By Session**: Content organized as individual session files in `docs/sessions/`
+- **By Deliverable**: Each session produces a specific artifact (notes, diagram, checklist, or minimal code)
+- **By Learning Progression**: Sessions build upon each other logically
+- **By Learning Modality**: Mix of conceptual explanation, code examples, diagrams, and practical reasoning
 
 ### Quality Requirements
 
