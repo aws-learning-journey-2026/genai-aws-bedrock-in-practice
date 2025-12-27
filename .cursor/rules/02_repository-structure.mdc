@@ -44,41 +44,9 @@ When including code examples in educational content:
 
 ## 📁 Repository Structure
 
-### Current Structure (As of December 27, 2025)
+**Single source of truth**: `docs/03_repository-structure.md`
 
-```text
-genai-aws-bedrock-in-practice/
-├── .copilot/                              # Copilot configuration
-│   └── settings.json
-├── .cursor/                               # Cursor AI configuration
-│   └── rules/                             # Project rules (this directory)
-│       ├── 01_educational-content-rules.mdc
-│       ├── 02_repository-structure.mdc
-│       ├── 03_quality-assurance.mdc
-│       ├── 04_markdown-standards.mdc
-│       ├── 05_primary-directives.mdc
-│       ├── 06_cross-domain-integration.mdc
-│       ├── 07_file-naming-conventions.mdc
-│       └── README.md
-├── docs/                                  # Documentation hub
-│   ├── 01_master-plan.md                  # Master plan and roadmap
-│   ├── 03_repository-structure.md         # Single source of truth for structure
-│   ├── sessions/                           # Session content (30-min format)
-│   │   ├── _session-template.md           # Session template
-│   │   ├── 01_bedrock-mental-models.md   # Learning session content
-│   │   ├── 01_meetup-bedrock-mental-models.md  # Meetup session content
-│   │   ├── 02_bedrock-platform-deep-dive.md
-│   │   ├── 02_meetup-bedrock-platform-deep-dive.md
-│   │   └── ... (additional sessions)
-│   ├── meetup/                             # Meetup index and materials
-│   │   └── sessions.md                    # Index of meetup sessions
-│   └── images/                             # Diagrams and visual assets
-├── src/                                    # Minimal runnable labs/examples
-├── source-material/                        # Staging area for imported content (git-ignored)
-├── LICENSE                                 # MIT License
-├── README.md                               # Main repository documentation
-└── .gitignore                             # Git ignore rules
-```
+Do **not** duplicate the full tree here — keep this rule file focused on behavior and refer to the doc above for the authoritative directory layout.
 
 ---
 
@@ -118,7 +86,7 @@ genai-aws-bedrock-in-practice/
 
 **Policy**:
 
-- ✅ Use `_session-template.md` as the starting point for new learning sessions
+- ✅ Use `docs/01_session-template.md` as the starting point for new learning sessions
 - ✅ Each session should produce a single primary artifact (notes, diagram, checklist, or minimal code)
 - ✅ Follow the master plan structure: Objective → Core Concepts → Hands-on → Artifact
 - ✅ Keep sessions focused and timeboxed to ~30 minutes
@@ -126,7 +94,7 @@ genai-aws-bedrock-in-practice/
 
 ## 📞 Support & Escalation
 
-**Questions about content placement?** → Check `docs/01_master-plan.md`
+**Questions about content placement?** → Check `docs/02_master-plan.md`
 
 **Content too long?** → Break into multiple sessions or create multi-part structure
 
@@ -134,12 +102,12 @@ genai-aws-bedrock-in-practice/
 
 **Link broken?** → Update URLs or fix internal file references
 
-**Structure outdated?** → Update `README.md` and `docs/01_master-plan.md` immediately
+**Structure outdated?** → Update `docs/03_repository-structure.md` first, then update `README.md` and `docs/02_master-plan.md`
 
 ---
 
 ## For More Information
 
-- **Master Plan**: `docs/01_master-plan.md`
-- **Session Template**: `docs/sessions/_session-template.md`
+- **Master Plan**: `docs/02_master-plan.md`
+- **Session Template**: `docs/01_session-template.md`
 - **Repository README**: `README.md`

@@ -22,23 +22,36 @@ genai-aws-bedrock-in-practice/
 │       ├── 06_cross-domain-integration.mdc
 │       ├── 07_file-naming-conventions.mdc
 │       └── README.md
+├── .github/                               # GitHub configuration
+│   ├── copilot-instructions.md            # Copilot instruction file
+│   ├── ISSUE_TEMPLATE/                    # Issue templates
+│   ├── prompts/                           # Reusable prompt templates
+│   └── PULL_REQUEST_TEMPLATE.md           # PR template
 ├── docs/                                  # Documentation hub
-│   ├── 01_master-plan.md                  # Master plan and roadmap
+│   ├── 01_session-template.md             # 30-minute session template
+│   ├── 02_master-plan.md                  # Master plan and roadmap
 │   ├── 03_repository-structure.md         # This file - single source of truth
-│   ├── sessions/                           # Session content (30-min format)
-│   │   ├── _session-template.md           # Session template for consistency
-│   │   ├── 01_bedrock-mental-models.md
-│   │   ├── 02_bedrock-platform-deep-dive.md
-│   │   └── ... (additional sessions as created)
-│   ├── meetup/                             # Meetup materials and slides
-│   └── images/                            # Diagrams and visual assets
+│   ├── backup/                            # Archived/old session drafts (not active)
+│   ├── images/                            # Diagrams and visual assets
+│   │   └── S1/                             # Session 01 images
+│   ├── meetup/                             # Meetup index and materials
+│   │   ├── .gitkeep
+│   │   └── sessions.md                    # Index of meetup sessions
+│   └── sessions/                           # Active session content (30-min format)
+│       ├── .gitkeep
+│       └── 01_bedrock-mental-models.md
 ├── src/                                    # Minimal runnable labs/examples
 ├── source-material/                        # Staging area for imported content (git-ignored)
-├── LICENSE                                 # MIT License
-├── README.md                               # Main repository documentation
 ├── .gitignore                             # Git ignore rules
-├── .markdownlint.json                      # Markdown linting configuration
-└── .markdownlint-cli2.yaml                 # Markdown lint CLI configuration
+├── .markdownlint-cli2.yaml                 # Markdownlint configuration
+├── .markdownlint.json                      # Markdownlint configuration
+├── .markdownlintignore                     # Markdownlint ignore rules
+├── CODE_OF_CONDUCT.md                     # Code of conduct
+├── CONTRIBUTING.md                        # Contribution guidelines
+├── LICENSE                                 # MIT License
+├── lychee.toml                             # Link checker configuration
+├── README.md                               # Main repository documentation
+├── SECURITY.md                            # Security policy
 ```
 
 ---
@@ -56,11 +69,13 @@ genai-aws-bedrock-in-practice/
 ### `docs/`
 **Purpose**: Primary documentation hub  
 **Contents**:
-- **`01_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
+- **`01_session-template.md`**: Standard 30-minute session template
+- **`02_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
 - **`03_repository-structure.md`**: This file - single source of truth for repository structure
-- **`sessions/`**: Individual session content files following the 30-minute format
+- **`sessions/`**: Active session content files following the 30-minute format
 - **`meetup/`**: Materials for live meetup delivery (slides, notes, etc.)
 - **`images/`**: Visual assets, diagrams, and architecture illustrations
+- **`backup/`**: Archived session drafts retained for reference
 
 ### `docs/sessions/`
 **Purpose**: Session-based learning content and meetup session materials  
@@ -83,7 +98,7 @@ genai-aws-bedrock-in-practice/
 3. Hands-on / applied reasoning (12–15 minutes)
 4. Output artifact + recap (2–5 minutes)
 
-**Template**: `_session-template.md` provides the standard structure for all learning sessions
+**Template**: `docs/01_session-template.md` provides the standard structure for all learning sessions
 
 **Current Sessions** (planned):
 - `01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations
@@ -113,9 +128,9 @@ genai-aws-bedrock-in-practice/
 ## 📋 File Naming Conventions
 
 ### Documentation Files
-- Master documents: `NN_descriptive-name.md` (e.g., `01_master-plan.md`)
+- Master documents: `NN_descriptive-name.md` (e.g., `02_master-plan.md`)
 - Session files: `NN_session-name.md` (e.g., `01_bedrock-mental-models.md`)
-- Template files: `_template-name.md` (leading underscore indicates template)
+- Session template: `01_session-template.md` (stored in `docs/`)
 
 ### Code Files
 - Follow language-specific conventions
@@ -150,8 +165,8 @@ genai-aws-bedrock-in-practice/
 
 ## 🔗 Related Documentation
 
-- **Master Plan**: `docs/01_master-plan.md` - Complete learning roadmap
-- **Session Template**: `docs/sessions/_session-template.md` - Standard session format
+- **Master Plan**: `docs/02_master-plan.md` - Complete learning roadmap
+- **Session Template**: `docs/01_session-template.md` - Standard session format
 - **Repository README**: `README.md` - Main entry point (references this file)
 
 ---
