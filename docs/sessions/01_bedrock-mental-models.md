@@ -128,7 +128,37 @@ They exist to **align vocabulary**, not to teach internals.
 | **Foundation Models**            | Large, pre-trained models reused across many tasks without training from scratch    |
 | **Amazon Bedrock**               | A managed AWS service for running foundation models via APIs                        |
 
-> Clarifying **“Model”** early is critical—everything in Bedrock ultimately revolves around *using models safely and effectively*.
+> Clarifying **"Model"** early is critical—everything in Bedrock ultimately revolves around *using models safely and effectively*.
+
+---
+
+### 2.4 Understanding Tokens
+
+Tokens are the **basic unit of text processing** in language models. Understanding tokens is essential for:
+
+* **Cost estimation** — Bedrock pricing is token-based
+* **Prompt design** — Token limits affect what you can send
+* **Performance** — Token count impacts latency and throughput
+
+#### How Tokenization Works
+
+![Tokenizer Process](../images/Tokenizer.PNG)
+
+**Key Points:**
+
+* Tokens are not always words — they can be subwords, parts of words, or even characters
+* Different models use different tokenizers
+* The same text may have different token counts across models
+* Token count directly impacts cost in Bedrock
+
+**Practical Example:**
+
+The phrase "Hello, world!" might be tokenized as:
+* `["Hello", ",", " world", "!"]` (4 tokens)
+* Or `["Hello", ",", "world", "!"]` (4 tokens)
+* Depending on the model's tokenizer
+
+> **Architect-level insight:** When designing systems with Bedrock, always consider token costs. Longer prompts = higher costs. This is why prompt engineering and RAG (Retrieval-Augmented Generation) matter for production systems.
 
 ---
 
@@ -375,7 +405,33 @@ Create a **one-page Bedrock Mental Model note** containing:
 
 ---
 
-## 15. What's Next
+## 15. Mini Demo
+
+### Simple Prompt Example
+
+This demonstration shows a basic interaction with Amazon Bedrock using a simple prompt. It illustrates the concepts we've covered: models, tokens, and probabilistic outputs.
+
+![Simple Prompt Example](../images/SimplePromot.PNG)
+
+**Key Observations:**
+
+* The prompt is sent to a foundation model via Bedrock
+* The model processes the input tokens and generates output tokens
+* The response is probabilistic — running the same prompt may yield different outputs
+* Token count affects both cost and latency
+
+**What This Demonstrates:**
+
+* **Model behavior** — How foundation models respond to prompts
+* **Token processing** — Input and output tokens are counted
+* **Probabilistic nature** — Outputs vary based on model parameters
+* **Bedrock abstraction** — The complexity of model internals is hidden
+
+> This simple example sets the foundation for understanding more complex interactions in subsequent sessions.
+
+---
+
+## 16. What's Next
 
 ### Session 02 – Amazon Bedrock Platform Deep Dive (Console-First)
 
