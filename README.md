@@ -102,17 +102,17 @@ graph LR
 
 ### Session Details
 
-| Session | Topic                                                   | Deliverable                                    | Focus Area                    |
-| ------- | ------------------------------------------------------- | ---------------------------------------------- | ----------------------------- |
-| **01**  | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          | Vocabulary & conceptual clarity |
-| **02**  | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         | Service operation & constraints |
-| **03**  | Model Exploration & Prompt Behavior                     | Prompt experiment log                          | Prompt behavior & determinism |
-| **04**  | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling | Request/response anatomy |
-| **05**  | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    | Lambda/API Gateway integration |
-| **06**  | Embeddings & Vector Thinking                            | Chunking strategy guide                        | Embeddings & similarity search |
-| **07**  | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist | Ingestion → retrieval → generation |
-| **08**  | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      | Managed vs custom orchestration |
-| **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring |
+| Session | Topic                                                   | Deliverable                                    | Focus Area                       | Type      | Status  |
+| ------- | ------------------------------------------------------- | ---------------------------------------------- | -------------------------------- | --------- | ------- |
+| **01**  | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          | Vocabulary & conceptual clarity  | 📚 Knowledge | ✅ Ready   |
+| **02**  | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         | Service operation & constraints  | Knowledge | 🔄 Planned |
+| **03**  | Model Exploration & Prompt Behavior                     | Prompt experiment log                          | Prompt behavior & determinism    | Knowledge | Planned |
+| **04**  | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling | Request/response anatomy     | Knowledge | Planned |
+| **05**  | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    | Lambda/API Gateway integration   | 🛠️ Project   | Planned |
+| **06**  | Embeddings & Vector Thinking                            | Chunking strategy guide                        | Embeddings & similarity search   | Knowledge | Planned |
+| **07**  | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist | Ingestion → retrieval → generation | Knowledge | Planned |
+| **08**  | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      | Managed vs custom orchestration  | Knowledge | Planned |
+| **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring      | Knowledge | Planned |
 
 > Additional sessions may be added as the platform evolves.
 
