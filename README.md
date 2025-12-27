@@ -50,17 +50,17 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 ## 🗂️ Session Structure (30 Minutes Each)
 
-| Session | Topic                                                   |
-| ------- | ------------------------------------------------------- |
-| 01      | Bedrock Mental Models & GenAI Foundations               |
-| 02      | Amazon Bedrock Service Deep Dive                        |
-| 03      | Model Exploration & Prompt Behavior                     |
-| 04      | Using Amazon Bedrock via APIs & SDKs                    |
-| 05      | Designing a GenAI Backend on AWS                        |
-| 06      | Embeddings & Vector Search Fundamentals                 |
-| 07      | Retrieval-Augmented Generation (RAG) with Bedrock       |
-| 08      | Advanced Bedrock Capabilities (Knowledge Bases, Agents) |
-| 09      | Production Readiness: Security, Cost, Observability     |
+| Session | Topic                                                   | Deliverable                                    |
+| ------- | ------------------------------------------------------- | ---------------------------------------------- |
+| 01      | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          |
+| 02      | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         |
+| 03      | Model Exploration & Prompt Behavior                     | Prompt experiment log                          |
+| 04      | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling |
+| 05      | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    |
+| 06      | Embeddings & Vector Thinking                            | Chunking strategy guide                        |
+| 07      | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist |
+| 08      | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      |
+| 09      | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 |
 
 > Additional sessions may be added as the platform evolves.
 
@@ -68,25 +68,26 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 ## 📁 Repository Structure
 
-```
+```text
 genai-aws-bedrock-in-practice/
-├── 01-bedrock-mental-models/
-├── 02-bedrock-service-deep-dive/
-├── 03-model-exploration/
-├── 04-bedrock-apis-and-sdks/
-├── 05-genai-backend-architecture/
-├── 06-embeddings-and-vectors/
-├── 07-rag-with-bedrock/
-├── 08-advanced-bedrock-capabilities/
-├── 09-production-readiness/
+├── docs/
+│   ├── 01_master-plan.md          # Master plan and roadmap
+│   ├── sessions/                   # Session content (30-min format)
+│   │   ├── 01_bedrock-mental-models.md
+│   │   ├── 02_bedrock-platform-deep-dive.md
+│   │   └── ... (additional sessions)
+│   ├── meetup/                     # Meetup materials and slides
+│   └── images/                     # Diagrams and visual assets
+├── src/                            # Minimal runnable labs/examples
+├── source-material/                # Staging area for imported content (git-ignored)
 └── README.md
 ```
 
-Each session folder contains:
+Session content is organized under `docs/sessions/` as individual markdown files. Each session follows a consistent 30-minute format and includes:
 
-* A focused `README.md`
-* Diagrams or notes where applicable
-* Code examples only when they add learning value
+* Core concepts and mental models
+* Hands-on reasoning and applied examples
+* Deliverable artifacts (notes, diagrams, checklists, or minimal code)
 
 ---
 
@@ -123,17 +124,21 @@ It is **not official AWS training material** and does not represent Amazon or it
 
 Begin with:
 
-👉 **`01-bedrock-mental-models/`**
+👉 **`docs/sessions/01_bedrock-mental-models.md`**
 
 Everything else builds on that foundation.
 
 ---
 
-If you want, next I can:
+## 📋 Principles (Non-Negotiables)
 
-* Create a **session README template**
-* Write **Session 01 fully**
-* Add **architecture diagrams**
-* Align this repo with your **meetup slide flow**
+* **Architecture-first**: Start from mental models, then APIs, then systems
+* **Practice-oriented**: Each session produces an artifact (notes, diagram, checklist, or minimal code)
+* **Production-aware**: Security, cost, observability, and failure modes are first-class
+* **Original content**: No course-clone structure or copied marketing text
 
-Just tell me the next step.
+---
+
+## 📚 Learning Roadmap
+
+See `docs/01_master-plan.md` for the complete learning roadmap and session details.
