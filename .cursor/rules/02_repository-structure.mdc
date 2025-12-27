@@ -62,7 +62,7 @@ genai-aws-bedrock-in-practice/
 │       └── README.md
 ├── docs/                                  # Documentation hub
 │   ├── 01_master-plan.md                  # Master plan and roadmap
-│   ├── 02_repository-structure.md         # Single source of truth for structure
+│   ├── 03_repository-structure.md         # Single source of truth for structure
 │   ├── sessions/                           # Session content (30-min format)
 │   │   ├── _session-template.md           # Session template
 │   │   ├── 01_bedrock-mental-models.md   # Learning session content
