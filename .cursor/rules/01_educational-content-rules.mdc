@@ -66,12 +66,12 @@
 
 ---
 
-## ⏱️ 25-Minute Learning Segments
+## ⏱️ 30-Minute Session Format
 
-✅ **Modular content** designed for focused 25-minute sessions  
-✅ **Multi-Part Structure**: Complex topics split into Part 1, Part 2, ... Part N  
-✅ **One-Shot Learning**: Each segment complete and actionable within time limit  
-✅ **Target Length**: 150 lines of content maximum per response
+✅ **Modular content** designed for focused 30-minute sessions  
+✅ **Session Structure**: Each session follows: Objective → Core Concepts → Hands-on → Artifact  
+✅ **One-Shot Learning**: Each session complete and actionable within time limit  
+✅ **Target Length**: 150 lines of content maximum per session (split if needed, don't trim)
 
 ### ⚠️ CRITICAL: Splitting vs. Trimming Policy
 
@@ -81,7 +81,7 @@
 - ✅ **Preserves ALL educational content** - No loss of examples, explanations, or concepts
 - ✅ **Maintains learning value** - Each part remains complete and actionable
 - ✅ **Better learning experience** - Learners get comprehensive coverage across parts
-- ✅ **Follows 25-minute principle** - Each part fits within focused learning session
+- ✅ **Follows 30-minute session format** - Each session fits within focused learning time
 
 **Why Trimming is Prohibited:**
 - ❌ **Loses educational content** - Examples, explanations, or concepts may be removed
@@ -118,7 +118,7 @@ Every educational content file MUST include:
 ---
 learning_level: "Beginner" | "Intermediate" | "Advanced"
 prerequisites: ["required knowledge", "prior concepts"]
-estimated_time: "25 minutes"  # Standard, adjust if needed
+estimated_time: "30 minutes"  # Standard session format, adjust if needed
 learning_objectives:
   - "Specific, measurable outcome 1"
   - "Specific, measurable outcome 2"
@@ -138,7 +138,7 @@ related_topics:
 ✅ Use hyphens for multi-word names: `01_Software-Design-Principles/`
 
 **CRITICAL**: This rule applies to **ALL files** in the repository:
-- ✅ Educational content files (`01_Reference/`, `02_Learning/`)
+- ✅ Educational content files (`docs/sessions/`)
 - ✅ Documentation files (`docs/`)
 - ✅ Any numbered files anywhere in the repository
 - ❌ **NO EXCEPTIONS** - `00_` is NEVER allowed, even for meta/documentation files

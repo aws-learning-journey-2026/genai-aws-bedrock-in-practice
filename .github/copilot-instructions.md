@@ -143,9 +143,11 @@ Interleave thinking with action in iterative cycles:
 
 ---
 
-## 📁 Current Repository Structure (AS OF NOVEMBER 24, 2025)
+## 📁 Current Repository Structure (As of December 27, 2025)
 
-### **Actual Current Structure** (verify with: `tree /F /A`)
+**Single Source of Truth**: See [`docs/02_repository-structure.md`](docs/02_repository-structure.md) for the authoritative repository structure.
+
+### **Actual Current Structure**
 
 ```text
 genai-aws-bedrock-in-practice/
@@ -163,68 +165,51 @@ genai-aws-bedrock-in-practice/
 │       └── README.md
 ├── .github/                               # GitHub configuration
 │   ├── copilot-instructions.md            # THIS FILE - Update when structure changes
-│   └── prompts/                           # Reusable prompt templates
-│       ├── smart-prompt-framework-guide.md
-│       └── task-prompt.md
+│   ├── ISSUE_TEMPLATE/                    # Issue templates
+│   ├── prompts/                           # Reusable prompt templates
+│   │   ├── smart-prompt-framework-guide.md
+│   │   └── task-prompt.md
+│   └── PULL_REQUEST_TEMPLATE.md          # PR template
 ├── docs/                                  # Documentation hub
 │   ├── 01_master-plan.md                  # Master plan and roadmap
 │   ├── 02_repository-structure.md         # Single source of truth for structure
 │   ├── sessions/                           # Session content (30-min format)
 │   │   ├── _session-template.md           # Session template
-│   │   └── ... (session files)
+│   │   ├── 01_bedrock-mental-models.md
+│   │   └── ... (additional sessions as created)
 │   ├── meetup/                             # Meetup materials and slides
 │   └── images/                            # Architecture diagrams and assets
 ├── src/                                    # Minimal runnable labs/examples
 ├── source-material/                        # Staging area (at repository root, git-ignored)
-├── LICENSE                                 # MIT License
-├── README.md                               # Main repository documentation
-└── .gitignore                             # Git ignore rules
-```
-
-### **Actual Current Structure** (Updated December 27, 2025)
-
-```text
-genai-aws-bedrock-in-practice/
-├── .copilot/                              # Copilot configuration
-├── .cursor/                               # Cursor AI configuration
-├── .github/                               # GitHub configuration
-├── docs/                                  # Documentation hub
-├── src/                                   # Source content (organized)
-│   ├── 01_Reference/                     # Reference library (static knowledge)
-│   │   ├── 01_Development/               # Software development fundamentals
-│   │   ├── 02_AI-and-ML/                 # AI/ML knowledge base
-│   │   └── 05_DevOps/                    # DevOps practices and tools
-│   ├── 02_Learning/                       # Learning paths content (coming soon)
-│   └── 03_Interview-Prep/                # Interview preparation materials
-│       ├── Common/                       # Shared interview content
-│       ├── TPM/                          # Technical Project Manager prep
-│       ├── Architect/                    # Software Architect prep
-│       ├── Solution-Architect/           # Solution Architect prep
-│       └── Engineering-Manager/          # Engineering Manager prep
-├── source-material/                       # Staging area (at repository root, git-ignored)
-└── tools/                                 # Automation and utilities
-    └── psscripts/                         # PowerShell automation scripts
+├── CODE_OF_CONDUCT.md                     # Code of conduct
+├── CONTRIBUTING.md                        # Contribution guidelines
+├── SECURITY.md                            # Security policy
+├── LICENSE                                # MIT License
+├── README.md                              # Main repository documentation
+├── .gitignore                             # Git ignore rules
+├── .markdownlint.json                     # Markdown linting configuration
+└── .markdownlint-cli2.yaml                # Markdown lint CLI configuration
 ```
 
 ### **Documentation Philosophy**
 
-**Current Documentation** (as of November 23, 2025):
+**Current Documentation** (as of December 27, 2025):
 
-1. **01_GitHub-Organization-Strategy.md** - GitHub organization setup and multi-repository strategy
-   - Organization creation and configuration
-   - Repository naming conventions
-   - Multi-repository architecture
+1. **01_master-plan.md** - Master plan and learning roadmap
+   - Session structure and format
+   - Learning principles
+   - Repository layout
 
-2. **02_Workspace-Review-2025-11-23.md** - Workspace review and recommendations
-   - Current state assessment
-   - Implementation checklist
-   - Next steps and recommendations
+2. **02_repository-structure.md** - Single source of truth for repository structure
+   - Complete directory structure
+   - Directory descriptions
+   - File naming conventions
 
-**Planned Documentation** (to be created):
+**Session Content**:
 
-- **01_UnifiedArchitectMasteryRoadmap.md** - Complete 9-stage learning roadmap (planned)
-- **02_repository-structure.md** - Repository organization reference (single source of truth)
-- Additional documentation as content is developed
+- Sessions organized under `docs/sessions/` following 30-minute format
+- Each session produces a single primary artifact
+- Template available at `docs/sessions/_session-template.md`
 
 ---
 
@@ -333,7 +318,7 @@ When including code examples in educational content:
 - ✅ **Preserves ALL educational content** - No loss of examples, explanations, or concepts
 - ✅ **Maintains learning value** - Each part remains complete and actionable
 - ✅ **Better learning experience** - Learners get comprehensive coverage across parts
-- ✅ **Follows 25-minute principle** - Each part fits within focused learning session
+- ✅ **Follows 30-minute session format** - Each session fits within focused learning time
 
 **Why Trimming is Prohibited:**
 - ❌ **Loses educational content** - Examples, explanations, or concepts may be removed
@@ -360,7 +345,7 @@ Every educational content file MUST include:
 ---
 learning_level: "Beginner" | "Intermediate" | "Advanced"
 prerequisites: ["required knowledge", "prior concepts"]
-estimated_time: "25 minutes"  # Standard, adjust if needed
+estimated_time: "30 minutes"  # Standard session format, adjust if needed
 learning_objectives:
   - "Specific, measurable outcome 1"
   - "Specific, measurable outcome 2"
@@ -380,7 +365,7 @@ related_topics:
 ✅ Use hyphens for multi-word names: `01_Software-Design-Principles/`
 
 **CRITICAL**: This rule applies to **ALL files** in the repository:
-- ✅ Educational content files (`01_Reference/`, `02_Learning/`)
+- ✅ Educational content files (`docs/sessions/`)
 - ✅ Documentation files (`docs/`)
 - ✅ Any numbered files anywhere in the repository
 - ❌ **NO EXCEPTIONS** - `00_` is NEVER allowed, even for meta/documentation files
@@ -395,19 +380,25 @@ related_topics:
 
 **CRITICAL**: File numbering MUST reflect logical learning dependencies, not arbitrary ordering.
 
-**Standard OOP Learning Progression** (01_Reference/01_Development/01_Software-Design-Principles/):
+**Session Learning Progression** (docs/sessions/):
 
-1. **01**: OOP Introduction - Understanding the paradigm
-2. **02**: Classes and Objects - Core building blocks
-3. **03**: Encapsulation and Abstraction - Data protection
-4. **04**: Inheritance and Polymorphism - Code reuse (fundamental OOP pillar)
-5. **05**: Composition and Interfaces - Advanced patterns (compares with inheritance)
-6. **06**: UML Class Relationships - Visualizing relationships
+Sessions follow a progressive learning path from foundations to production readiness:
+
+1. **01**: Bedrock Mental Models & GenAI Foundations - Core concepts and mental models
+2. **02**: Bedrock Platform Deep Dive - Service architecture and console exploration
+3. **03**: Model Exploration & Prompt Behavior - Understanding model capabilities
+4. **04**: Bedrock APIs & SDKs - Programmatic access
+5. **05**: GenAI Backend Architecture - System design patterns
+6. **06**: Embeddings & Vector Thinking - Vector concepts and applications
+7. **07**: RAG with Bedrock - Retrieval-augmented generation
+8. **08**: Advanced Capabilities - Knowledge Bases and Agents
+9. **09**: Production Readiness - Security, cost, observability
 
 **Why This Order Matters**:
-- Inheritance (04) must come BEFORE Composition (05) because Composition discusses "favor composition over inheritance" - learners need to understand inheritance first
-- Inheritance is a fundamental OOP pillar; Composition is an alternative/comparison
-- UML (06) comes last as it visualizes all previous concepts
+- Mental models (01) must come first - establishes foundation
+- Platform understanding (02) before APIs (04) - console-first approach
+- Core concepts (01-04) before advanced patterns (05-09)
+- Production readiness (09) comes last - builds on all previous concepts
 
 **When Creating New Content**:
 - ✅ Verify prerequisites are numbered BEFORE the new content
