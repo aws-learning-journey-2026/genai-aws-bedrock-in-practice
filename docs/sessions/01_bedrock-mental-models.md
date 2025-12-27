@@ -309,7 +309,7 @@ In Amazon Bedrock, prompts directly influence:
 * Consistency and variability
 * Hallucination risk
 
-In Amazon Bedrock, prompts are the primary control surface developers have over model behavior.
+Prompts are the primary control surface developers have over model behavior.
 
 > Prompt engineering is not about clever wording — it is about **designing an interface to a probabilistic system**.
 
@@ -478,7 +478,7 @@ Correct mental models prevent these failures.
 
 This demonstration shows a basic interaction with Amazon Bedrock using a simple prompt. It illustrates the concepts we've covered: models, tokens, and probabilistic outputs.
 
-![Simple Prompt Example](../images/SimplePromot.PNG)
+![Simple Prompt Example](../images/SimplePrompt.PNG)
 
 **Key Observations:**
 
