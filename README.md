@@ -68,20 +68,13 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 ## 📁 Repository Structure
 
-```text
-genai-aws-bedrock-in-practice/
-├── docs/
-│   ├── 01_master-plan.md          # Master plan and roadmap
-│   ├── sessions/                   # Session content (30-min format)
-│   │   ├── 01_bedrock-mental-models.md
-│   │   ├── 02_bedrock-platform-deep-dive.md
-│   │   └── ... (additional sessions)
-│   ├── meetup/                     # Meetup materials and slides
-│   └── images/                     # Diagrams and visual assets
-├── src/                            # Minimal runnable labs/examples
-├── source-material/                # Staging area for imported content (git-ignored)
-└── README.md
-```
+For complete repository structure details, see **[`docs/02_repository-structure.md`](docs/02_repository-structure.md)** (single source of truth).
+
+**Quick Overview**:
+- `docs/sessions/` - Session content (30-minute format)
+- `docs/meetup/` - Meetup materials and slides
+- `src/` - Minimal runnable labs/examples
+- `source-material/` - Staging area for imported content (git-ignored)
 
 Session content is organized under `docs/sessions/` as individual markdown files. Each session follows a consistent 30-minute format and includes:
 
@@ -93,7 +86,7 @@ Session content is organized under `docs/sessions/` as individual markdown files
 
 ## 🔍 What This Repository Does *Not* Aim to Do
 
-* ❌ Replicate Udemy or official AWS documentation
+* ❌ Replicate of official AWS documentation
 * ❌ Cover every Bedrock feature exhaustively
 * ❌ Provide copy-paste production code
 
