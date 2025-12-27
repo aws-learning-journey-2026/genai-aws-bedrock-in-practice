@@ -1,7 +1,7 @@
 # Cursor AI Project Rules
 
 **Version**: 1.0  
-**Last Updated**: November 6, 2025
+**Last Updated**: December 27, 2025
 
 This directory contains modular rule files for Cursor AI, following the recommended Project Rules structure.
 
@@ -11,7 +11,7 @@ This directory contains modular rule files for Cursor AI, following the recommen
 
 ### `01_educational-content-rules.mdc`
 **Priority**: MANDATORY  
-**Content**: Zero-Copy Policy, Transformative Workflow, 25-minute segments, metadata requirements, educational excellence standards
+**Content**: Zero-Copy Policy, Transformative Workflow, 30-minute session format, metadata requirements, educational excellence standards
 
 ### `02_repository-structure.mdc`
 **Content**: Repository context, structure overview, support resources

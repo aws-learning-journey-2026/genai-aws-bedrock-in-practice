@@ -63,8 +63,19 @@ genai-aws-bedrock-in-practice/
 - **`images/`**: Visual assets, diagrams, and architecture illustrations
 
 ### `docs/sessions/`
-**Purpose**: Session-based learning content  
+**Purpose**: Session-based learning content and meetup session materials  
 **Structure**: Each session is a single markdown file following the naming convention `NN_session-name.md`
+
+**File Types**:
+
+1. **Learning Sessions**: `NN_{session-name}.md` (e.g., `01_bedrock-mental-models.md`)
+   - Self-study content following the session template
+   - Includes: Objective, Core Concepts, Hands-on, Artifact
+
+2. **Meetup Sessions**: `NN_meetup-{session-name}.md` (e.g., `01_meetup-bedrock-mental-models.md`)
+   - Meetup delivery content with organization, date, and agenda
+   - Based on learning sessions but includes meetup-specific details
+   - Includes: Organization, Date, Duration, Type, Deliverable, Why This Session, Agenda
 
 **Session Format** (30 minutes each):
 1. Objective (1–2 minutes)
@@ -72,11 +83,13 @@ genai-aws-bedrock-in-practice/
 3. Hands-on / applied reasoning (12–15 minutes)
 4. Output artifact + recap (2–5 minutes)
 
-**Template**: `_session-template.md` provides the standard structure for all sessions
+**Template**: `_session-template.md` provides the standard structure for all learning sessions
 
 **Current Sessions** (planned):
 - `01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations
+- `01_meetup-bedrock-mental-models.md` - Meetup Session 01 (Dot Net Learners House)
 - `02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
+- `02_meetup-bedrock-platform-deep-dive.md` - Meetup Session 02 (Dot Net Learners House)
 - `03_model-exploration-prompt-behavior.md` - Model Exploration & Prompt Behavior
 - `04_bedrock-apis-sdks.md` - Bedrock APIs & SDKs
 - `05_genai-backend-architecture.md` - Designing a Minimal GenAI Backend on AWS
