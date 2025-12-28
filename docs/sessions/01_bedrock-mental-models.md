@@ -1,158 +1,48 @@
-# Session 01: Bedrock Mental Models & GenAI Foundations
+---
+learning_level: "Beginner"
+prerequisites: []
+estimated_time: "30 minutes"
+learning_objectives:
+  - "Explain the minimal AI hierarchy relevant to Bedrock users"
+  - "Define what a model is (and is not) in practical terms"
+  - "Describe what Amazon Bedrock is and is not for system design"
+related_topics:
+  prerequisites: []
+  builds_upon: []
+  enables:
+    - "02_bedrock-platform-deep-dive.md"
+  cross_refs: []
+---
+
+# Session 01: Bedrock Mental Models & GenAI Foundations (Index)
+
+This session is split into focused modules to stay within the 30-minute format and keep each concept boundary clean.
 
 * **Event URL:** <https://www.meetup.com/dot-net-learners-house-hyderabad/events/312511436>
-* **Duration:** ~30 minutes
+* **Duration:** ~30 minutes (combined)
 * **Type:** Conceptual (mental models first, tooling later)
 * **Deliverable:** One-page *Bedrock Mental Model* note + glossary
-* **Part of:** `genai-aws-bedrock-in-practice`
-* **Organization:** aws-learning-journey-2026
 
 ---
 
-## 1. Objective
+## Modules
 
-By the end of this session, you should be able to:
-
-* Explain what **Generative AI** is in practical terms
-* Describe what a **foundation model** is and why it matters
-* Clearly articulate **what Amazon Bedrock is and is not**
-* Place **Amazon Bedrock correctly within the AWS AI/ML ecosystem**
-
-### Why This Matters
-
-> **These are very common assumptions — I’ve made them myself.**
-
-Many challenges with Generative AI on AWS begin **before any code is written**:
-
-* Amazon Bedrock is frequently misunderstood in relation to SageMaker
-* LLMs are often approached as deterministic APIs rather than probabilistic systems
-* System designs may overlook token-based cost and variability in outputs
-
-Without the right mental model, early design decisions can lead to unnecessary complexity, higher costs, or fragile systems. This session exists to establish that foundation before moving into tools and implementation.
+1. [Core Mental Models](01_bedrock-mental-models/core-mental-models.md)
+2. [Tokens](01_bedrock-mental-models/tokens.md)
+3. [Terminology & Scope](01_bedrock-mental-models/terminology-and-scope.md)
+4. [Applied Reasoning & Artifact](01_bedrock-mental-models/applied-reasoning-and-artifact.md)
 
 ---
 
-## 2. Core Mental Models
+## Output Artifact
 
-### 2.1 The Minimal AI Hierarchy (For Bedrock Users)
+After completing the modules, you should have a one-page note that answers:
 
-For **using Amazon Bedrock**, you only need the following conceptual hierarchy.
-This is an **orientation model**, not a training guide.
+- What Bedrock is (and is not)
+- The minimal hierarchy you need as a Bedrock user
+- The core terms you’ll use in later sessions (model, prompt, tokens, inference)
+- The first “design reflexes” for cost, variability, and safety
 
-#### The AI Hierarchy (Minimal Mental Model)
-
-```mermaid
-graph LR
-    A[Artificial Intelligence<br/>Systems that perceive, reason, and act] --> B[Machine Learning<br/>Learn patterns from data]
-    B --> C[Neural Networks<br/>Function approximators]
-    C --> D[Deep Learning<br/>Large networks, complex representations]
-    D --> E[Generative AI<br/>Generate new content]
-    E --> F[Foundation Models<br/>Pre-trained, reusable]
-    F --> G[Amazon Bedrock<br/>Managed inference platform]
-    
-    style A fill:#E3F2FD,stroke:#1976D2,stroke-width:2px
-    style G fill:#E8F5E9,stroke:#388E3C,stroke-width:3px
-    style E fill:#FFF3E0,stroke:#F57C00,stroke-width:2px
-```
-
-**Text Hierarchy (ASCII fallback):**
-
-```text
-Artificial Intelligence
-   └── Machine Learning
-         └── Neural Networks
-               └── Deep Learning
-                     └── Generative AI
-                           └── Foundation Models (via Amazon Bedrock)
-```
-
-> Everything below **Generative AI** is intentionally **abstracted away** by Amazon Bedrock.
-
-As Bedrock users, we design **systems and workflows**, not **models or training pipelines**.
-
----
-
-### 2.2 What Is a Model? (Practically Defined)
-
-> A **model** is a mathematical function that has learned patterns from data and can use those patterns to produce outputs for new inputs.
-
-**Key point:** Humans write code. Models learn behavior.
-
-#### Model as a "Learned Mapping"
-
-Think of a model as:
-
-```text
-Input  ──► Learned Mapping ──► Output
-```
-
-**Examples:**
-
-* Text → next likely words
-* Question → answer
-* Image prompt → image
-* Document → summary
-* Text → vector (embedding)
-
-The "mapping" is learned during training, not programmed.
-
-#### What a Model Is NOT
-
-Clarifying this avoids confusion later:
-
-* ❌ Not an API
-* ❌ Not a chatbot
-* ❌ Not a database
-* ❌ Not a rules engine
-* ❌ Not deterministic logic
-
-A model produces **probabilistic outputs**, not guaranteed results.
-
-> **Architect-level framing:** "A model is not software logic — it's learned behavior. That's why we design guardrails around it."
-
----
-
-### 2.3 Essential Concepts (Orientation Only)
-
-These definitions are intentionally concise.
-They exist to **align vocabulary**, not to teach internals.
-
-| Concept                          | One-line Definition                                                                 |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| **Model**                        | A trained function that maps inputs to outputs based on patterns learned from data  |
-| **Artificial Intelligence (AI)** | The broad goal of building systems that can perceive, reason, and act intelligently |
-| **Machine Learning (ML)**        | Systems that learn patterns from data instead of being explicitly programmed        |
-| **Neural Networks**              | Function approximators that learn complex mappings between inputs and outputs       |
-| **Deep Learning**                | Uses large neural networks to learn rich representations from massive data          |
-| **Generative AI**                | Models that generate new content such as text, images, or code                      |
-| **Foundation Models**            | Large, pre-trained models reused across many tasks without training from scratch    |
-| **Amazon Bedrock**               | A managed AWS service for running foundation models via APIs                        |
-
-> Clarifying **"Model"** early is critical—everything in Bedrock ultimately revolves around *using models safely and effectively*.
-
----
-
-### 2.4 Understanding Tokens
-
-Tokens are the **basic unit of text processing** in language models. Understanding tokens is essential for:
-
-* **Cost estimation** — Bedrock pricing is token-based
-* **Prompt design** — Token limits affect what you can send
-* **Performance** — Token count impacts latency and throughput
-
-#### How Tokenization Works
-
-![Tokenizer Process](../images/S1/Tokenizer.PNG)
-
-#### What a Tokenizer Actually Is
-
-A tokenizer is **not just a splitter**. It is a learned encoding system that:
-
-* Breaks text into units (tokens)
-* Maps those tokens to numerical IDs
-* Is tightly coupled to how the model was trained
-
-> **Tokenizer + Model are a pair.** You cannot mix and match them.
 
 #### Key Points
 

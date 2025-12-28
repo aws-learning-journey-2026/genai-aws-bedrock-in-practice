@@ -3,11 +3,9 @@ learning_level: "Beginner"  # Beginner | Intermediate | Advanced
 prerequisites: []
 estimated_time: "30 minutes"
 learning_objectives:
-
   - "[Objective 1: measurable outcome]"
   - "[Objective 2: measurable outcome]"
 related_topics:
-
   prerequisites: []
   builds_upon: []
   enables: []
@@ -25,6 +23,7 @@ related_topics:
 ## 1. Objective (1–2 minutes)
 
 **What you'll learn:**
+
 - [ ] Key learning objective 1
 - [ ] Key learning objective 2
 - [ ] Key learning objective 3
@@ -52,6 +51,7 @@ related_topics:
 [How this fits into system design thinking]
 
 ### Constraints & Trade-offs
+
 
 - **Constraint 1**: [Description]
 - **Trade-off 1**: [Description]
@@ -90,16 +90,19 @@ related_topics:
 
 ### Key Takeaways
 
+
 - [ ] Takeaway 1
 - [ ] Takeaway 2
 - [ ] Takeaway 3
 
 ### Next Steps
 
+
 - [ ] What to explore next
 - [ ] Prerequisites for next session
 
 ### References
+
 
 - [Reference 1]
 - [Reference 2]

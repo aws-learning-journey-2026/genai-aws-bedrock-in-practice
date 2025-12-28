@@ -25,8 +25,8 @@ This is **Swamy's personal learning** repository, knowledge-sharing repository a
 * [Purpose of This Repository](#-purpose-of-this-repository)
 * [Who This Is For](#-who-this-is-for)
 * [Learning Philosophy](#-learning-philosophy--in-practice)
-* [Session Roadmap](#session-roadmap---9-sessions)
-* [Repository Structure](#repository-structure)
+* [Session Roadmap](#-session-roadmap---9-sessions)
+* [Repository Structure](#-repository-structure)
 * [Principles](#-principles-non-negotiables)
 * [Where to Start](#-where-to-start)
 * [Organization Context](#-organization-context)
@@ -259,9 +259,9 @@ Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guide
 
 **Quick Checklist**:
 
-* [ ] Read the [Master Plan](docs/01_master-plan.md)
 * [ ] Review [Contributing Guidelines](CONTRIBUTING.md)
-* [ ] Follow the [Session Template](docs/sessions/_session-template.md)
+* [ ] Read the [Master Plan](docs/02_master-plan.md)
+* [ ] Follow the [Session Template](docs/01_session-template.md)
 * [ ] Ensure content aligns with repository principles
 
 ---
@@ -280,9 +280,9 @@ You can connect with the community to:
 
 **Related Resources**:
 
-* [Master Plan](docs/01_master-plan.md) - Complete learning roadmap
+* [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
-* [Session Template](docs/sessions/_session-template.md) - Standard session format
+* [Session Template](docs/01_session-template.md) - Standard session format
 
 ---
 

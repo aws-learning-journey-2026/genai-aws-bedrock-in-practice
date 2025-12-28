@@ -5,6 +5,7 @@ Thank you for your interest in contributing to **genai-aws-bedrock-in-practice**
 ## 🎯 Repository Purpose
 
 This repository focuses on:
+
 - **Architecture-first learning**: Mental models → APIs → systems
 - **Session-based format**: 30-minute timeboxed sessions
 - **Production-aware content**: Security, cost, observability, and failure modes
@@ -56,8 +57,9 @@ We welcome contributions in the following areas:
 
 When creating or updating session content:
 
+
 - ✅ **Follow the 30-minute format**: Objective → Core Concepts → Hands-on → Artifact
-- ✅ **Use the session template**: Start from `docs/sessions/_session-template.md`
+- ✅ **Use the session template**: Start from `docs/01_session-template.md`
 - ✅ **Architecture-first approach**: Emphasize mental models before APIs
 - ✅ **Production-aware**: Include security, cost, and observability considerations
 - ✅ **Original content**: Transform, don't copy from sources
@@ -82,6 +84,7 @@ When creating or updating session content:
 Before submitting your contribution, ensure:
 
 ### Content Quality
+
 - [ ] Content follows the repository's principles (architecture-first, production-aware)
 - [ ] Session format is correct (30-minute structure)
 - [ ] Content is original and transformative (not copied)
@@ -89,6 +92,7 @@ Before submitting your contribution, ensure:
 - [ ] Examples are relevant and practical
 
 ### Technical Quality
+
 - [ ] Markdown linting passes (no errors)
 - [ ] All file references point to existing files
 - [ ] Code examples are minimal and illustrative
@@ -96,6 +100,7 @@ Before submitting your contribution, ensure:
 - [ ] No placeholder text or TODOs remain
 
 ### Documentation
+
 - [ ] README updated if structure changed
 - [ ] Repository structure document updated if needed
 - [ ] Related documentation cross-referenced
