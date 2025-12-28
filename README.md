@@ -81,47 +81,19 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 The learning journey progresses through **9 focused sessions**, each building on previous concepts and producing a concrete artifact.
 
-### Session Progression
+> **📋 Complete Session Overview**: For the full session roadmap, detailed status table, progression diagram, and session locations, see [`docs/04_session-overview.md`](docs/04_session-overview.md) (single source of truth).
 
-```mermaid
-graph LR
-    S1["01️⃣ Mental Models<br/><small>Foundations & Vocabulary</small>"]
-    --> S2["02️⃣ Platform Deep Dive<br/><small>Console & Constraints</small>"]
-    --> S3["03️⃣ Model Exploration<br/><small>Prompt Behavior</small>"]
-    --> S4["04️⃣ APIs & SDKs<br/><small>Integration Patterns</small>"]
-    --> S5["05️⃣ Backend Design<br/><small>Architecture on AWS</small>"]
-    --> S6["06️⃣ Embeddings<br/><small>Vector Thinking</small>"]
-    --> S7["07️⃣ RAG Systems<br/><small>Retrieval-Augmented</small>"]
-    --> S8["08️⃣ Advanced Features<br/><small>Knowledge Bases & Agents</small>"]
-    --> S9["09️⃣ Production Ready<br/><small>Security, Cost, Ops</small>"]
+### Quick Reference
 
-    style S1 fill:#E3F2FD,stroke:#64B5F6,stroke-width:2px,color:#0D47A1
-    style S9 fill:#E8F5E9,stroke:#66BB6A,stroke-width:2px,color:#1B5E20
-```
-
-### Session Details
-
-| Session | Topic                                                   | Deliverable                                    | Focus Area                       | Type      | Status  |
-| ------- | ------------------------------------------------------- | ---------------------------------------------- | -------------------------------- | --------- | ------- |
-| **01**  | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          | Vocabulary & conceptual clarity  | 📚 Knowledge | ✅ Ready   |
-| **02**  | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         | Service operation & constraints  | 📚 Knowledge | 🔄 Planned |
-| **03**  | Model Exploration & Prompt Behavior                     | Prompt experiment log                          | Prompt behavior & determinism    | 📚 Knowledge | 🔄 Planned |
-| **04**  | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling | Request/response anatomy     | 📚 Knowledge | 🔄 Planned |
-| **05**  | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    | Lambda/API Gateway integration   | 🛠️ Project   | 🔄 Planned |
-| **06**  | Embeddings & Vector Thinking                            | Chunking strategy guide                        | Embeddings & similarity search   | 📚 Knowledge | 🔄 Planned |
-| **07**  | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist | Ingestion → retrieval → generation | 📚 Knowledge | 🔄 Planned |
-| **08**  | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      | Managed vs custom orchestration  | 📚 Knowledge | 🔄 Planned |
-| **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring      | 📚 Knowledge | 🔄 Planned |
-
-> Additional sessions may be added as the platform evolves.
-
-### Learning Flow
-
-**Foundation Sessions (1-3)**: Build mental models and understand the platform  
-**Integration Sessions (4-6)**: Connect Bedrock to systems and work with embeddings  
-**Advanced Sessions (7-9)**: Build production-ready GenAI systems
+| Session | Topic | Status | Deliverable |
+|---------|-------|--------|-------------|
+| **01** | Bedrock Mental Models & GenAI Foundations | ✅ Complete | One-page mental model note + glossary |
+| **02** | Bedrock Platform Deep Dive (Console-First) | 🔄 Draft | Model selection checklist + risk notes |
+| **03-09** | See [Session Overview](docs/04_session-overview.md) for complete details | 📋 Planned | Various artifacts |
 
 **Total Duration**: ~4.5 hours of focused learning (9 sessions × 30 minutes)
+
+> Additional sessions may be added as the platform evolves.
 
 ---
 
@@ -280,7 +252,8 @@ You can connect with the community to:
 
 **Related Resources**:
 
-* [Session Index Dashboard](docs/sessions/README.md) - Overview of all sessions and their status
+* [Session Overview](docs/04_session-overview.md) - **Single source of truth** for session roadmap and status
+* [Session Index Dashboard](docs/sessions/README.md) - Detailed session information and navigation
 * [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
 * [Session Template](docs/templates/session-template.md) - Standard session format

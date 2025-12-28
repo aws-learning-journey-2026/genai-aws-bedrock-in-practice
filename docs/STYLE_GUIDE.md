@@ -350,9 +350,9 @@ docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee "docs/sessions/**/*.md
 
 ## Related Resources
 
+- [Session Overview](04_session-overview.md) - **Single source of truth** for session roadmap
 - [Session Template](templates/session-template.md)
 - [Session Index Dashboard](sessions/README.md)
-- [Repository Structure](03_repository-structure.md)
 - [Contributing Guidelines](../../CONTRIBUTING.md)
 
 ---

@@ -84,8 +84,9 @@ genai-aws-bedrock-in-practice/
 **Contents**:
 
 - **`01_session-template.md`**: Standard 30-minute session template
-- **`02_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
-- **`03_repository-structure.md`**: This file - single source of truth for repository structure
+- **`03_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
+- **`02_repository-structure.md`**: This file - single source of truth for repository structure
+- **`04_session-overview.md`**: **Single source of truth** for session roadmap and status
 - **`sessions/`**: Active session content files following the 30-minute format
 - **`meetup/`**: Materials for live meetup delivery (slides, notes, etc.)
 - **`images/`**: Visual assets, diagrams, and architecture illustrations

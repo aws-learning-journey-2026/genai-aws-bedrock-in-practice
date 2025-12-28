@@ -1,31 +1,14 @@
 # Session Index Dashboard
 
-This document provides a comprehensive overview of all learning sessions in the repository, their completion status, and expected learner outcomes.
+This document provides detailed information about each learning session, including modules, learning outcomes, and navigation.
 
 **Repository**: `genai-aws-bedrock-in-practice`  
 **Format**: 30-minute focused sessions  
 **Approach**: Architecture-first, production-aware learning
 
+> **📋 Session Overview**: For the complete session roadmap, status table, and progression diagram, see the [Session Overview](../04_session-overview.md) (single source of truth).
+
 ---
-
-## Session Overview
-
-| Session | Topic | Status | Deliverable | Duration |
-|---------|-------|--------|-------------|----------|
-| **01** | Bedrock Mental Models & GenAI Foundations | ✅ Complete | One-page mental model note + glossary | 30 min |
-| **02** | Bedrock Platform Deep Dive (Console-First) | 🔄 Draft | Model selection checklist + risk notes | 30 min |
-| **03** | Model Exploration & Prompt Behavior | 📋 Planned | Prompt experiment log | 30 min |
-| **04** | Bedrock APIs & SDKs | 📋 Planned | Minimal "hello inference" snippets + error handling | 30 min |
-| **05** | Designing a Minimal GenAI Backend on AWS | 📋 Planned | Architecture diagram + API contract sketch | 30 min |
-| **06** | Embeddings & Vector Thinking | 📋 Planned | Chunking strategy guide | 30 min |
-| **07** | Retrieval-Augmented Generation (RAG) with Bedrock | 📋 Planned | RAG reference architecture + anti-pattern checklist | 30 min |
-| **08** | Advanced Capabilities (Knowledge Bases / Agents) | 📋 Planned | "Choose your orchestration" decision tree | 30 min |
-| **09** | Production Readiness: Security, Cost, Observability | 📋 Planned | Production readiness checklist | 30 min |
-
-**Legend**:
-- ✅ Complete - Ready for use
-- 🔄 Draft - In progress, needs completion
-- 📋 Planned - Not yet started
 
 ---
 
@@ -167,13 +150,7 @@ This document provides a comprehensive overview of all learning sessions in the 
 
 ---
 
-## Learning Flow
-
-**Foundation Sessions (1-3)**: Build mental models and understand the platform  
-**Integration Sessions (4-6)**: Connect Bedrock to systems and work with embeddings  
-**Advanced Sessions (7-9)**: Build production-ready GenAI systems
-
-**Total Duration**: ~4.5 hours of focused learning (9 sessions × 30 minutes)
+> **📋 For session roadmap, status table, and learning flow**: See [Session Overview](../04_session-overview.md)
 
 ---
 
@@ -209,8 +186,9 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 
 ## Related Resources
 
+- **Session Overview**: [`../04_session-overview.md`](../04_session-overview.md) - **Single source of truth** for session roadmap and status
 - **Master Plan**: [`../02_master-plan.md`](../02_master-plan.md)
-- **Session Template**: [`../01_session-template.md`](../01_session-template.md)
+- **Session Template**: [`../templates/session-template.md`](../templates/session-template.md)
 - **Repository Structure**: [`../03_repository-structure.md`](../03_repository-structure.md)
 - **Main README**: [`../../README.md`](../../README.md)
 
