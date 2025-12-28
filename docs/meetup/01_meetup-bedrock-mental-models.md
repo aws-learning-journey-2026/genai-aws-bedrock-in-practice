@@ -1,10 +1,11 @@
 # Meetup Session 01: Bedrock Mental Models & GenAI Foundations
 
-**Organization**: Dot Net Learners House  
-**Date**: Sunday, December 28, 2025 · 9:00 AM to 10:00 AM IST  
-**Duration**: 30 minutes  
-**Type**: Conceptual + light demo  
-**Deliverable**: One-page "Bedrock mental model" note + glossary
+* **Organization**: Dot Net Learners House  
+* **Event URL:** <https://www.meetup.com/dot-net-learners-house-hyderabad/events/312511436>
+* **Date**: Sunday, December 28, 2025 · 9:00 AM to 10:00 AM IST  
+* **Duration**: 30 minutes  
+* **Type**: Conceptual + light demo  
+* **Deliverable**: One-page "Bedrock mental model" note + glossary
 
 ---
 
