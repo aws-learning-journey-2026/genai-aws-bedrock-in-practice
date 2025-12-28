@@ -63,7 +63,7 @@ Correct mental models prevent these failures.
 
 This demonstration shows a basic interaction with Amazon Bedrock using a simple prompt. It illustrates the concepts we've covered: models, tokens, and probabilistic outputs.
 
-![Simple Prompt Example](../../images/S1/SimplePrompt.PNG)
+![Simple Prompt Example](../../docs/images/S1/SimplePrompt.PNG)
 
 **Key Observations:**
 

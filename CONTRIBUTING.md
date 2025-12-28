@@ -17,7 +17,7 @@ This repository focuses on:
 
 We welcome contributions in the following areas:
 
-1. **Session Content** (`docs/sessions/`)
+1. **Session Content** (`src/`)
    - New session write-ups following the 30-minute format
    - Improvements to existing sessions
    - Session artifacts (diagrams, checklists, notes)
@@ -51,7 +51,7 @@ We welcome contributions in the following areas:
 
 - [ ] **If you add/move folders**: Update [`docs/01_repository-structure.md`](docs/01_repository-structure.md)
 - [ ] **If you add a session**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) (session table, locations, prerequisites)
-- [ ] **If you add a session**: Update [`docs/sessions/README.md`](docs/sessions/README.md) (detailed session information)
+- [ ] **If you add a session**: Update [`docs/sessions/README.md`](docs/sessions/README.md) (detailed session information; sessions are located in `src/`)
 - [ ] **If you add a meetup session**: Update [`docs/meetup/sessions.md`](docs/meetup/sessions.md)
 - [ ] **If you change session status**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) status table
 - [ ] **Verify all file references**: Run link checker to ensure no broken links

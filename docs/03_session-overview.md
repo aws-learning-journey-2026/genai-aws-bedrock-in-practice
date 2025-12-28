@@ -68,15 +68,15 @@ graph LR
 
 | Session | Folder Path | Overview File |
 |---------|-------------|---------------|
-| **01** | `docs/sessions/01_bedrock-mental-models/` | [`01_overview.md`](sessions/01_bedrock-mental-models/01_overview.md) |
-| **02** | `docs/sessions/02_bedrock-platform-deep-dive/` | [`02_bedrock-platform-deep-dive.md`](sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md) |
-| **03** | `docs/sessions/03_model-exploration/` | *Planned* |
-| **04** | `docs/sessions/04_bedrock-apis-sdks/` | *Planned* |
-| **05** | `docs/sessions/05_genai-backend-architecture/` | *Planned* |
-| **06** | `docs/sessions/06_embeddings-vector-thinking/` | *Planned* |
-| **07** | `docs/sessions/07_rag-with-bedrock/` | *Planned* |
-| **08** | `docs/sessions/08_advanced-capabilities/` | *Planned* |
-| **09** | `docs/sessions/09_production-readiness/` | *Planned* |
+| **01** | `src/01_bedrock-mental-models/` | [`01_overview.md`](../src/01_bedrock-mental-models/01_overview.md) |
+| **02** | `src/02_bedrock-platform-deep-dive/` | [`02_bedrock-platform-deep-dive.md`](../src/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md) |
+| **03** | `src/03_model-exploration/` | *Planned* |
+| **04** | `src/04_bedrock-apis-sdks/` | *Planned* |
+| **05** | `src/05_genai-backend-architecture/` | *Planned* |
+| **06** | `src/06_embeddings-vector-thinking/` | *Planned* |
+| **07** | `src/07_rag-with-bedrock/` | *Planned* |
+| **08** | `src/08_advanced-capabilities/` | *Planned* |
+| **09** | `src/09_production-readiness/` | *Planned* |
 
 ---
 

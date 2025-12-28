@@ -17,15 +17,15 @@ This document provides detailed information about each learning session, includi
 ### Session 01: Bedrock Mental Models & GenAI Foundations ✅
 
 **Status**: Complete  
-**Location**: [`01_bedrock-mental-models/`](01_bedrock-mental-models/)  
-**Overview**: [`01_overview.md`](01_bedrock-mental-models/01_overview.md)
+**Location**: [`../src/01_bedrock-mental-models/`](../src/01_bedrock-mental-models/)  
+**Overview**: [`01_overview.md`](../src/01_bedrock-mental-models/01_overview.md)
 
 **Modules**:
 
-1. [Core Mental Models](01_bedrock-mental-models/02_core-mental-models.md) - AI hierarchy, model definitions
-2. [Tokens](01_bedrock-mental-models/03_tokens.md) - Tokenization, cost implications
-3. [Terminology & Scope](01_bedrock-mental-models/04_terminology-and-scope.md) - Foundation models, Bedrock positioning
-4. [Applied Reasoning & Artifact](01_bedrock-mental-models/05_applied-reasoning-and-artifact.md) - Decision framework, output artifact
+1. [Core Mental Models](../src/01_bedrock-mental-models/02_core-mental-models.md) - AI hierarchy, model definitions
+2. [Tokens](../src/01_bedrock-mental-models/03_tokens.md) - Tokenization, cost implications
+3. [Terminology & Scope](../src/01_bedrock-mental-models/04_terminology-and-scope.md) - Foundation models, Bedrock positioning
+4. [Applied Reasoning & Artifact](../src/01_bedrock-mental-models/05_applied-reasoning-and-artifact.md) - Decision framework, output artifact
 
 **Learning Outcomes**:
 - Explain the minimal AI hierarchy relevant to Bedrock users
@@ -43,8 +43,8 @@ This document provides detailed information about each learning session, includi
 ### Session 02: Bedrock Platform Deep Dive (Console-First) 🔄
 
 **Status**: Draft  
-**Location**: [`02_bedrock-platform-deep-dive/`](02_bedrock-platform-deep-dive/)  
-**Overview**: [`02_bedrock-platform-deep-dive.md`](02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md)
+**Location**: [`../src/02_bedrock-platform-deep-dive/`](../src/02_bedrock-platform-deep-dive/)  
+**Overview**: [`02_bedrock-platform-deep-dive.md`](../src/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md)
 
 **Learning Outcomes**:
 - Navigate the Bedrock console and model catalog with a clear purpose
@@ -158,8 +158,8 @@ This document provides detailed information about each learning session, includi
 
 ### By Status
 
-- **Complete**: [Session 01](01_bedrock-mental-models/)
-- **Draft**: [Session 02](02_bedrock-platform-deep-dive/)
+- **Complete**: [Session 01](../src/01_bedrock-mental-models/)
+- **Draft**: [Session 02](../src/02_bedrock-platform-deep-dive/)
 - **Planned**: Sessions 03-09
 
 ### By Learning Stage
@@ -189,7 +189,7 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 - **Session Overview**: [`../03_session-overview.md`](../03_session-overview.md) - **Single source of truth** for session roadmap and status
 - **Master Plan**: [`../02_master-plan.md`](../02_master-plan.md)
 - **Session Template**: [`../templates/session-template.md`](../templates/session-template.md)
-- **Repository Structure**: [`../03_repository-structure.md`](../03_repository-structure.md)
+- **Repository Structure**: [`../01_repository-structure.md`](../01_repository-structure.md)
 - **Main README**: [`../../README.md`](../../README.md)
 
 ---

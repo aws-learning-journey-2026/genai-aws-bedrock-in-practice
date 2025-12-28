@@ -127,7 +127,7 @@ Currently, this directory is empty. Examples will be added as sessions are devel
 
 **Related Resources**:
 - [Session Overview](../docs/03_session-overview.md) - **Single source of truth** for session roadmap
-- [Session Index Dashboard](../docs/sessions/README.md)
+- [Session Index Dashboard](../docs/sessions/README.md) (sessions located in `src/`)
 - [Style Guide](../docs/STYLE_GUIDE.md)
 - [Contributing Guidelines](../CONTRIBUTING.md)
 

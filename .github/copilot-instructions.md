@@ -171,7 +171,7 @@ Do **not** maintain a duplicated tree in this file.
 
 **Session Content**:
 
-- Sessions organized under `docs/sessions/` following 30-minute format
+- Sessions organized under `src/` following 30-minute format (alongside code examples)
 - Each session produces a single primary artifact
 - Template available at `docs/01_session-template.md`
 
@@ -337,7 +337,7 @@ related_topics:
 ✅ Use hyphens for multi-word names: `01_Software-Design-Principles/`
 
 **CRITICAL**: This rule applies to **ALL files** in the repository:
-- ✅ Educational content files (`docs/sessions/`)
+- ✅ Educational content files (`src/`)
 - ✅ Documentation files (`docs/`)
 - ✅ Any numbered files anywhere in the repository
 - ❌ **NO EXCEPTIONS** - `00_` is NEVER allowed, even for meta/documentation files
@@ -352,7 +352,7 @@ related_topics:
 
 **CRITICAL**: File numbering MUST reflect logical learning dependencies, not arbitrary ordering.
 
-**Session Learning Progression** (docs/sessions/):
+**Session Learning Progression** (src/):
 
 Sessions follow a progressive learning path from foundations to production readiness:
 
@@ -667,7 +667,7 @@ All content must demonstrate:
 
 1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder (at repository root)
 2. **Review and migrate**: AI assistant reviews content, identifies unique topics, and migrates/transforms following Educational Content Rules
-3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
+3. **Verify migration**: Confirm all unique content has been migrated to `src/` session folders as appropriate
 4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
 
 **Important Notes**:

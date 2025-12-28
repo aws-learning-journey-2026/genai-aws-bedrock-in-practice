@@ -92,16 +92,19 @@ genai-aws-bedrock-in-practice/
 
 ---
 
-### `docs/sessions/`
+### `src/` (Sessions and Code)
 
-**Purpose**: Session-based learning content  
-**Structure**: Each session lives in its own folder `NN_session-name/` and contains a primary markdown file `NN_session-name.md`.
+**Purpose**: Session-based learning content and code examples  
+**Structure**: Each session lives in its own folder `NN_session-name/` and contains markdown files. Code examples are organized by language in subdirectories.
 
 **File Types**:
 
-1. **Learning Sessions**: `docs/sessions/NN_{session-name}/01_overview.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_overview.md`)
+1. **Learning Sessions**: `src/NN_{session-name}/01_overview.md` (e.g., `src/01_bedrock-mental-models/01_overview.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
+2. **Code Examples**: `src/{language}/` (e.g., `src/python/`, `src/javascript/`)
+   - Minimal, illustrative code examples that demonstrate concepts
+   - Organized by programming language
 
 ### `docs/meetup/`
 
@@ -124,8 +127,8 @@ genai-aws-bedrock-in-practice/
 
 **Current Sessions**:
 
-- `docs/sessions/01_bedrock-mental-models/01_overview.md` - Bedrock Mental Models & GenAI Foundations (overview)
-- `docs/sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
+- `src/01_bedrock-mental-models/01_overview.md` - Bedrock Mental Models & GenAI Foundations (overview)
+- `src/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
 
 **Meetup Sessions**:
 
@@ -152,7 +155,7 @@ genai-aws-bedrock-in-practice/
 
 **Purpose**: Staging area for imported/raw content  
 **Status**: Git-ignored, used for temporary storage before content migration  
-**Workflow**: Content placed here → reviewed → migrated to appropriate `docs/sessions/` files
+**Workflow**: Content placed here → reviewed → migrated to appropriate `src/` session files
 
 ---
 

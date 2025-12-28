@@ -99,15 +99,15 @@ Deliverable: production readiness checklist (security + cost + ops).
 
 ## Folder Mapping (Planned)
 
-The simplest starting point is to keep session content under `docs/sessions/`.
+Session content is located in `src/` alongside code examples, keeping learning materials and code together.
 
 Example:
 
-* `docs/sessions/01_bedrock-mental-models/01_overview.md`
-* `docs/sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md`
+* `src/01_bedrock-mental-models/01_overview.md`
+* `src/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md`
 
 ## Next Steps
 
-1. Convert Session 01 into a concrete write-up under `docs/sessions/`.
+1. Convert Session 01 into a concrete write-up under `src/`.
 2. Add a small, consistent session template (so every session feels uniform).
 3. Expand the root README once Session 01 exists (so the repo has a solid entry point).

@@ -108,8 +108,8 @@ For complete repository structure details, see **[`docs/03_repository-structure.
 
 Begin with:
 
-👉 **[Session 01 Overview](docs/sessions/01_bedrock-mental-models/01_overview.md)**  
-   *Path: `docs/sessions/01_bedrock-mental-models/01_overview.md`*
+👉 **[Session 01 Overview](src/01_bedrock-mental-models/01_overview.md)**  
+   *Path: `src/01_bedrock-mental-models/01_overview.md`*
 
 Or start from the **[Session Index Dashboard](docs/sessions/README.md)** for an overview of all sessions.
 
@@ -206,7 +206,7 @@ You only need to run these commands once per machine.
 
    ```bash
    # Navigate to sessions
-   cd docs/sessions
+   cd src
    # Open the first session (when created)
    ```
 
@@ -248,7 +248,7 @@ You can connect with the community to:
 **Related Resources**:
 
 * [Session Overview](docs/03_session-overview.md) - **Single source of truth** for session roadmap and status
-* [Session Index Dashboard](docs/sessions/README.md) - Detailed session information and navigation
+* [Session Index Dashboard](docs/sessions/README.md) - Detailed session information and navigation (sessions located in `src/`)
 * [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
 * [Session Template](docs/templates/session-template.md) - Standard session format

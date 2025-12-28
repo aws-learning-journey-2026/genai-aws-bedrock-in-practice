@@ -332,10 +332,10 @@ Run before committing:
 
 ```bash
 # Markdown linting
-npx markdownlint-cli2 "docs/sessions/**/*.md"
+npx markdownlint-cli2 "src/**/*.md"
 
 # Link checking
-docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee "docs/sessions/**/*.md"
+docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee "src/**/*.md"
 ```
 
 ### Manual Checks

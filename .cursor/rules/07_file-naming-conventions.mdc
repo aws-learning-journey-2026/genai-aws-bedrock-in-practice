@@ -427,7 +427,7 @@ question-bank/
 
 ### Recommended Patterns by Folder Type
 
-**In session folders** (e.g., `docs/sessions/`):
+**In session folders** (e.g., `src/`):
 - Use ordered files: `NN_topic-slug.md`
 - If you must split: `NN_topic-slug-part1.md`, `NN_topic-slug-part2.md` (keep the same `NN_` prefix)
 

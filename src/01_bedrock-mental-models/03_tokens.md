@@ -25,7 +25,7 @@ Tokens are the **basic unit of text processing** in language models. Understandi
 
 ## How Tokenization Works
 
-![Tokenizer Process](../../images/S1/Tokenizer.PNG)
+![Tokenizer Process](../../docs/images/S1/Tokenizer.PNG)
 
 ## What a Tokenizer Actually Is
 
