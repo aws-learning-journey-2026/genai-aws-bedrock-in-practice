@@ -60,32 +60,24 @@ jobs:
 
       - name: Verify session overview exists
         run: |
-          if [ ! -f "docs/04_session-overview.md" ]; then
-            echo "❌ docs/04_session-overview.md (single source of truth) is missing!"
+          if [ ! -f "docs/03_session-overview.md" ]; then
+            echo "❌ docs/03_session-overview.md (single source of truth) is missing!"
             exit 1
           fi
           echo "✅ Session overview file exists"
 
       - name: Verify repository structure doc exists
         run: |
-          if [ ! -f "docs/02_repository-structure.md" ]; then
-            echo "❌ docs/02_repository-structure.md (single source of truth) is missing!"
+          if [ ! -f "docs/01_repository-structure.md" ]; then
+            echo "❌ docs/01_repository-structure.md (single source of truth) is missing!"
             exit 1
           fi
           echo "✅ Repository structure doc exists"
 
-      - name: Verify session overview exists
-        run: |
-          if [ ! -f "docs/04_session-overview.md" ]; then
-            echo "❌ docs/04_session-overview.md (single source of truth) is missing!"
-            exit 1
-          fi
-          echo "✅ Session overview doc exists"
-
       - name: Check session index references
         run: |
-          if ! grep -q "04_session-overview.md" docs/sessions/README.md; then
-            echo "⚠️  Warning: docs/sessions/README.md should reference docs/04_session-overview.md"
+          if ! grep -q "03_session-overview.md" docs/sessions/README.md; then
+            echo "⚠️  Warning: docs/sessions/README.md should reference docs/03_session-overview.md"
           fi
           echo "✅ Session index check complete"
 

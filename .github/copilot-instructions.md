@@ -35,7 +35,7 @@
 
 **After ANY structural change, IMMEDIATELY update**:
 
-1. ✅ **`docs/02_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
+1. ✅ **`docs/01_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
 2. ✅ This file (.github/copilot-instructions.md) - Repository Structure section
 3. ✅ `.cursor/rules/02_repository-structure.mdc` - Repository structure rules
 4. ✅ README.md - Repository Structure section
@@ -44,7 +44,7 @@
 
 **Self-Check Question**: "Did I update the repository structure documentation?" - If no, STOP and do it NOW.
 
-**Note**: If `docs/02_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
+**Note**: If `docs/01_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
 
 ### 3. Chain-of-Thought + ReAct + Reasoning
 
@@ -145,13 +145,13 @@ Interleave thinking with action in iterative cycles:
 
 ## 📁 Current Repository Structure (As of December 27, 2025)
 
-**Single Source of Truth**: See [`docs/02_repository-structure.md`](../docs/02_repository-structure.md) for the authoritative repository structure.
+**Single Source of Truth**: See [`docs/01_repository-structure.md`](../docs/01_repository-structure.md) for the authoritative repository structure.
 
 ### **Structure Reference**
 
 Do **not** maintain a duplicated tree in this file.
 
-- Authoritative structure: `docs/02_repository-structure.md`
+- Authoritative structure: `docs/01_repository-structure.md`
 - Master plan: `docs/02_master-plan.md`
 - Session template: `docs/01_session-template.md`
 
@@ -164,7 +164,7 @@ Do **not** maintain a duplicated tree in this file.
    - Learning principles
    - Repository layout
 
-2. **02_repository-structure.md** - Single source of truth for repository structure
+2. **01_repository-structure.md** - Single source of truth for repository structure
    - Complete directory structure
    - Directory descriptions
    - File naming conventions
@@ -1014,7 +1014,7 @@ ASCII Fallback:
 
 ## 📞 Support & Escalation
 
-**Questions about content placement?** → Check `docs/02_repository-structure.md`
+**Questions about content placement?** → Check `docs/01_repository-structure.md`
 
 **Content too long?** → Split into semantic files (e.g., `fundamentals.md`, `advanced.md`) - see [File Naming Conventions](../.cursor/rules/07_file-naming-conventions.mdc)
 
@@ -1078,6 +1078,6 @@ ASCII Fallback:
 ## For More Information
 
 - **Master Plan**: `docs/02_master-plan.md`
-- **Structure Reference**: `docs/02_repository-structure.md` (single source of truth)
+- **Structure Reference**: `docs/01_repository-structure.md` (single source of truth)
 - **Session Template**: `docs/01_session-template.md`
 - **Repository README**: `README.md`
