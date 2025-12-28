@@ -57,7 +57,6 @@ We welcome contributions in the following areas:
 
 When creating or updating session content:
 
-
 - ✅ **Follow the 30-minute format**: Objective → Core Concepts → Hands-on → Artifact
 - ✅ **Use the session template**: Start from `docs/01_session-template.md`
 - ✅ **Architecture-first approach**: Emphasize mental models before APIs
@@ -133,4 +132,5 @@ Your contributions help make this repository a valuable learning resource for th
 ---
 
 **Remember**: This repository focuses on **understanding how to think about GenAI systems on AWS**, not on providing complete production code. Keep contributions focused on learning and architectural reasoning.
+
 

@@ -25,7 +25,7 @@ This is **Swamy's personal learning** repository, knowledge-sharing repository a
 * [Purpose of This Repository](#-purpose-of-this-repository)
 * [Who This Is For](#-who-this-is-for)
 * [Learning Philosophy](#-learning-philosophy--in-practice)
-* [Session Roadmap](#-session-roadmap---9-sessions)
+* [Session Roadmap](#session-roadmap---9-sessions)
 * [Repository Structure](#-repository-structure)
 * [Principles](#-principles-non-negotiables)
 * [Where to Start](#-where-to-start)

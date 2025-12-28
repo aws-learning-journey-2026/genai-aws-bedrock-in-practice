@@ -52,10 +52,8 @@ related_topics:
 
 ### Constraints & Trade-offs
 
-
 - **Constraint 1**: [Description]
 - **Trade-off 1**: [Description]
-
 ---
 
 ## 3. Hands-on / Applied Reasoning (12–15 minutes)
@@ -90,19 +88,16 @@ related_topics:
 
 ### Key Takeaways
 
-
 - [ ] Takeaway 1
 - [ ] Takeaway 2
 - [ ] Takeaway 3
 
 ### Next Steps
 
-
 - [ ] What to explore next
 - [ ] Prerequisites for next session
 
 ### References
-
 
 - [Reference 1]
 - [Reference 2]
@@ -116,4 +111,5 @@ related_topics:
 ---
 
 **Session Status**: [Draft / In Progress / Complete]
+
 
