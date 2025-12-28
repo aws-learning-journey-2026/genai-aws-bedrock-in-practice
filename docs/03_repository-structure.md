@@ -42,11 +42,11 @@ genai-aws-bedrock-in-practice/
 │   └── sessions/                           # Active session content (30-min format)
 │       ├── .gitkeep
 │       ├── 01_bedrock-mental-models/
-│       │   ├── 01_bedrock-mental-models.md
-│       │   ├── core-mental-models.md
-│       │   ├── tokens.md
-│       │   ├── terminology-and-scope.md
-│       │   └── applied-reasoning-and-artifact.md
+│       │   ├── 01_overview.md
+│       │   ├── 02_core-mental-models.md
+│       │   ├── 03_tokens.md
+│       │   ├── 04_terminology-and-scope.md
+│       │   └── 05_applied-reasoning-and-artifact.md
 │       └── 02_bedrock-platform-deep-dive/
 │           └── 02_bedrock-platform-deep-dive.md
 │       
@@ -98,7 +98,7 @@ genai-aws-bedrock-in-practice/
 
 **File Types**:
 
-1. **Learning Sessions**: `docs/sessions/NN_{session-name}/NN_{session-name}.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`)
+1. **Learning Sessions**: `docs/sessions/NN_{session-name}/01_overview.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_overview.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
 
@@ -123,7 +123,7 @@ genai-aws-bedrock-in-practice/
 
 **Current Sessions**:
 
-- `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations (index)
+- `docs/sessions/01_bedrock-mental-models/01_overview.md` - Bedrock Mental Models & GenAI Foundations (overview)
 - `docs/sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
 
 **Meetup Sessions**:
@@ -160,7 +160,7 @@ genai-aws-bedrock-in-practice/
 ### Documentation Files
 
 - Master documents: `NN_descriptive-name.md` (e.g., `02_master-plan.md`)
-- Session files: `NN_session-name.md` (e.g., `01_bedrock-mental-models.md`)
+- Session files: `01_overview.md` (overview), `02_module-name.md`, `03_module-name.md`, etc. (e.g., `01_overview.md`, `02_core-mental-models.md`)
 - Session template: `01_session-template.md` (stored in `docs/`)
 
 ### Code Files

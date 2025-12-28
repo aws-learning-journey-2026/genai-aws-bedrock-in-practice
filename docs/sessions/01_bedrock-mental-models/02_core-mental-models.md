@@ -9,7 +9,7 @@ related_topics:
   prerequisites: []
   builds_upon: []
   enables:
-    - "01_bedrock-mental-models.md"
+    - "01_overview.md"
   cross_refs: []
 ---
 
@@ -108,3 +108,4 @@ They exist to **align vocabulary**, not to teach internals.
 | **Generative AI**                | Models that generate new content such as text, images, or code                      |
 | **Foundation Models**            | Large, pre-trained models reused across many tasks without training from scratch    |
 | **Amazon Bedrock**               | A managed AWS service for running foundation models via APIs                        |
+

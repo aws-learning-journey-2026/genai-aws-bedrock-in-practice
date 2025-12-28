@@ -1,16 +1,16 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "01_bedrock-mental-models.md"
+  - "01_overview.md"
 estimated_time: "10 minutes"
 learning_objectives:
   - "Explain what tokens are and why they matter for cost, latency, and prompt design"
   - "Describe why token counts vary across models (tokenizer-model coupling)"
 related_topics:
   prerequisites:
-    - "01_bedrock-mental-models.md"
+    - "01_overview.md"
   builds_upon:
-    - "core-mental-models.md"
+    - "02_core-mental-models.md"
   enables: []
   cross_refs: []
 ---
@@ -84,3 +84,4 @@ This is why production systems:
 * Rely on RAG to control prompt size
 
 > **Architect-level insight:** When designing systems with Bedrock, always consider token costs. Longer prompts = higher costs. Token counts vary by model, so always test with your target model.
+

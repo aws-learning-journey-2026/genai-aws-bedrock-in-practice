@@ -1,17 +1,17 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "01_bedrock-mental-models.md"
+  - "01_overview.md"
 estimated_time: "10 minutes"
 learning_objectives:
-  - "Reason about when Bedrock is the right choice (and when it isn’t)"
+  - "Reason about when Bedrock is the right choice (and when it isn't)"
   - "Identify common failure modes when treating LLMs like deterministic APIs"
   - "Produce the session artifact: a one-page Bedrock mental model note"
 related_topics:
   prerequisites:
-    - "01_bedrock-mental-models.md"
+    - "01_overview.md"
   builds_upon:
-    - "terminology-and-scope.md"
+    - "04_terminology-and-scope.md"
   enables: []
   cross_refs: []
 ---
@@ -102,7 +102,7 @@ Create a **one-page Bedrock Mental Model note** containing:
 
 ---
 
-## What’s Next
+## What's Next
 
 ### Session 02 – Amazon Bedrock Platform Deep Dive (Console-First)
 
@@ -111,3 +111,4 @@ Create a **one-page Bedrock Mental Model note** containing:
 * Inference parameters
 * Pricing and cost control
 * Security and governance
+

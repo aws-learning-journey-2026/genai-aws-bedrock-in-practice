@@ -76,7 +76,7 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 **File Types in `docs/sessions/`**:
 
-1. **Learning Sessions**: `docs/sessions/NN_{session-name}/NN_{session-name}.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`)
+1. **Learning Sessions**: `docs/sessions/NN_{session-name}/01_overview.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_overview.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
 

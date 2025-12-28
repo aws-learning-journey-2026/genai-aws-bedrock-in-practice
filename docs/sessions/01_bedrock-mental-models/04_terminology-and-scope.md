@@ -1,21 +1,21 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "01_bedrock-mental-models.md"
+  - "01_overview.md"
 estimated_time: "10 minutes"
 learning_objectives:
   - "Differentiate base models, foundation models, language models, and LLMs"
   - "Explain what Bedrock is and is not in system-design terms"
 related_topics:
   prerequisites:
-    - "01_bedrock-mental-models.md"
+    - "01_overview.md"
   builds_upon:
-    - "core-mental-models.md"
+    - "02_core-mental-models.md"
   enables: []
   cross_refs: []
 ---
 
-# Session 01 (Module): Terminology + What Bedrock Is (and Isn’t)
+# Session 01 (Module): Terminology + What Bedrock Is (and Isn't)
 
 ## Foundation Models vs Base Models vs Language Models vs Large Language Models
 
@@ -163,7 +163,7 @@ This session and repository **do not cover**:
 
 If asked:
 
-> *“Don’t these models use neural networks?”*
+> *"Don't these models use neural networks?"*
 
 **Answer:**
 
@@ -183,13 +183,14 @@ Bedrock fills the gap between **fully managed AI APIs** and **full ML engineerin
 
 ---
 
-## The “Power Grid” Analogy
+## The "Power Grid" Analogy
 
 Think of Amazon Bedrock as a **power grid**:
 
-* You don’t build the power plant (AWS manages models)
+* You don't build the power plant (AWS manages models)
 * You choose how much power you draw (model + parameters)
 * You pay for what you consume (tokens)
 * Your system determines efficiency and reliability
 
 Bedrock gives **capability**, not **guarantees**.
+

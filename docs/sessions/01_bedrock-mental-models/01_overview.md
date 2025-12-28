@@ -14,7 +14,7 @@ related_topics:
   cross_refs: []
 ---
 
-# Session 01: Bedrock Mental Models & GenAI Foundations (Index)
+# Session 01: Bedrock Mental Models & GenAI Foundations
 
 This session is split into focused modules to stay within the 30-minute format and keep each concept boundary clean.
 
@@ -27,10 +27,10 @@ This session is split into focused modules to stay within the 30-minute format a
 
 ## Modules
 
-1. [Core Mental Models](core-mental-models.md)
-2. [Tokens](tokens.md)
-3. [Terminology & Scope](terminology-and-scope.md)
-4. [Applied Reasoning & Artifact](applied-reasoning-and-artifact.md)
+1. [Core Mental Models](02_core-mental-models.md)
+2. [Tokens](03_tokens.md)
+3. [Terminology & Scope](04_terminology-and-scope.md)
+4. [Applied Reasoning & Artifact](05_applied-reasoning-and-artifact.md)
 
 ---
 
@@ -40,5 +40,5 @@ After completing the modules, you should have a one-page note that answers:
 
 * What Bedrock is (and is not)
 * The minimal hierarchy you need as a Bedrock user
-* The core terms you’ll use in later sessions (model, prompt, tokens, inference)
-* The first “design reflexes” for cost, variability, and safety
+* The core terms you'll use in later sessions (model, prompt, tokens, inference)
+* The first "design reflexes" for cost, variability, and safety

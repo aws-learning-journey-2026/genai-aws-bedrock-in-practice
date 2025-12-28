@@ -144,7 +144,7 @@ For complete repository structure details, see **[`docs/03_repository-structure.
 
 Begin with:
 
-👉 **`docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`**
+👉 **`docs/sessions/01_bedrock-mental-models/01_overview.md`**
 
 Everything else builds on that foundation.
 
