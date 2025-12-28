@@ -65,7 +65,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Documentation
 - Meetup materials for Sessions 01 and 02
-- Backup/archived content
 - Image assets for Session 01
 
 ### Infrastructure

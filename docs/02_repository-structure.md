@@ -31,7 +31,6 @@ genai-aws-bedrock-in-practice/
 │   ├── 01_session-template.md             # 30-minute session template
 │   ├── 03_master-plan.md                  # Master plan and roadmap
 │   ├── 02_repository-structure.md         # This file - single source of truth
-│   ├── backup/                            # Archived/old session drafts (not active)
 │   ├── images/                            # Diagrams and visual assets
 │   │   └── S1/                             # Session 01 images
 │   ├── meetup/                             # Meetup index and materials
@@ -91,7 +90,8 @@ genai-aws-bedrock-in-practice/
 - **`sessions/`**: Active session content files following the 30-minute format
 - **`meetup/`**: Materials for live meetup delivery (slides, notes, etc.)
 - **`images/`**: Visual assets, diagrams, and architecture illustrations
-- **`backup/`**: Archived session drafts retained for reference
+
+---
 
 ### `docs/sessions/`
 
