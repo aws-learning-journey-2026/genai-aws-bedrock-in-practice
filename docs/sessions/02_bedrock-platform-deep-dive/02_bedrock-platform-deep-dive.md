@@ -18,8 +18,9 @@ related_topics:
 # Session 02: Bedrock Platform Deep Dive (Console-First)
 
 **Duration**: ~30 minutes  
-**Date**: [Set date]  
 **Deliverable**: Decision checklist for model selection + risk notes
+
+> **Artifact Template**: Use [`../artifacts/session02-model-selection-template.md`](../artifacts/session02-model-selection-template.md) to create your checklist.
 
 ---
 
@@ -56,15 +57,67 @@ Most downstream failures happen when teams pick models “by vibe” (or by head
 
 ## 3. Hands-on / Applied Reasoning (12–15 minutes)
 
-### Mini-experiment
+### Mini-Experiment: Model Comparison
 
-Run the same prompt across 2–3 models (text/chat) and vary one parameter (temperature).
+**Objective**: Compare 2–3 models using the same prompt and observe differences.
 
-Capture:
+#### Step 1: Prepare Your Test Prompt
 
-- Output differences
-- Latency “feel”
-- Any policy/safety differences you notice
+Use this sample prompt (or create your own):
+
+```
+You are a helpful assistant. Explain what Amazon Bedrock is in 2-3 sentences, focusing on what it enables for developers.
+```
+
+**Record your prompt**: Add it to your artifact template.
+
+#### Step 2: Test Models in Bedrock Console
+
+**Models to Test** (select 2-3):
+- `anthropic.claude-v2` (Claude 2)
+- `anthropic.claude-v2:1` (Claude 2.1)
+- `amazon.titan-text-lite-v1` (Titan Lite)
+- `amazon.titan-text-express-v1` (Titan Express)
+
+**Where to Test**: AWS Bedrock Console → Playground → Text or Chat
+
+#### Step 3: Vary Parameters
+
+Test with different `temperature` values:
+- **Temperature 0.0**: Deterministic, focused
+- **Temperature 0.7**: Balanced (default)
+- **Temperature 1.0**: More creative, varied
+
+#### Step 4: Capture Observations
+
+Record in your artifact:
+
+- **Output differences**: How do responses differ?
+- **Latency "feel"**: Which models respond faster?
+- **Policy/safety differences**: Any content filtering differences?
+- **Cost indicators**: Token counts (input + output)
+
+#### Common Console Gotchas
+
+**Before Starting**:
+- [ ] Bedrock enabled in your region? (Check: Bedrock Console → Model access)
+- [ ] Model access granted? (Some models require explicit enablement)
+- [ ] IAM permissions? (Need `bedrock:InvokeModel` permission)
+- [ ] Region selection? (Not all models available in all regions)
+
+**If You Hit Issues**:
+- **"Model not available"**: Check region and model access settings
+- **"Access denied"**: Verify IAM permissions
+- **"Quota exceeded"**: Check service quotas in AWS Console
+
+#### Step 5: Record Results
+
+Use the comparison table in your artifact template to record:
+- Model IDs tested
+- Latency observations
+- Quality assessment
+- Cost estimates (token counts)
+- Any notable differences
 
 ---
 
@@ -72,13 +125,26 @@ Capture:
 
 ### Deliverable
 
-Create a one-page checklist:
+**Artifact**: Model Selection Checklist + Risk Notes
 
-- Use case and success criteria
-- Candidate models and why
-- Constraints (region, latency, budget, safety)
-- Prompt + parameter defaults
-- Risks (hallucination, cost spikes, instability) + mitigations
+**Location**: Use template at [`../artifacts/session02-model-selection-template.md`](../artifacts/session02-model-selection-template.md)
+
+**What to Include**:
+
+- ✅ Use case and success criteria
+- ✅ Candidate models and rationale
+- ✅ Constraints (region, latency, budget, safety)
+- ✅ Test prompt + parameter defaults
+- ✅ Test results comparison table
+- ✅ Risks (hallucination, cost spikes, instability) + mitigations
+- ✅ Final model selection with rationale
+
+**Acceptance Criteria**:
+- [ ] Checklist is complete (all sections filled)
+- [ ] At least 2 models compared
+- [ ] Test results recorded
+- [ ] Risks identified with mitigations
+- [ ] Model selection justified
 
 ### Next Steps
 

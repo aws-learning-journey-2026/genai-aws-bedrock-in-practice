@@ -9,7 +9,7 @@ related_topics:
   prerequisites: []
   builds_upon: []
   enables:
-    - "01_overview.md"
+    - "03_tokens.md"
   cross_refs: []
 ---
 

@@ -74,6 +74,14 @@ jobs:
           fi
           echo "✅ Repository structure doc exists"
 
+      - name: Verify session overview exists
+        run: |
+          if [ ! -f "docs/04_session-overview.md" ]; then
+            echo "❌ docs/04_session-overview.md (single source of truth) is missing!"
+            exit 1
+          fi
+          echo "✅ Session overview doc exists"
+
       - name: Check session index references
         run: |
           if ! grep -q "04_session-overview.md" docs/sessions/README.md; then

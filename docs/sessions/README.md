@@ -196,3 +196,5 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 
 **Last Updated**: January 2025  
 **Maintainer**: Viswanatha Swamy P K
+
+> **Note**: For session roadmap and status, see [`../04_session-overview.md`](../04_session-overview.md) (single source of truth).

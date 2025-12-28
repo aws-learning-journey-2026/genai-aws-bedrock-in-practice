@@ -83,12 +83,23 @@ This demonstration shows a basic interaction with Amazon Bedrock using a simple 
 
 ## Output Artifact
 
-Create a **one-page Bedrock Mental Model note** containing:
+**Artifact**: One-Page Bedrock Mental Model Note + Glossary
+
+**Template**: [`../artifacts/session01-mental-model-template.md`](../artifacts/session01-mental-model-template.md)
+
+**What to Include**:
 
 1. What Bedrock is and is not
 2. The power grid analogy
-3. Key vocabulary
+3. Key vocabulary (model, prompt, tokens, inference, foundation model)
 4. Core decision principles
+5. When to use Bedrock (and when not to)
+
+**Acceptance Criteria**:
+- [ ] All sections completed
+- [ ] Definitions in your own words (not copied)
+- [ ] Power grid analogy explained
+- [ ] Decision principles clearly stated
 
 ---
 
