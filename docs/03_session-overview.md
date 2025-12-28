@@ -117,8 +117,8 @@ graph LR
 ## Related Documentation
 
 - **Session Index Dashboard**: [`docs/sessions/README.md`](sessions/README.md) - Detailed session information and navigation
-- **Master Plan**: [`03_master-plan.md`](03_master-plan.md) - Complete learning roadmap and principles
-- **Repository Structure**: [`02_repository-structure.md`](02_repository-structure.md) - Single source of truth for structure
+- **Master Plan**: [`02_master-plan.md`](02_master-plan.md) - Complete learning roadmap and principles
+- **Repository Structure**: [`01_repository-structure.md`](01_repository-structure.md) - Single source of truth for structure
 - **Session Template**: [`templates/session-template.md`](templates/session-template.md) - Standard session format
 - **Main README**: [`../README.md`](../README.md) - Repository entry point
 

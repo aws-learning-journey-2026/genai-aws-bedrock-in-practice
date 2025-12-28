@@ -172,6 +172,6 @@ This template provides structure for session delivery notes, making sessions rep
 
 **Related Resources**:
 - [Session Template](../session-template.md)
-- [Session Overview](../../04_session-overview.md)
+- [Session Overview](../../03_session-overview.md)
 - [Style Guide](../../STYLE_GUIDE.md)
 

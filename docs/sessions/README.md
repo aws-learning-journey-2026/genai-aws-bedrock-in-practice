@@ -6,7 +6,7 @@ This document provides detailed information about each learning session, includi
 **Format**: 30-minute focused sessions  
 **Approach**: Architecture-first, production-aware learning
 
-> **📋 Session Overview**: For the complete session roadmap, status table, and progression diagram, see the [Session Overview](../04_session-overview.md) (single source of truth).
+> **📋 Session Overview**: For the complete session roadmap, status table, and progression diagram, see the [Session Overview](../03_session-overview.md) (single source of truth).
 
 ---
 
@@ -150,7 +150,7 @@ This document provides detailed information about each learning session, includi
 
 ---
 
-> **📋 For session roadmap, status table, and learning flow**: See [Session Overview](../04_session-overview.md)
+> **📋 For session roadmap, status table, and learning flow**: See [Session Overview](../03_session-overview.md)
 
 ---
 
@@ -186,8 +186,8 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 
 ## Related Resources
 
-- **Session Overview**: [`../04_session-overview.md`](../04_session-overview.md) - **Single source of truth** for session roadmap and status
-- **Master Plan**: [`../03_master-plan.md`](../03_master-plan.md)
+- **Session Overview**: [`../03_session-overview.md`](../03_session-overview.md) - **Single source of truth** for session roadmap and status
+- **Master Plan**: [`../02_master-plan.md`](../02_master-plan.md)
 - **Session Template**: [`../templates/session-template.md`](../templates/session-template.md)
 - **Repository Structure**: [`../03_repository-structure.md`](../03_repository-structure.md)
 - **Main README**: [`../../README.md`](../../README.md)
@@ -197,4 +197,4 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 **Last Updated**: January 2025  
 **Maintainer**: Viswanatha Swamy P K
 
-> **Note**: For session roadmap and status, see [`../04_session-overview.md`](../04_session-overview.md) (single source of truth).
+> **Note**: For session roadmap and status, see [`../03_session-overview.md`](../03_session-overview.md) (single source of truth).

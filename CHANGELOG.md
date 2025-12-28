@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Session overview as single source of truth (`docs/04_session-overview.md`)
+- Session overview as single source of truth (`docs/03_session-overview.md`)
 - Session index dashboard (`docs/sessions/README.md`)
 - Enhanced session template in `docs/templates/`
 - Facilitator notes template (`docs/templates/facilitator-notes-template.md`)
@@ -45,8 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial repository structure
 - README.md with comprehensive documentation
-- Master plan (`docs/03_master-plan.md`)
-- Repository structure documentation (`docs/02_repository-structure.md`)
+- Master plan (`docs/02_master-plan.md`)
+- Repository structure documentation (`docs/01_repository-structure.md`)
 - Session template (`docs/templates/session-template.md`)
 - Code of Conduct
 - Contributing guidelines

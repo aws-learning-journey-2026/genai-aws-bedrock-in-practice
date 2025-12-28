@@ -40,20 +40,20 @@ We welcome contributions in the following areas:
 
 ### Before You Begin
 
-1. **Read the Master Plan**: Review [`docs/03_master-plan.md`](docs/03_master-plan.md) to understand the repository's structure and principles
-2. **Review Repository Structure**: Check [`docs/02_repository-structure.md`](docs/02_repository-structure.md) for the single source of truth on organization
-3. **Review Session Overview**: Check [`docs/04_session-overview.md`](docs/04_session-overview.md) for the single source of truth on session roadmap and status
+1. **Read the Master Plan**: Review [`docs/02_master-plan.md`](docs/02_master-plan.md) to understand the repository's structure and principles
+2. **Review Repository Structure**: Check [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the single source of truth on organization
+3. **Review Session Overview**: Check [`docs/03_session-overview.md`](docs/03_session-overview.md) for the single source of truth on session roadmap and status
 4. **Understand Session Format**: Review [`docs/templates/session-template.md`](docs/templates/session-template.md) for the standard session structure
 
 ### Structure Validation Checklist
 
 **CRITICAL**: When making structural changes, you MUST update the single source of truth files:
 
-- [ ] **If you add/move folders**: Update [`docs/02_repository-structure.md`](docs/02_repository-structure.md)
-- [ ] **If you add a session**: Update [`docs/04_session-overview.md`](docs/04_session-overview.md) (session table, locations, prerequisites)
+- [ ] **If you add/move folders**: Update [`docs/01_repository-structure.md`](docs/01_repository-structure.md)
+- [ ] **If you add a session**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) (session table, locations, prerequisites)
 - [ ] **If you add a session**: Update [`docs/sessions/README.md`](docs/sessions/README.md) (detailed session information)
 - [ ] **If you add a meetup session**: Update [`docs/meetup/sessions.md`](docs/meetup/sessions.md)
-- [ ] **If you change session status**: Update [`docs/04_session-overview.md`](docs/04_session-overview.md) status table
+- [ ] **If you change session status**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) status table
 - [ ] **Verify all file references**: Run link checker to ensure no broken links
 
 > **Note**: CI will validate that single source of truth files exist. Manual updates are required for content changes.
@@ -127,9 +127,9 @@ Before submitting your contribution, ensure:
 
 ## 📚 Resources
 
-- **Session Overview**: [`docs/04_session-overview.md`](docs/04_session-overview.md) - Single source of truth for session roadmap
-- **Master Plan**: [`docs/03_master-plan.md`](docs/03_master-plan.md)
-- **Repository Structure**: [`docs/02_repository-structure.md`](docs/02_repository-structure.md) - Single source of truth for structure
+- **Session Overview**: [`docs/03_session-overview.md`](docs/03_session-overview.md) - Single source of truth for session roadmap
+- **Master Plan**: [`docs/02_master-plan.md`](docs/02_master-plan.md)
+- **Repository Structure**: [`docs/01_repository-structure.md`](docs/01_repository-structure.md) - Single source of truth for structure
 - **Session Template**: [`docs/templates/session-template.md`](docs/templates/session-template.md)
 - **Facilitator Notes Template**: [`docs/templates/facilitator-notes-template.md`](docs/templates/facilitator-notes-template.md)
 - **Educational Content Rules**: [`.cursor/rules/01_educational-content-rules.mdc`](.cursor/rules/01_educational-content-rules.mdc)

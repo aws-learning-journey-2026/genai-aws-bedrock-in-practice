@@ -57,7 +57,7 @@ Understanding the Bedrock console and model catalog is essential for making info
 ## Related Content
 
 **Learning Session**: [`02_bedrock-platform-deep-dive.md`](../sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md)  
-**Master Plan**: [`../03_master-plan.md`](../03_master-plan.md) - Session 02
+**Master Plan**: [`../02_master-plan.md`](../02_master-plan.md) - Session 02
 
 ---
 
