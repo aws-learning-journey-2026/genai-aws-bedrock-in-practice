@@ -264,6 +264,5 @@ This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LIC
 
 ---
 
-> 🧠 **genai-aws-bedrock-in-practice** — Designed and maintained by `Viswanatha Swamy P K`  
-> Empowering builders to design production-ready GenAI systems on AWS.  
+> 🧠 **genai-aws-bedrock-in-practice** — Designed and maintained by `Viswanatha Swamy P K`. Empowering builders to design production-ready GenAI systems on AWS.  
 > © 2025 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions
