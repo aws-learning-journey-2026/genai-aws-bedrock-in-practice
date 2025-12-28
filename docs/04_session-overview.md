@@ -47,6 +47,7 @@ graph LR
 | **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring      | 📚 Knowledge | 📋 Planned | 30 min |
 
 **Legend**:
+
 - ✅ **Complete** - Ready for use
 - 🔄 **Draft** - In progress, needs completion
 - 📋 **Planned** - Not yet started
