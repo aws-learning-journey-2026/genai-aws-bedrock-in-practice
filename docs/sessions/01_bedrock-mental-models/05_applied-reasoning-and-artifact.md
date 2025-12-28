@@ -85,7 +85,7 @@ This demonstration shows a basic interaction with Amazon Bedrock using a simple 
 
 **Artifact**: One-Page Bedrock Mental Model Note + Glossary
 
-**Template**: [`../artifacts/session01-mental-model-template.md`](../artifacts/session01-mental-model-template.md)
+**Template**: [`../../templates/session01-mental-model-template.md`](../../templates/session01-mental-model-template.md)
 
 **What to Include**:
 
@@ -96,10 +96,11 @@ This demonstration shows a basic interaction with Amazon Bedrock using a simple 
 5. When to use Bedrock (and when not to)
 
 **Acceptance Criteria**:
-- [ ] All sections completed
-- [ ] Definitions in your own words (not copied)
-- [ ] Power grid analogy explained
-- [ ] Decision principles clearly stated
+
+* [ ] All sections completed
+* [ ] Definitions in your own words (not copied)
+* [ ] Power grid analogy explained
+* [ ] Decision principles clearly stated
 
 ---
 

@@ -20,7 +20,7 @@ related_topics:
 **Duration**: ~30 minutes  
 **Deliverable**: Decision checklist for model selection + risk notes
 
-> **Artifact Template**: Use [`../artifacts/session02-model-selection-template.md`](../artifacts/session02-model-selection-template.md) to create your checklist.
+> **Artifact Template**: Use [`../../templates/session02-model-selection-template.md`](../../templates/session02-model-selection-template.md) to create your checklist.
 
 ---
 
@@ -65,7 +65,7 @@ Most downstream failures happen when teams pick models “by vibe” (or by head
 
 Use this sample prompt (or create your own):
 
-```
+```text
 You are a helpful assistant. Explain what Amazon Bedrock is in 2-3 sentences, focusing on what it enables for developers.
 ```
 
@@ -74,6 +74,7 @@ You are a helpful assistant. Explain what Amazon Bedrock is in 2-3 sentences, fo
 #### Step 2: Test Models in Bedrock Console
 
 **Models to Test** (select 2-3):
+
 - `anthropic.claude-v2` (Claude 2)
 - `anthropic.claude-v2:1` (Claude 2.1)
 - `amazon.titan-text-lite-v1` (Titan Lite)
@@ -84,6 +85,7 @@ You are a helpful assistant. Explain what Amazon Bedrock is in 2-3 sentences, fo
 #### Step 3: Vary Parameters
 
 Test with different `temperature` values:
+
 - **Temperature 0.0**: Deterministic, focused
 - **Temperature 0.7**: Balanced (default)
 - **Temperature 1.0**: More creative, varied
@@ -100,12 +102,14 @@ Record in your artifact:
 #### Common Console Gotchas
 
 **Before Starting**:
+
 - [ ] Bedrock enabled in your region? (Check: Bedrock Console → Model access)
 - [ ] Model access granted? (Some models require explicit enablement)
 - [ ] IAM permissions? (Need `bedrock:InvokeModel` permission)
 - [ ] Region selection? (Not all models available in all regions)
 
 **If You Hit Issues**:
+
 - **"Model not available"**: Check region and model access settings
 - **"Access denied"**: Verify IAM permissions
 - **"Quota exceeded"**: Check service quotas in AWS Console
@@ -113,6 +117,7 @@ Record in your artifact:
 #### Step 5: Record Results
 
 Use the comparison table in your artifact template to record:
+
 - Model IDs tested
 - Latency observations
 - Quality assessment
@@ -127,7 +132,7 @@ Use the comparison table in your artifact template to record:
 
 **Artifact**: Model Selection Checklist + Risk Notes
 
-**Location**: Use template at [`../artifacts/session02-model-selection-template.md`](../artifacts/session02-model-selection-template.md)
+**Location**: Use template at [`../../templates/session02-model-selection-template.md`](../../templates/session02-model-selection-template.md)
 
 **What to Include**:
 
@@ -140,6 +145,7 @@ Use the comparison table in your artifact template to record:
 - ✅ Final model selection with rationale
 
 **Acceptance Criteria**:
+
 - [ ] Checklist is complete (all sections filled)
 - [ ] At least 2 models compared
 - [ ] Test results recorded

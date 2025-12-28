@@ -25,7 +25,7 @@ This is **Swamy's personal learning** repository, knowledge-sharing repository a
 * [Purpose of This Repository](#-purpose-of-this-repository)
 * [Who This Is For](#-who-this-is-for)
 * [Learning Philosophy](#-learning-philosophy--in-practice)
-* [Session Roadmap](#session-roadmap---9-sessions)
+* [Session Roadmap](#️-session-roadmap---9-sessions)
 * [Repository Structure](#-repository-structure)
 * [Principles](#-principles-non-negotiables)
 * [Where to Start](#-where-to-start)
@@ -82,14 +82,6 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 The learning journey progresses through **9 focused sessions**, each building on previous concepts and producing a concrete artifact.
 
 > **📋 Complete Session Overview**: For the full session roadmap, detailed status table, progression diagram, and session locations, see [`docs/04_session-overview.md`](docs/04_session-overview.md) (single source of truth).
-
-### Quick Reference
-
-| Session | Topic | Status | Deliverable |
-|---------|-------|--------|-------------|
-| **01** | Bedrock Mental Models & GenAI Foundations | ✅ Complete | One-page mental model note + glossary |
-| **02** | Bedrock Platform Deep Dive (Console-First) | 🔄 Draft | Model selection checklist + risk notes |
-| **03-09** | See [Session Overview](docs/04_session-overview.md) for complete details | 📋 Planned | Various artifacts |
 
 **Total Duration**: ~4.5 hours of focused learning (9 sessions × 30 minutes)
 
