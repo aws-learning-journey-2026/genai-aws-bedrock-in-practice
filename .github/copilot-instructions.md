@@ -35,7 +35,7 @@
 
 **After ANY structural change, IMMEDIATELY update**:
 
-1. ✅ **`docs/03_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
+1. ✅ **`docs/01_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
 2. ✅ This file (.github/copilot-instructions.md) - Repository Structure section
 3. ✅ `.cursor/rules/02_repository-structure.mdc` - Repository structure rules
 4. ✅ README.md - Repository Structure section
@@ -44,7 +44,7 @@
 
 **Self-Check Question**: "Did I update the repository structure documentation?" - If no, STOP and do it NOW.
 
-**Note**: If `docs/03_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
+**Note**: If `docs/01_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
 
 ### 3. Chain-of-Thought + ReAct + Reasoning
 
@@ -145,13 +145,13 @@ Interleave thinking with action in iterative cycles:
 
 ## 📁 Current Repository Structure (As of December 27, 2025)
 
-**Single Source of Truth**: See [`docs/03_repository-structure.md`](docs/03_repository-structure.md) for the authoritative repository structure.
+**Single Source of Truth**: See [`docs/01_repository-structure.md`](../docs/01_repository-structure.md) for the authoritative repository structure.
 
 ### **Structure Reference**
 
 Do **not** maintain a duplicated tree in this file.
 
-- Authoritative structure: `docs/03_repository-structure.md`
+- Authoritative structure: `docs/01_repository-structure.md`
 - Master plan: `docs/02_master-plan.md`
 - Session template: `docs/01_session-template.md`
 
@@ -164,20 +164,20 @@ Do **not** maintain a duplicated tree in this file.
    - Learning principles
    - Repository layout
 
-2. **03_repository-structure.md** - Single source of truth for repository structure
+2. **01_repository-structure.md** - Single source of truth for repository structure
    - Complete directory structure
    - Directory descriptions
    - File naming conventions
 
 **Session Content**:
 
-- Sessions organized under `docs/sessions/` following 30-minute format
+- Sessions organized under `src/` following 30-minute format (alongside code examples)
 - Each session produces a single primary artifact
 - Template available at `docs/01_session-template.md`
 
 **Meetup Sessions**:
 
-- Meetup sessions are stored as individual files in `docs/sessions/` with naming pattern `NN_meetup-{session-name}.md`
+- Meetup sessions are stored as individual files in `docs/meetup/` with naming pattern `NN_meetup-{session-name}.md`
 - Each meetup session file contains: organization, date, duration, type, deliverable, agenda, and related content links
 - Meetup sessions are based on learning sessions but include meetup-specific details for live delivery
 - Index file: `docs/meetup/sessions.md` provides an overview and links to all meetup session files
@@ -337,7 +337,7 @@ related_topics:
 ✅ Use hyphens for multi-word names: `01_Software-Design-Principles/`
 
 **CRITICAL**: This rule applies to **ALL files** in the repository:
-- ✅ Educational content files (`docs/sessions/`)
+- ✅ Educational content files (`src/`)
 - ✅ Documentation files (`docs/`)
 - ✅ Any numbered files anywhere in the repository
 - ❌ **NO EXCEPTIONS** - `00_` is NEVER allowed, even for meta/documentation files
@@ -352,7 +352,7 @@ related_topics:
 
 **CRITICAL**: File numbering MUST reflect logical learning dependencies, not arbitrary ordering.
 
-**Session Learning Progression** (docs/sessions/):
+**Session Learning Progression** (src/):
 
 Sessions follow a progressive learning path from foundations to production readiness:
 
@@ -667,7 +667,7 @@ All content must demonstrate:
 
 1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder (at repository root)
 2. **Review and migrate**: AI assistant reviews content, identifies unique topics, and migrates/transforms following Educational Content Rules
-3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
+3. **Verify migration**: Confirm all unique content has been migrated to `src/` session folders as appropriate
 4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
 
 **Important Notes**:
@@ -1014,7 +1014,7 @@ ASCII Fallback:
 
 ## 📞 Support & Escalation
 
-**Questions about content placement?** → Check `docs/03_repository-structure.md`
+**Questions about content placement?** → Check `docs/01_repository-structure.md`
 
 **Content too long?** → Split into semantic files (e.g., `fundamentals.md`, `advanced.md`) - see [File Naming Conventions](../.cursor/rules/07_file-naming-conventions.mdc)
 
@@ -1078,6 +1078,6 @@ ASCII Fallback:
 ## For More Information
 
 - **Master Plan**: `docs/02_master-plan.md`
-- **Structure Reference**: `docs/03_repository-structure.md` (single source of truth)
+- **Structure Reference**: `docs/01_repository-structure.md` (single source of truth)
 - **Session Template**: `docs/01_session-template.md`
 - **Repository README**: `README.md`

@@ -5,6 +5,7 @@ Thank you for your interest in contributing to **genai-aws-bedrock-in-practice**
 ## 🎯 Repository Purpose
 
 This repository focuses on:
+
 - **Architecture-first learning**: Mental models → APIs → systems
 - **Session-based format**: 30-minute timeboxed sessions
 - **Production-aware content**: Security, cost, observability, and failure modes
@@ -16,7 +17,7 @@ This repository focuses on:
 
 We welcome contributions in the following areas:
 
-1. **Session Content** (`docs/sessions/`)
+1. **Session Content** (`src/`)
    - New session write-ups following the 30-minute format
    - Improvements to existing sessions
    - Session artifacts (diagrams, checklists, notes)
@@ -39,9 +40,23 @@ We welcome contributions in the following areas:
 
 ### Before You Begin
 
-1. **Read the Master Plan**: Review [`docs/01_master-plan.md`](docs/01_master-plan.md) to understand the repository's structure and principles
-2. **Review Repository Structure**: Check [`docs/03_repository-structure.md`](docs/03_repository-structure.md) for the single source of truth on organization
-3. **Understand Session Format**: Review [`docs/sessions/_session-template.md`](docs/sessions/_session-template.md) for the standard session structure
+1. **Read the Master Plan**: Review [`docs/02_master-plan.md`](docs/02_master-plan.md) to understand the repository's structure and principles
+2. **Review Repository Structure**: Check [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the single source of truth on organization
+3. **Review Session Overview**: Check [`docs/03_session-overview.md`](docs/03_session-overview.md) for the single source of truth on session roadmap and status
+4. **Understand Session Format**: Review [`docs/templates/session-template.md`](docs/templates/session-template.md) for the standard session structure
+
+### Structure Validation Checklist
+
+**CRITICAL**: When making structural changes, you MUST update the single source of truth files:
+
+- [ ] **If you add/move folders**: Update [`docs/01_repository-structure.md`](docs/01_repository-structure.md)
+- [ ] **If you add a session**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) (session table, locations, prerequisites)
+- [ ] **If you add a session**: Update [`docs/sessions/README.md`](docs/sessions/README.md) (detailed session information; sessions are located in `src/`)
+- [ ] **If you add a meetup session**: Update [`docs/meetup/sessions.md`](docs/meetup/sessions.md)
+- [ ] **If you change session status**: Update [`docs/03_session-overview.md`](docs/03_session-overview.md) status table
+- [ ] **Verify all file references**: Run link checker to ensure no broken links
+
+> **Note**: CI will validate that single source of truth files exist. Manual updates are required for content changes.
 
 ### Contribution Workflow
 
@@ -57,7 +72,7 @@ We welcome contributions in the following areas:
 When creating or updating session content:
 
 - ✅ **Follow the 30-minute format**: Objective → Core Concepts → Hands-on → Artifact
-- ✅ **Use the session template**: Start from `docs/sessions/_session-template.md`
+- ✅ **Use the session template**: Start from `docs/templates/session-template.md`
 - ✅ **Architecture-first approach**: Emphasize mental models before APIs
 - ✅ **Production-aware**: Include security, cost, and observability considerations
 - ✅ **Original content**: Transform, don't copy from sources
@@ -82,6 +97,7 @@ When creating or updating session content:
 Before submitting your contribution, ensure:
 
 ### Content Quality
+
 - [ ] Content follows the repository's principles (architecture-first, production-aware)
 - [ ] Session format is correct (30-minute structure)
 - [ ] Content is original and transformative (not copied)
@@ -89,6 +105,7 @@ Before submitting your contribution, ensure:
 - [ ] Examples are relevant and practical
 
 ### Technical Quality
+
 - [ ] Markdown linting passes (no errors)
 - [ ] All file references point to existing files
 - [ ] Code examples are minimal and illustrative
@@ -96,6 +113,7 @@ Before submitting your contribution, ensure:
 - [ ] No placeholder text or TODOs remain
 
 ### Documentation
+
 - [ ] README updated if structure changed
 - [ ] Repository structure document updated if needed
 - [ ] Related documentation cross-referenced
@@ -109,9 +127,11 @@ Before submitting your contribution, ensure:
 
 ## 📚 Resources
 
-- **Master Plan**: [`docs/01_master-plan.md`](docs/01_master-plan.md)
-- **Repository Structure**: [`docs/03_repository-structure.md`](docs/03_repository-structure.md)
-- **Session Template**: [`docs/sessions/_session-template.md`](docs/sessions/_session-template.md)
+- **Session Overview**: [`docs/03_session-overview.md`](docs/03_session-overview.md) - Single source of truth for session roadmap
+- **Master Plan**: [`docs/02_master-plan.md`](docs/02_master-plan.md)
+- **Repository Structure**: [`docs/01_repository-structure.md`](docs/01_repository-structure.md) - Single source of truth for structure
+- **Session Template**: [`docs/templates/session-template.md`](docs/templates/session-template.md)
+- **Facilitator Notes Template**: [`docs/templates/facilitator-notes-template.md`](docs/templates/facilitator-notes-template.md)
 - **Educational Content Rules**: [`.cursor/rules/01_educational-content-rules.mdc`](.cursor/rules/01_educational-content-rules.mdc)
 - **File Naming Conventions**: [`.cursor/rules/07_file-naming-conventions.mdc`](.cursor/rules/07_file-naming-conventions.mdc)
 
@@ -128,4 +148,5 @@ Your contributions help make this repository a valuable learning resource for th
 ---
 
 **Remember**: This repository focuses on **understanding how to think about GenAI systems on AWS**, not on providing complete production code. Keep contributions focused on learning and architectural reasoning.
+
 

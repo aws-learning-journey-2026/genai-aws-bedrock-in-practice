@@ -25,8 +25,8 @@ This is **Swamy's personal learning** repository, knowledge-sharing repository a
 * [Purpose of This Repository](#-purpose-of-this-repository)
 * [Who This Is For](#-who-this-is-for)
 * [Learning Philosophy](#-learning-philosophy--in-practice)
-* [Session Roadmap](#session-roadmap---9-sessions)
-* [Repository Structure](#repository-structure)
+* [Session Roadmap](#️-session-roadmap---9-sessions)
+* [Repository Structure](#-repository-structure)
 * [Principles](#-principles-non-negotiables)
 * [Where to Start](#-where-to-start)
 * [Organization Context](#-organization-context)
@@ -81,47 +81,11 @@ Each session is designed to fit into **~30 minutes**, making it suitable for:
 
 The learning journey progresses through **9 focused sessions**, each building on previous concepts and producing a concrete artifact.
 
-### Session Progression
-
-```mermaid
-graph LR
-    S1["01️⃣ Mental Models<br/><small>Foundations & Vocabulary</small>"]
-    --> S2["02️⃣ Platform Deep Dive<br/><small>Console & Constraints</small>"]
-    --> S3["03️⃣ Model Exploration<br/><small>Prompt Behavior</small>"]
-    --> S4["04️⃣ APIs & SDKs<br/><small>Integration Patterns</small>"]
-    --> S5["05️⃣ Backend Design<br/><small>Architecture on AWS</small>"]
-    --> S6["06️⃣ Embeddings<br/><small>Vector Thinking</small>"]
-    --> S7["07️⃣ RAG Systems<br/><small>Retrieval-Augmented</small>"]
-    --> S8["08️⃣ Advanced Features<br/><small>Knowledge Bases & Agents</small>"]
-    --> S9["09️⃣ Production Ready<br/><small>Security, Cost, Ops</small>"]
-
-    style S1 fill:#E3F2FD,stroke:#64B5F6,stroke-width:2px,color:#0D47A1
-    style S9 fill:#E8F5E9,stroke:#66BB6A,stroke-width:2px,color:#1B5E20
-```
-
-### Session Details
-
-| Session | Topic                                                   | Deliverable                                    | Focus Area                       | Type      | Status  |
-| ------- | ------------------------------------------------------- | ---------------------------------------------- | -------------------------------- | --------- | ------- |
-| **01**  | Bedrock Mental Models & GenAI Foundations               | One-page mental model note + glossary          | Vocabulary & conceptual clarity  | 📚 Knowledge | ✅ Ready   |
-| **02**  | Bedrock Platform Deep Dive (Console-First)              | Model selection checklist + risk notes         | Service operation & constraints  | 📚 Knowledge | 🔄 Planned |
-| **03**  | Model Exploration & Prompt Behavior                     | Prompt experiment log                          | Prompt behavior & determinism    | 📚 Knowledge | 🔄 Planned |
-| **04**  | Bedrock APIs & SDKs                                     | Minimal "hello inference" snippets + error handling | Request/response anatomy     | 📚 Knowledge | 🔄 Planned |
-| **05**  | Designing a Minimal GenAI Backend on AWS               | Architecture diagram + API contract sketch    | Lambda/API Gateway integration   | 🛠️ Project   | 🔄 Planned |
-| **06**  | Embeddings & Vector Thinking                            | Chunking strategy guide                        | Embeddings & similarity search   | 📚 Knowledge | 🔄 Planned |
-| **07**  | Retrieval-Augmented Generation (RAG) with Bedrock       | RAG reference architecture + anti-pattern checklist | Ingestion → retrieval → generation | 📚 Knowledge | 🔄 Planned |
-| **08**  | Advanced Capabilities (Knowledge Bases / Agents)        | "Choose your orchestration" decision tree      | Managed vs custom orchestration  | 📚 Knowledge | 🔄 Planned |
-| **09**  | Production Readiness: Security, Cost, Observability      | Production readiness checklist                 | IAM, networking, monitoring      | 📚 Knowledge | 🔄 Planned |
-
-> Additional sessions may be added as the platform evolves.
-
-### Learning Flow
-
-**Foundation Sessions (1-3)**: Build mental models and understand the platform  
-**Integration Sessions (4-6)**: Connect Bedrock to systems and work with embeddings  
-**Advanced Sessions (7-9)**: Build production-ready GenAI systems
+> **📋 Complete Session Overview**: For the full session roadmap, detailed status table, progression diagram, and session locations, see [`docs/03_session-overview.md`](docs/03_session-overview.md) (single source of truth).
 
 **Total Duration**: ~4.5 hours of focused learning (9 sessions × 30 minutes)
+
+> Additional sessions may be added as the platform evolves.
 
 ---
 
@@ -144,7 +108,10 @@ For complete repository structure details, see **[`docs/03_repository-structure.
 
 Begin with:
 
-👉 **`docs/sessions/01_bedrock-mental-models.md`**
+👉 **[Session 01 Overview](src/01_bedrock-mental-models/01_overview.md)**  
+   *Path: `src/01_bedrock-mental-models/01_overview.md`*
+
+Or start from the **[Session Index Dashboard](docs/sessions/README.md)** for an overview of all sessions.
 
 Everything else builds on that foundation.
 
@@ -232,14 +199,14 @@ You only need to run these commands once per machine.
 
    ```bash
    # Read the master plan to understand the structure
-   cat docs/01_master-plan.md
+   cat docs/02_master-plan.md
    ```
 
 3. **Start with Session 01**:
 
    ```bash
    # Navigate to sessions
-   cd docs/sessions
+   cd src
    # Open the first session (when created)
    ```
 
@@ -259,9 +226,9 @@ Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guide
 
 **Quick Checklist**:
 
-* [ ] Read the [Master Plan](docs/01_master-plan.md)
 * [ ] Review [Contributing Guidelines](CONTRIBUTING.md)
-* [ ] Follow the [Session Template](docs/sessions/_session-template.md)
+* [ ] Read the [Master Plan](docs/02_master-plan.md)
+* [ ] Follow the [Session Template](docs/templates/session-template.md)
 * [ ] Ensure content aligns with repository principles
 
 ---
@@ -280,9 +247,14 @@ You can connect with the community to:
 
 **Related Resources**:
 
-* [Master Plan](docs/01_master-plan.md) - Complete learning roadmap
+* [Session Overview](docs/03_session-overview.md) - **Single source of truth** for session roadmap and status
+* [Session Index Dashboard](docs/sessions/README.md) - Detailed session information and navigation (sessions located in `src/`)
+* [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
-* [Session Template](docs/sessions/_session-template.md) - Standard session format
+* [Session Template](docs/templates/session-template.md) - Standard session format
+* [Style Guide](docs/STYLE_GUIDE.md) - Content creation guidelines
+* [Code Examples](src/README.md) - Minimal illustrative code samples
+* [CHANGELOG](CHANGELOG.md) - Version history and changes
 
 ---
 
@@ -292,6 +264,5 @@ This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LIC
 
 ---
 
-> 🧠 **genai-aws-bedrock-in-practice** — Designed and maintained by `Viswanatha Swamy P K`  
-> Empowering builders to design production-ready GenAI systems on AWS.  
+> 🧠 **genai-aws-bedrock-in-practice** — Designed and maintained by `Viswanatha Swamy P K`. Empowering builders to design production-ready GenAI systems on AWS.  
 > © 2025 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions

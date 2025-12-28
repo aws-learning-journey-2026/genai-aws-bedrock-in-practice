@@ -10,22 +10,22 @@
 
 **IMPORTANT**: These rules apply differently based on content type:
 
-### Educational Content (`docs/sessions/`)
+### Educational Content (`src/`)
 - ✅ **File naming**: Must follow numbering conventions (01_, 02_, etc., no 00_) OR semantic names (see [File Naming Conventions](./07_file-naming-conventions.mdc))
 - ✅ **Line limits**: Recommended ≤150 lines (split, don't trim)
 - ✅ **YAML frontmatter**: Required for all educational content files (all 5 metadata fields)
 - ✅ **Zero-copy policy**: Applies (content must be transformative)
 - ✅ **File references**: Must point to existing files
 
-### Session Content (`docs/sessions/`)
+### Session Content (`src/`)
 - ✅ **File naming**: Semantic names preferred (e.g., `core-concepts.md`, `system-design.md`)
 - ✅ **Numbering**: Optional - use only when sequence matters
 - ✅ **YAML frontmatter**: Required
 - ✅ **Line limits**: Recommended ≤150 lines
 
-### Meetup Materials (`docs/sessions/` and `docs/meetup/`)
-- ✅ **File naming**: Meetup sessions use pattern `NN_meetup-{session-name}.md` in `docs/sessions/`
-- ✅ **Structure**: Each meetup session is a separate file in `docs/sessions/` (e.g., `01_meetup-bedrock-mental-models.md`)
+### Meetup Materials (`docs/meetup/`)
+- ✅ **File naming**: Meetup sessions use pattern `NN_meetup-{session-name}.md` in `docs/meetup/`
+- ✅ **Structure**: Each meetup session is a separate file in `docs/meetup/` (e.g., `01_meetup-bedrock-mental-models.md`)
 - ✅ **Index file**: `docs/meetup/sessions.md` provides an index linking to all meetup session files
 - ⚠️ **YAML frontmatter**: Not required for meetup sessions (they use markdown headers instead)
 - ✅ **Line limits**: Recommended ≤150 lines per meetup session file
@@ -139,7 +139,7 @@ related_topics:
 ✅ Use hyphens for multi-word names: `01_Software-Design-Principles/`
 
 **CRITICAL**: This rule applies to **ALL files** in the repository:
-- ✅ Educational content files (`docs/sessions/`)
+- ✅ Educational content files (`src/`)
 - ✅ Documentation files (`docs/`)
 - ✅ Any numbered files anywhere in the repository
 - ❌ **NO EXCEPTIONS** - `00_` is NEVER allowed, even for meta/documentation files
@@ -282,7 +282,7 @@ class ProductFactory:
 
 1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder
 2. **Review and migrate**: AI assistant reviews content, identifies unique topics, and migrates/transforms following Educational Content Rules
-3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
+3. **Verify migration**: Confirm all unique content has been migrated to `src/` session folders as appropriate
 4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
 
 **Important Notes**:
@@ -320,7 +320,7 @@ class ProductFactory:
    - **Use Chain-of-Thought**: Think through each transformation step explicitly
    - **Apply Reasoning**: Make logical decisions about content structure, examples, and explanations
 
-3. **REASON**: Create new educational content in appropriate `docs/sessions/` or `src/` folders
+3. **REASON**: Create new educational content in appropriate `src/` session folders
    - Apply logical reasoning to determine correct placement
    - Ensure learning dependencies are properly structured
    - Verify content flow and progression
@@ -445,7 +445,7 @@ Before committing:
 
 ## 🔍 Comprehensive Content Review Process
 
-**MANDATORY**: All content in `docs/sessions/` and `src/` folders must undergo comprehensive review using CoT (Chain-of-Thought), ReAct (Reasoning + Acting), and systematic reasoning.
+**MANDATORY**: All content in `src/` session folders must undergo comprehensive review using CoT (Chain-of-Thought), ReAct (Reasoning + Acting), and systematic reasoning.
 
 **🚨 CRITICAL RULE ALIGNMENT**: Migration and Review use **THE EXACT SAME RULES AND CHECKLIST**. The 7-category Individual File Review Checklist MUST be applied during migration/transformation, not just during review. This ensures all content is compliant from the moment it's created.
 
@@ -460,7 +460,7 @@ Before committing:
 - ❌ **NEVER**: Review only files that "look problematic" - review ALL files
 
 **Scope of Review**:
-- If reviewing `docs/sessions/` folder: Review ALL files in `docs/sessions/`
+- If reviewing `src/` folder: Review ALL session files in `src/`
 - If reviewing `src/` folder: Review ALL files in `src/`
 - If reviewing a specific subfolder: Review ALL files in that subfolder
 - If reviewing specific files: Review each requested file individually
@@ -589,7 +589,7 @@ Before committing:
 
 - **Before committing**: Review all modified files
 - **After splitting files**: Review all affected files and references
-- **Periodic audits**: Comprehensive review of entire `docs/sessions/` folder
+- **Periodic audits**: Comprehensive review of entire `src/` session folders
 - **After major changes**: Full review of affected sections
 
 ### Review Documentation

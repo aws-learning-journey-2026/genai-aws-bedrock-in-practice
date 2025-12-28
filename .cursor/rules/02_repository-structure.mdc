@@ -14,7 +14,8 @@
 - Production-aware content: security, cost, observability, and failure modes
 - Original content focused on system design thinking, not demo-only
 
-**Target Audience**: 
+**Target Audience**:
+
 - Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS
 - Architects/TPMs who need clarity on trade-offs, governance, and readiness
 
@@ -44,7 +45,7 @@ When including code examples in educational content:
 
 ## 📁 Repository Structure
 
-**Single source of truth**: `docs/03_repository-structure.md`
+**Single source of truth**: `docs/01_repository-structure.md`
 
 Do **not** duplicate the full tree here — keep this rule file focused on behavior and refer to the doc above for the authoritative directory layout.
 
@@ -60,7 +61,7 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 1. **Place materials**: User places source materials (transcripts, notes, documents) in `source-material/` folder (at repository root)
 2. **Review and migrate**: AI assistant reviews ALL files, identifies unique content, and migrates/transforms following Educational Content Rules
-3. **Verify migration**: Confirm all unique content has been migrated to `docs/sessions/` or `src/` as appropriate
+3. **Verify migration**: Confirm all unique content has been migrated to `src/` session folders as appropriate
 4. **Keep source files**: After successful migration, keep source files in `source-material/` folder - user will delete manually
 
 **Important**:
@@ -71,22 +72,24 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 ### Session Content Structure
 
-**Important**: Session content is organized under `docs/sessions/` as individual markdown files following the 30-minute format.
+**Important**: Session content is organized under `src/` as per-session folders following the 30-minute format. Code examples are also in `src/` organized by language.
 
-**File Types in `docs/sessions/`**:
+**File Types in `src/`**:
 
-1. **Learning Sessions**: `NN_{session-name}.md` (e.g., `01_bedrock-mental-models.md`)
+1. **Learning Sessions**: `src/NN_{session-name}/01_overview.md` (e.g., `src/01_bedrock-mental-models/01_overview.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
+2. **Code Examples**: `src/{language}/` (e.g., `src/python/`, `src/javascript/`)
+   - Minimal, illustrative code examples that demonstrate concepts
 
-2. **Meetup Sessions**: `NN_meetup-{session-name}.md` (e.g., `01_meetup-bedrock-mental-models.md`)
+2. **Meetup Sessions**: Stored under `docs/meetup/` (e.g., `docs/meetup/01_meetup-bedrock-mental-models.md`)
    - Meetup delivery content with organization, date, and agenda
    - Based on learning sessions but includes meetup-specific details
    - Includes: Organization, Date, Duration, Type, Deliverable, Why This Session, Agenda
 
 **Policy**:
 
-- ✅ Use `docs/01_session-template.md` as the starting point for new learning sessions
+- ✅ Use `docs/templates/session-template.md` as the starting point for new learning sessions
 - ✅ Each session should produce a single primary artifact (notes, diagram, checklist, or minimal code)
 - ✅ Follow the master plan structure: Objective → Core Concepts → Hands-on → Artifact
 - ✅ Keep sessions focused and timeboxed to ~30 minutes
@@ -102,7 +105,7 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 **Link broken?** → Update URLs or fix internal file references
 
-**Structure outdated?** → Update `docs/03_repository-structure.md` first, then update `README.md` and `docs/02_master-plan.md`
+**Structure outdated?** → Update `docs/01_repository-structure.md` first, then update `README.md` and `docs/02_master-plan.md`
 
 ---
 

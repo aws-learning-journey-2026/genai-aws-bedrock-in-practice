@@ -11,7 +11,7 @@ You are working with **genai-aws-bedrock-in-practice**, a practical, architectur
 
 Target Folders for Verification:
 
-- `docs/sessions/`
+- `src/` (sessions and code)
 - `src/`
 - `docs/`
 - `.github/`
@@ -145,7 +145,7 @@ Check for presence of:
 
 ### Content Organization
 
-- **By Session**: Content organized as individual session files in `docs/sessions/`
+- **By Session**: Content organized as individual session files in `src/`
 - **By Deliverable**: Each session produces a specific artifact (notes, diagram, checklist, or minimal code)
 - **By Learning Progression**: Sessions build upon each other logically
 - **By Learning Modality**: Mix of conceptual explanation, code examples, diagrams, and practical reasoning

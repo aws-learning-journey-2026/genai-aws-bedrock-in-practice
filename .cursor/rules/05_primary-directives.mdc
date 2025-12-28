@@ -40,7 +40,7 @@ See: `01_educational-content-rules.mdc` for complete details.
 
 **After ANY structural change, IMMEDIATELY update**:
 
-1. ✅ `docs/02_repository-structure.md` - Repository Structure section (single source of truth)
+1. ✅ `docs/01_repository-structure.md` - Repository Structure section (single source of truth)
 2. ✅ `README.md` - Repository Structure section
 3. ✅ Relevant documentation files
 4. ✅ Run verification: `.\Quick-HealthCheck.ps1` from tools/psscripts/
@@ -53,7 +53,7 @@ See: `01_educational-content-rules.mdc` for complete details.
 
 1. ✅ **Check for `00_` prefix**: **NEVER ALLOWED** - Use `01_` instead
 2. ✅ **Verify scope**: Rule applies to **ALL files** including:
-   - Session content (`docs/sessions/`)
+   - Session content (`src/`)
    - Documentation files (`docs/`)
    - Any numbered files anywhere in repository
 3. ✅ **Quick validation**: Run `Get-ChildItem -Recurse -Filter "*00_*"` to find violations

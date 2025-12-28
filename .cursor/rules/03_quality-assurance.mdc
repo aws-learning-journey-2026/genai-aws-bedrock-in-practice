@@ -16,7 +16,7 @@
 - [ ] **30-Minute Session Format Compliance**: Content within 150 lines, modular structure
 - [ ] **5 Required Metadata Fields**: learning_level, prerequisites, estimated_time, learning_objectives, related_topics
 - [ ] **Original Examples**: All code, diagrams, datasets, and exercises are original
-- [ ] **ASCII-First Diagrams**: Diagrams redrawn in ASCII, never embedded copyrighted figures
+- [ ] **Mermaid-First Diagrams**: Use Mermaid diagrams with ASCII fallback; never embed copyrighted figures
 - [ ] **Learning Objectives**: Clear, specific, and measurable outcomes
 - [ ] **Progressive Scaffolding**: Foundations → Practice → Pitfalls → Next Steps
 - [ ] **Proper Learning Level**: Assigned (Stage 1-9 or Beginner/Intermediate/Advanced)
