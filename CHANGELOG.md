@@ -45,8 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial repository structure
 - README.md with comprehensive documentation
-- Master plan (`docs/02_master-plan.md`)
-- Repository structure documentation (`docs/03_repository-structure.md`)
+- Master plan (`docs/03_master-plan.md`)
+- Repository structure documentation (`docs/02_repository-structure.md`)
 - Session template (`docs/01_session-template.md`)
 - Code of Conduct
 - Contributing guidelines

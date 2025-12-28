@@ -29,8 +29,8 @@ genai-aws-bedrock-in-practice/
 │   └── PULL_REQUEST_TEMPLATE.md           # PR template
 ├── docs/                                  # Documentation hub
 │   ├── 01_session-template.md             # 30-minute session template
-│   ├── 02_master-plan.md                  # Master plan and roadmap
-│   ├── 03_repository-structure.md         # This file - single source of truth
+│   ├── 03_master-plan.md                  # Master plan and roadmap
+│   ├── 02_repository-structure.md         # This file - single source of truth
 │   ├── backup/                            # Archived/old session drafts (not active)
 │   ├── images/                            # Diagrams and visual assets
 │   │   └── S1/                             # Session 01 images
@@ -85,6 +85,7 @@ genai-aws-bedrock-in-practice/
 
 - **`01_session-template.md`**: Standard 30-minute session template
 - **`03_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
+- **`04_session-overview.md`**: **Single source of truth** for session roadmap and status
 - **`02_repository-structure.md`**: This file - single source of truth for repository structure
 - **`04_session-overview.md`**: **Single source of truth** for session roadmap and status
 - **`sessions/`**: Active session content files following the 30-minute format
@@ -160,7 +161,7 @@ genai-aws-bedrock-in-practice/
 
 ### Documentation Files
 
-- Master documents: `NN_descriptive-name.md` (e.g., `02_master-plan.md`)
+- Master documents: `NN_descriptive-name.md` (e.g., `03_master-plan.md`)
 - Session files: `01_overview.md` (overview), `02_module-name.md`, `03_module-name.md`, etc. (e.g., `01_overview.md`, `02_core-mental-models.md`)
 - Session template: `01_session-template.md` (stored in `docs/`)
 
@@ -200,7 +201,8 @@ genai-aws-bedrock-in-practice/
 
 ## 🔗 Related Documentation
 
-- **Master Plan**: `docs/02_master-plan.md` - Complete learning roadmap
+- **Master Plan**: `docs/03_master-plan.md` - Complete learning roadmap
+- **Session Overview**: `docs/04_session-overview.md` - Single source of truth for session roadmap
 - **Session Template**: `docs/01_session-template.md` - Standard session format
 - **Repository README**: `README.md` - Main entry point (references this file)
 

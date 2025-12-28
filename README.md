@@ -207,7 +207,7 @@ You only need to run these commands once per machine.
 
    ```bash
    # Read the master plan to understand the structure
-   cat docs/02_master-plan.md
+   cat docs/03_master-plan.md
    ```
 
 3. **Start with Session 01**:
@@ -235,7 +235,7 @@ Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guide
 **Quick Checklist**:
 
 * [ ] Review [Contributing Guidelines](CONTRIBUTING.md)
-* [ ] Read the [Master Plan](docs/02_master-plan.md)
+* [ ] Read the [Master Plan](docs/03_master-plan.md)
 * [ ] Follow the [Session Template](docs/01_session-template.md)
 * [ ] Ensure content aligns with repository principles
 
@@ -257,7 +257,7 @@ You can connect with the community to:
 
 * [Session Overview](docs/04_session-overview.md) - **Single source of truth** for session roadmap and status
 * [Session Index Dashboard](docs/sessions/README.md) - Detailed session information and navigation
-* [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
+* [Master Plan](docs/03_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
 * [Session Template](docs/templates/session-template.md) - Standard session format
 * [Style Guide](docs/STYLE_GUIDE.md) - Content creation guidelines

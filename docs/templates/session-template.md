@@ -196,6 +196,6 @@ This structure:
 **Related Resources**:
 - [Session Overview](../04_session-overview.md) - **Single source of truth** for session roadmap
 - [Session Index Dashboard](../sessions/README.md)
-- [Master Plan](../02_master-plan.md)
+- [Master Plan](../03_master-plan.md)
 - [Repository Structure](../03_repository-structure.md)
 

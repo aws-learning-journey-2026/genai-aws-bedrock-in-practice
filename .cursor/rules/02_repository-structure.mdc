@@ -45,7 +45,7 @@ When including code examples in educational content:
 
 ## 📁 Repository Structure
 
-**Single source of truth**: `docs/03_repository-structure.md`
+**Single source of truth**: `docs/02_repository-structure.md`
 
 Do **not** duplicate the full tree here — keep this rule file focused on behavior and refer to the doc above for the authoritative directory layout.
 
@@ -103,12 +103,12 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 **Link broken?** → Update URLs or fix internal file references
 
-**Structure outdated?** → Update `docs/03_repository-structure.md` first, then update `README.md` and `docs/02_master-plan.md`
+**Structure outdated?** → Update `docs/02_repository-structure.md` first, then update `README.md` and `docs/03_master-plan.md`
 
 ---
 
 ## For More Information
 
-- **Master Plan**: `docs/02_master-plan.md`
+- **Master Plan**: `docs/03_master-plan.md`
 - **Session Template**: `docs/01_session-template.md`
 - **Repository README**: `README.md`

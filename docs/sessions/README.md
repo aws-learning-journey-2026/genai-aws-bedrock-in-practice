@@ -187,7 +187,7 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for detailed guidelines.
 ## Related Resources
 
 - **Session Overview**: [`../04_session-overview.md`](../04_session-overview.md) - **Single source of truth** for session roadmap and status
-- **Master Plan**: [`../02_master-plan.md`](../02_master-plan.md)
+- **Master Plan**: [`../03_master-plan.md`](../03_master-plan.md)
 - **Session Template**: [`../templates/session-template.md`](../templates/session-template.md)
 - **Repository Structure**: [`../03_repository-structure.md`](../03_repository-structure.md)
 - **Main README**: [`../../README.md`](../../README.md)
