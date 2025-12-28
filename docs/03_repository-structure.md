@@ -36,18 +36,20 @@ genai-aws-bedrock-in-practice/
 │   │   └── S1/                             # Session 01 images
 │   ├── meetup/                             # Meetup index and materials
 │   │   ├── .gitkeep
+│   │   ├── 01_meetup-bedrock-mental-models.md
+│   │   ├── 02_meetup-bedrock-platform-deep-dive.md
 │   │   └── sessions.md                    # Index of meetup sessions
 │   └── sessions/                           # Active session content (30-min format)
 │       ├── .gitkeep
-│       ├── 01_bedrock-mental-models.md
-│       ├── 01_bedrock-mental-models/        # Session 01 split into focused modules
+│       ├── 01_bedrock-mental-models/
+│       │   ├── 01_bedrock-mental-models.md
 │       │   ├── core-mental-models.md
 │       │   ├── tokens.md
 │       │   ├── terminology-and-scope.md
 │       │   └── applied-reasoning-and-artifact.md
-│       ├── 01_meetup-bedrock-mental-models.md
-│       ├── 02_bedrock-platform-deep-dive.md
-│       └── 02_meetup-bedrock-platform-deep-dive.md
+│       └── 02_bedrock-platform-deep-dive/
+│           └── 02_bedrock-platform-deep-dive.md
+│       
 ├── src/                                    # Minimal runnable labs/examples
 ├── source-material/                        # Staging area for imported content (git-ignored)
 ├── .gitignore                             # Git ignore rules
@@ -67,16 +69,20 @@ genai-aws-bedrock-in-practice/
 ## 📂 Directory Descriptions
 
 ### `.copilot/`
+
 **Purpose**: GitHub Copilot configuration  
 **Contents**: Settings for Copilot behavior and language preferences
 
 ### `.cursor/`
+
 **Purpose**: Cursor AI configuration and project rules  
 **Contents**: Modular rule files (`.mdc` format) that guide AI assistance behavior
 
 ### `docs/`
+
 **Purpose**: Primary documentation hub  
 **Contents**:
+
 - **`01_session-template.md`**: Standard 30-minute session template
 - **`02_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
 - **`03_repository-structure.md`**: This file - single source of truth for repository structure
@@ -86,21 +92,28 @@ genai-aws-bedrock-in-practice/
 - **`backup/`**: Archived session drafts retained for reference
 
 ### `docs/sessions/`
-**Purpose**: Session-based learning content and meetup session materials  
-**Structure**: Each session is a single markdown file following the naming convention `NN_session-name.md`
+
+**Purpose**: Session-based learning content  
+**Structure**: Each session lives in its own folder `NN_session-name/` and contains a primary markdown file `NN_session-name.md`.
 
 **File Types**:
 
-1. **Learning Sessions**: `NN_{session-name}.md` (e.g., `01_bedrock-mental-models.md`)
+1. **Learning Sessions**: `docs/sessions/NN_{session-name}/NN_{session-name}.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
 
-2. **Meetup Sessions**: `NN_meetup-{session-name}.md` (e.g., `01_meetup-bedrock-mental-models.md`)
+### `docs/meetup/`
+
+**Purpose**: Meetup delivery content and index  
+**File Types**:
+
+1. **Meetup Sessions**: `NN_meetup-{session-name}.md` (e.g., `01_meetup-bedrock-mental-models.md`)
    - Meetup delivery content with organization, date, and agenda
    - Based on learning sessions but includes meetup-specific details
    - Includes: Organization, Date, Duration, Type, Deliverable, Why This Session, Agenda
 
 **Session Format** (30 minutes each):
+
 1. Objective (1–2 minutes)
 2. Core concepts (10–12 minutes)
 3. Hands-on / applied reasoning (12–15 minutes)
@@ -109,13 +122,17 @@ genai-aws-bedrock-in-practice/
 **Template**: `docs/01_session-template.md` provides the standard structure for all learning sessions
 
 **Current Sessions**:
-- `01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations (index)
-   - `docs/sessions/01_bedrock-mental-models/` contains split modules for Session 01
-- `01_meetup-bedrock-mental-models.md` - Meetup Session 01 (Dot Net Learners House)
-- `02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
-- `02_meetup-bedrock-platform-deep-dive.md` - Meetup Session 02 (Dot Net Learners House)
+
+- `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations (index)
+- `docs/sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
+
+**Meetup Sessions**:
+
+- `docs/meetup/01_meetup-bedrock-mental-models.md` - Meetup Session 01 (Dot Net Learners House)
+- `docs/meetup/02_meetup-bedrock-platform-deep-dive.md` - Meetup Session 02 (Dot Net Learners House)
 
 **Future Sessions** (planned):
+
 - `03_model-exploration-prompt-behavior.md` - Model Exploration & Prompt Behavior
 - `04_bedrock-apis-sdks.md` - Bedrock APIs & SDKs
 - `05_genai-backend-architecture.md` - Designing a Minimal GenAI Backend on AWS
@@ -125,11 +142,13 @@ genai-aws-bedrock-in-practice/
 - `09_production-readiness.md` - Production Readiness: Security, Cost, Observability
 
 ### `src/`
+
 **Purpose**: Minimal runnable labs and examples  
 **Contents**: Small code examples that add learning value (not full implementations)  
 **Status**: Currently empty, reserved for future minimal examples
 
 ### `source-material/`
+
 **Purpose**: Staging area for imported/raw content  
 **Status**: Git-ignored, used for temporary storage before content migration  
 **Workflow**: Content placed here → reviewed → migrated to appropriate `docs/sessions/` files
@@ -139,11 +158,13 @@ genai-aws-bedrock-in-practice/
 ## 📋 File Naming Conventions
 
 ### Documentation Files
+
 - Master documents: `NN_descriptive-name.md` (e.g., `02_master-plan.md`)
 - Session files: `NN_session-name.md` (e.g., `01_bedrock-mental-models.md`)
 - Session template: `01_session-template.md` (stored in `docs/`)
 
 ### Code Files
+
 - Follow language-specific conventions
 - Keep examples minimal and illustrative
 
@@ -162,12 +183,14 @@ genai-aws-bedrock-in-practice/
 ## 📝 Maintenance
 
 **When to Update This File**:
+
 - New directories are added
 - Directory purposes change
 - File naming conventions evolve
 - Repository structure is reorganized
 
 **After Updating**:
+
 - Update `README.md` if it references structure details
 - Update `.cursor/rules/02_repository-structure.mdc` if needed
 - Ensure all references point to this file as the single source of truth

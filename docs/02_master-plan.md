@@ -103,8 +103,8 @@ The simplest starting point is to keep session content under `docs/sessions/`.
 
 Example:
 
-* `docs/sessions/01_bedrock-mental-models.md`
-* `docs/sessions/02_bedrock-platform-deep-dive.md`
+* `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`
+* `docs/sessions/02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md`
 
 ## Next Steps
 

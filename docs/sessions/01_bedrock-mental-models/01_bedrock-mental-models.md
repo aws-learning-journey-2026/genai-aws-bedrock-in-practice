@@ -10,7 +10,7 @@ related_topics:
   prerequisites: []
   builds_upon: []
   enables:
-    - "02_bedrock-platform-deep-dive.md"
+    - "../02_bedrock-platform-deep-dive/02_bedrock-platform-deep-dive.md"
   cross_refs: []
 ---
 
@@ -27,10 +27,10 @@ This session is split into focused modules to stay within the 30-minute format a
 
 ## Modules
 
-1. [Core Mental Models](01_bedrock-mental-models/core-mental-models.md)
-2. [Tokens](01_bedrock-mental-models/tokens.md)
-3. [Terminology & Scope](01_bedrock-mental-models/terminology-and-scope.md)
-4. [Applied Reasoning & Artifact](01_bedrock-mental-models/applied-reasoning-and-artifact.md)
+1. [Core Mental Models](core-mental-models.md)
+2. [Tokens](tokens.md)
+3. [Terminology & Scope](terminology-and-scope.md)
+4. [Applied Reasoning & Artifact](applied-reasoning-and-artifact.md)
 
 ---
 

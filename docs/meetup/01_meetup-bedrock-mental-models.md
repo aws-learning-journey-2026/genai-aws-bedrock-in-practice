@@ -58,7 +58,7 @@ Without the right mental model, every design decision downstream is flawed. This
 
 ## Related Content
 
-**Learning Session**: [`01_bedrock-mental-models.md`](01_bedrock-mental-models.md)  
+**Learning Session**: [`01_bedrock-mental-models.md`](../sessions/01_bedrock-mental-models/01_bedrock-mental-models.md)  
 **Master Plan**: [`../02_master-plan.md`](../02_master-plan.md) - Session 01
 
 ---

@@ -145,7 +145,7 @@ Interleave thinking with action in iterative cycles:
 
 ## 📁 Current Repository Structure (As of December 27, 2025)
 
-**Single Source of Truth**: See [`docs/03_repository-structure.md`](docs/03_repository-structure.md) for the authoritative repository structure.
+**Single Source of Truth**: See [`docs/03_repository-structure.md`](../docs/03_repository-structure.md) for the authoritative repository structure.
 
 ### **Structure Reference**
 
@@ -177,7 +177,7 @@ Do **not** maintain a duplicated tree in this file.
 
 **Meetup Sessions**:
 
-- Meetup sessions are stored as individual files in `docs/sessions/` with naming pattern `NN_meetup-{session-name}.md`
+- Meetup sessions are stored as individual files in `docs/meetup/` with naming pattern `NN_meetup-{session-name}.md`
 - Each meetup session file contains: organization, date, duration, type, deliverable, agenda, and related content links
 - Meetup sessions are based on learning sessions but include meetup-specific details for live delivery
 - Index file: `docs/meetup/sessions.md` provides an overview and links to all meetup session files

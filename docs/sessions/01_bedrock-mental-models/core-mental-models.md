@@ -9,7 +9,7 @@ related_topics:
   prerequisites: []
   builds_upon: []
   enables:
-    - "../01_bedrock-mental-models.md"
+    - "01_bedrock-mental-models.md"
   cross_refs: []
 ---
 

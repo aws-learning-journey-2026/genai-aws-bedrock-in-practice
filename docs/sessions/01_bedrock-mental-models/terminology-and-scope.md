@@ -1,14 +1,14 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "../01_bedrock-mental-models.md"
+  - "01_bedrock-mental-models.md"
 estimated_time: "10 minutes"
 learning_objectives:
   - "Differentiate base models, foundation models, language models, and LLMs"
   - "Explain what Bedrock is and is not in system-design terms"
 related_topics:
   prerequisites:
-    - "../01_bedrock-mental-models.md"
+    - "01_bedrock-mental-models.md"
   builds_upon:
     - "core-mental-models.md"
   enables: []

@@ -14,7 +14,8 @@
 - Production-aware content: security, cost, observability, and failure modes
 - Original content focused on system design thinking, not demo-only
 
-**Target Audience**: 
+**Target Audience**:
+
 - Builders who can write basic code (any language) but want stronger GenAI system design skills on AWS
 - Architects/TPMs who need clarity on trade-offs, governance, and readiness
 
@@ -71,15 +72,15 @@ Do **not** duplicate the full tree here — keep this rule file focused on behav
 
 ### Session Content Structure
 
-**Important**: Session content is organized under `docs/sessions/` as individual markdown files following the 30-minute format.
+**Important**: Session content is organized under `docs/sessions/` as per-session folders following the 30-minute format.
 
 **File Types in `docs/sessions/`**:
 
-1. **Learning Sessions**: `NN_{session-name}.md` (e.g., `01_bedrock-mental-models.md`)
+1. **Learning Sessions**: `docs/sessions/NN_{session-name}/NN_{session-name}.md` (e.g., `docs/sessions/01_bedrock-mental-models/01_bedrock-mental-models.md`)
    - Self-study content following the session template
    - Includes: Objective, Core Concepts, Hands-on, Artifact
 
-2. **Meetup Sessions**: `NN_meetup-{session-name}.md` (e.g., `01_meetup-bedrock-mental-models.md`)
+2. **Meetup Sessions**: Stored under `docs/meetup/` (e.g., `docs/meetup/01_meetup-bedrock-mental-models.md`)
    - Meetup delivery content with organization, date, and agenda
    - Based on learning sessions but includes meetup-specific details
    - Includes: Organization, Date, Duration, Type, Deliverable, Why This Session, Agenda

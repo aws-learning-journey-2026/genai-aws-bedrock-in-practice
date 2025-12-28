@@ -1,7 +1,7 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "../01_bedrock-mental-models.md"
+  - "01_bedrock-mental-models.md"
 estimated_time: "10 minutes"
 learning_objectives:
   - "Reason about when Bedrock is the right choice (and when it isn’t)"
@@ -9,7 +9,7 @@ learning_objectives:
   - "Produce the session artifact: a one-page Bedrock mental model note"
 related_topics:
   prerequisites:
-    - "../01_bedrock-mental-models.md"
+    - "01_bedrock-mental-models.md"
   builds_upon:
     - "terminology-and-scope.md"
   enables: []

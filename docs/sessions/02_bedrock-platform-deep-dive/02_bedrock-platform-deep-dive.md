@@ -1,7 +1,7 @@
 ---
 learning_level: "Beginner"
 prerequisites:
-  - "01_bedrock-mental-models.md"
+  - "../01_bedrock-mental-models/01_bedrock-mental-models.md"
 estimated_time: "30 minutes"
 learning_objectives:
   - "Navigate the Bedrock console and model catalog with a clear purpose"
@@ -9,7 +9,7 @@ learning_objectives:
   - "Produce a simple model-selection checklist + risk notes for a use case"
 related_topics:
   prerequisites:
-    - "01_bedrock-mental-models.md"
+    - "../01_bedrock-mental-models/01_bedrock-mental-models.md"
   builds_upon: []
   enables: []
   cross_refs: []
