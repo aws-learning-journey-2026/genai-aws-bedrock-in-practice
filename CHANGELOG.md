@@ -10,10 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Session overview as single source of truth (`docs/04_session-overview.md`)
 - Session index dashboard (`docs/sessions/README.md`)
 - Enhanced session template in `docs/templates/`
+- Facilitator notes template (`docs/templates/facilitator-notes-template.md`)
 - Style guide (`docs/STYLE_GUIDE.md`)
+- CI workflow for markdown quality checks (`.github/workflows/markdown-quality.yml`)
+- Structure validation checklist in CONTRIBUTING.md
+- Review action items tracking (`docs/REVIEW_ACTION_ITEMS.md`)
 - CHANGELOG.md
+- Minimal Python code example (`src/python/bedrock_hello_inference.py`)
 
 ### Changed
 - Renamed Session 01 files to new naming convention:
@@ -23,9 +29,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `terminology-and-scope.md` → `04_terminology-and-scope.md`
   - `applied-reasoning-and-artifact.md` → `05_applied-reasoning-and-artifact.md`
 - Updated all file references across documentation
+- Made "Where to Start" link more resilient with multiple entry points
+- Enhanced CONTRIBUTING.md with structure validation requirements
 
 ### Fixed
 - Markdown linting issues in Session 01 files
+
+### Moved
+- `COMPREHENSIVE_REVIEW_REPORT.md` → `docs/reviews/2025-01_workspace-review.md` (archived as historical)
 
 ---
 

@@ -116,7 +116,10 @@ For complete repository structure details, see **[`docs/03_repository-structure.
 
 Begin with:
 
-👉 **`docs/sessions/01_bedrock-mental-models/01_overview.md`**
+👉 **[Session 01 Overview](docs/sessions/01_bedrock-mental-models/01_overview.md)**  
+   *Path: `docs/sessions/01_bedrock-mental-models/01_overview.md`*
+
+Or start from the **[Session Index Dashboard](docs/sessions/README.md)** for an overview of all sessions.
 
 Everything else builds on that foundation.
 
