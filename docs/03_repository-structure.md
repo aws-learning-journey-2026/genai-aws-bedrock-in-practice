@@ -39,7 +39,15 @@ genai-aws-bedrock-in-practice/
 │   │   └── sessions.md                    # Index of meetup sessions
 │   └── sessions/                           # Active session content (30-min format)
 │       ├── .gitkeep
-│       └── 01_bedrock-mental-models.md
+│       ├── 01_bedrock-mental-models.md
+│       ├── 01_bedrock-mental-models/        # Session 01 split into focused modules
+│       │   ├── core-mental-models.md
+│       │   ├── tokens.md
+│       │   ├── terminology-and-scope.md
+│       │   └── applied-reasoning-and-artifact.md
+│       ├── 01_meetup-bedrock-mental-models.md
+│       ├── 02_bedrock-platform-deep-dive.md
+│       └── 02_meetup-bedrock-platform-deep-dive.md
 ├── src/                                    # Minimal runnable labs/examples
 ├── source-material/                        # Staging area for imported content (git-ignored)
 ├── .gitignore                             # Git ignore rules
@@ -100,11 +108,14 @@ genai-aws-bedrock-in-practice/
 
 **Template**: `docs/01_session-template.md` provides the standard structure for all learning sessions
 
-**Current Sessions** (planned):
-- `01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations
+**Current Sessions**:
+- `01_bedrock-mental-models.md` - Bedrock Mental Models & GenAI Foundations (index)
+   - `docs/sessions/01_bedrock-mental-models/` contains split modules for Session 01
 - `01_meetup-bedrock-mental-models.md` - Meetup Session 01 (Dot Net Learners House)
 - `02_bedrock-platform-deep-dive.md` - Bedrock Platform Deep Dive (Console-First)
 - `02_meetup-bedrock-platform-deep-dive.md` - Meetup Session 02 (Dot Net Learners House)
+
+**Future Sessions** (planned):
 - `03_model-exploration-prompt-behavior.md` - Model Exploration & Prompt Behavior
 - `04_bedrock-apis-sdks.md` - Bedrock APIs & SDKs
 - `05_genai-backend-architecture.md` - Designing a Minimal GenAI Backend on AWS

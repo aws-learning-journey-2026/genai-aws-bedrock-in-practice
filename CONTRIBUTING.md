@@ -39,9 +39,9 @@ We welcome contributions in the following areas:
 
 ### Before You Begin
 
-1. **Read the Master Plan**: Review [`docs/01_master-plan.md`](docs/01_master-plan.md) to understand the repository's structure and principles
+1. **Read the Master Plan**: Review [`docs/02_master-plan.md`](docs/02_master-plan.md) to understand the repository's structure and principles
 2. **Review Repository Structure**: Check [`docs/03_repository-structure.md`](docs/03_repository-structure.md) for the single source of truth on organization
-3. **Understand Session Format**: Review [`docs/sessions/_session-template.md`](docs/sessions/_session-template.md) for the standard session structure
+3. **Understand Session Format**: Review [`docs/01_session-template.md`](docs/01_session-template.md) for the standard session structure
 
 ### Contribution Workflow
 
@@ -109,9 +109,9 @@ Before submitting your contribution, ensure:
 
 ## 📚 Resources
 
-- **Master Plan**: [`docs/01_master-plan.md`](docs/01_master-plan.md)
+- **Master Plan**: [`docs/02_master-plan.md`](docs/02_master-plan.md)
 - **Repository Structure**: [`docs/03_repository-structure.md`](docs/03_repository-structure.md)
-- **Session Template**: [`docs/sessions/_session-template.md`](docs/sessions/_session-template.md)
+- **Session Template**: [`docs/01_session-template.md`](docs/01_session-template.md)
 - **Educational Content Rules**: [`.cursor/rules/01_educational-content-rules.mdc`](.cursor/rules/01_educational-content-rules.mdc)
 - **File Naming Conventions**: [`.cursor/rules/07_file-naming-conventions.mdc`](.cursor/rules/07_file-naming-conventions.mdc)
 

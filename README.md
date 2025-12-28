@@ -232,7 +232,7 @@ You only need to run these commands once per machine.
 
    ```bash
    # Read the master plan to understand the structure
-   cat docs/01_master-plan.md
+   cat docs/02_master-plan.md
    ```
 
 3. **Start with Session 01**:
