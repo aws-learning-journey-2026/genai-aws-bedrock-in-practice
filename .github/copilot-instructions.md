@@ -35,7 +35,7 @@
 
 **After ANY structural change, IMMEDIATELY update**:
 
-1. ✅ **`docs/02_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
+1. ✅ **`docs/03_repository-structure.md`** - **UPDATE THIS FIRST** (Single source of truth, if exists)
 2. ✅ This file (.github/copilot-instructions.md) - Repository Structure section
 3. ✅ `.cursor/rules/02_repository-structure.mdc` - Repository structure rules
 4. ✅ README.md - Repository Structure section
@@ -44,7 +44,7 @@
 
 **Self-Check Question**: "Did I update the repository structure documentation?" - If no, STOP and do it NOW.
 
-**Note**: If `docs/02_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
+**Note**: If `docs/03_repository-structure.md` doesn't exist, create it as the single source of truth for repository structure, then reference it from other files.
 
 ### 3. Chain-of-Thought + ReAct + Reasoning
 
@@ -145,66 +145,26 @@ Interleave thinking with action in iterative cycles:
 
 ## 📁 Current Repository Structure (As of December 27, 2025)
 
-**Single Source of Truth**: See [`docs/02_repository-structure.md`](docs/02_repository-structure.md) for the authoritative repository structure.
+**Single Source of Truth**: See [`docs/03_repository-structure.md`](docs/03_repository-structure.md) for the authoritative repository structure.
 
-### **Actual Current Structure**
+### **Structure Reference**
 
-```text
-genai-aws-bedrock-in-practice/
-├── .copilot/                              # Copilot configuration
-│   └── settings.json
-├── .cursor/                               # Cursor AI configuration
-│   └── rules/                             # Project rules and guidelines
-│       ├── 01_educational-content-rules.mdc
-│       ├── 02_repository-structure.mdc
-│       ├── 03_quality-assurance.mdc
-│       ├── 04_markdown-standards.mdc
-│       ├── 05_primary-directives.mdc
-│       ├── 06_cross-domain-integration.mdc
-│       ├── 07_file-naming-conventions.mdc
-│       └── README.md
-├── .github/                               # GitHub configuration
-│   ├── copilot-instructions.md            # THIS FILE - Update when structure changes
-│   ├── ISSUE_TEMPLATE/                    # Issue templates
-│   ├── prompts/                           # Reusable prompt templates
-│   │   ├── smart-prompt-framework-guide.md
-│   │   └── task-prompt.md
-│   └── PULL_REQUEST_TEMPLATE.md          # PR template
-├── docs/                                  # Documentation hub
-│   ├── 01_master-plan.md                  # Master plan and roadmap
-│   ├── 02_repository-structure.md         # Single source of truth for structure
-│   ├── sessions/                           # Session content (30-min format)
-│   │   ├── _session-template.md           # Session template
-│   │   ├── 01_bedrock-mental-models.md    # Learning session content
-│   │   ├── 01_meetup-bedrock-mental-models.md  # Meetup session content
-│   │   ├── 02_bedrock-platform-deep-dive.md
-│   │   ├── 02_meetup-bedrock-platform-deep-dive.md
-│   │   └── ... (additional sessions as created)
-│   ├── meetup/                             # Meetup index and materials
-│   │   └── sessions.md                    # Index of meetup sessions
-│   └── images/                            # Architecture diagrams and assets
-├── src/                                    # Minimal runnable labs/examples
-├── source-material/                        # Staging area (at repository root, git-ignored)
-├── CODE_OF_CONDUCT.md                     # Code of conduct
-├── CONTRIBUTING.md                        # Contribution guidelines
-├── SECURITY.md                            # Security policy
-├── LICENSE                                # MIT License
-├── README.md                              # Main repository documentation
-├── .gitignore                             # Git ignore rules
-├── .markdownlint.json                     # Markdown linting configuration
-└── .markdownlint-cli2.yaml                # Markdown lint CLI configuration
-```
+Do **not** maintain a duplicated tree in this file.
+
+- Authoritative structure: `docs/03_repository-structure.md`
+- Master plan: `docs/02_master-plan.md`
+- Session template: `docs/01_session-template.md`
 
 ### **Documentation Philosophy**
 
 **Current Documentation** (as of December 27, 2025):
 
-1. **01_master-plan.md** - Master plan and learning roadmap
+1. **02_master-plan.md** - Master plan and learning roadmap
    - Session structure and format
    - Learning principles
    - Repository layout
 
-2. **02_repository-structure.md** - Single source of truth for repository structure
+2. **03_repository-structure.md** - Single source of truth for repository structure
    - Complete directory structure
    - Directory descriptions
    - File naming conventions
@@ -213,7 +173,7 @@ genai-aws-bedrock-in-practice/
 
 - Sessions organized under `docs/sessions/` following 30-minute format
 - Each session produces a single primary artifact
-- Template available at `docs/sessions/_session-template.md`
+- Template available at `docs/01_session-template.md`
 
 **Meetup Sessions**:
 
@@ -1054,7 +1014,7 @@ ASCII Fallback:
 
 ## 📞 Support & Escalation
 
-**Questions about content placement?** → Check `docs/02_repository-structure.md`
+**Questions about content placement?** → Check `docs/03_repository-structure.md`
 
 **Content too long?** → Split into semantic files (e.g., `fundamentals.md`, `advanced.md`) - see [File Naming Conventions](../.cursor/rules/07_file-naming-conventions.mdc)
 
@@ -1117,7 +1077,7 @@ ASCII Fallback:
 
 ## For More Information
 
-- **Master Plan**: `docs/01_master-plan.md`
-- **Structure Reference**: `docs/02_repository-structure.md` (single source of truth)
-- **Session Template**: `docs/sessions/_session-template.md`
+- **Master Plan**: `docs/02_master-plan.md`
+- **Structure Reference**: `docs/03_repository-structure.md` (single source of truth)
+- **Session Template**: `docs/01_session-template.md`
 - **Repository README**: `README.md`

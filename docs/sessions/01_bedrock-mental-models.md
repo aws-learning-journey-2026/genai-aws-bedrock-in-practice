@@ -72,7 +72,47 @@ As Bedrock users, we design **systems and workflows**, not **models or training 
 
 ---
 
-### 2.2 Essential Concepts (Orientation Only)
+### 2.2 What Is a Model? (Practically Defined)
+
+> A **model** is a mathematical function that has learned patterns from data and can use those patterns to produce outputs for new inputs.
+
+**Key point:** Humans write code. Models learn behavior.
+
+#### Model as a "Learned Mapping"
+
+Think of a model as:
+
+```text
+Input  ──► Learned Mapping ──► Output
+```
+
+**Examples:**
+
+* Text → next likely words
+* Question → answer
+* Image prompt → image
+* Document → summary
+* Text → vector (embedding)
+
+The "mapping" is learned during training, not programmed.
+
+#### What a Model Is NOT
+
+Clarifying this avoids confusion later:
+
+* ❌ Not an API
+* ❌ Not a chatbot
+* ❌ Not a database
+* ❌ Not a rules engine
+* ❌ Not deterministic logic
+
+A model produces **probabilistic outputs**, not guaranteed results.
+
+> **Architect-level framing:** "A model is not software logic — it's learned behavior. That's why we design guardrails around it."
+
+---
+
+### 2.3 Essential Concepts (Orientation Only)
 
 These definitions are intentionally concise.
 They exist to **align vocabulary**, not to teach internals.
@@ -88,52 +128,153 @@ They exist to **align vocabulary**, not to teach internals.
 | **Foundation Models**            | Large, pre-trained models reused across many tasks without training from scratch    |
 | **Amazon Bedrock**               | A managed AWS service for running foundation models via APIs                        |
 
-> Clarifying **“Model”** early is critical—everything in Bedrock ultimately revolves around *using models safely and effectively*.
+> Clarifying **"Model"** early is critical—everything in Bedrock ultimately revolves around *using models safely and effectively*.
+
+---
+
+### 2.4 Understanding Tokens
+
+Tokens are the **basic unit of text processing** in language models. Understanding tokens is essential for:
+
+* **Cost estimation** — Bedrock pricing is token-based
+* **Prompt design** — Token limits affect what you can send
+* **Performance** — Token count impacts latency and throughput
+
+#### How Tokenization Works
+
+![Tokenizer Process](../images/S1/Tokenizer.PNG)
+
+#### What a Tokenizer Actually Is
+
+A tokenizer is **not just a splitter**. It is a learned encoding system that:
+
+* Breaks text into units (tokens)
+* Maps those tokens to numerical IDs
+* Is tightly coupled to how the model was trained
+
+> **Tokenizer + Model are a pair.** You cannot mix and match them.
+
+#### Key Points
+
+* Tokens are not always words — they can be subwords, parts of words, or even characters
+* **Tokenization is model-specific, not universal** — there is no global standard for tokens
+* Different models use different tokenizers, vocabularies, and encoding rules
+* The same text may have different token counts across models
+* Token count directly impacts cost in Bedrock
+
+#### Why Tokens Differ Across Models
+
+Each foundation model in Bedrock:
+
+* Uses its **own tokenizer** (trained with the model)
+* Has its **own vocabulary**
+* Was trained with **different text corpora**
+* May use different subword strategies (BPE, WordPiece, Unigram, etc.)
+
+This means the same sentence can be tokenized differently by different models.
+
+**Practical Example:**
+
+The phrase "Hello, world!" might be tokenized as:
+
+* `["Hello", ",", " world", "!"]` (4 tokens) in one model
+* `["Hello", ",", "world", "!"]` (4 tokens) in another model
+* Or even `["Hello", ",", " world", "!"]` (3 tokens) in yet another
+
+Same text. Same meaning. **Different tokens.**
+
+#### Architect-Level Implication
+
+> **Token count is always model-specific.**
+
+Therefore:
+
+* You **cannot** estimate cost generically across models
+* You **must** test token counts with the target model
+* You **must** design prompts defensively
+* You **must not** assume token counts are universal
+
+This is why production systems:
+
+* Measure tokens dynamically
+* Use truncation and summarization
+* Rely on RAG to control prompt size
+
+> **Architect-level insight:** When designing systems with Bedrock, always consider token costs. Longer prompts = higher costs. Token counts vary by model, so always test with your target model. This is why prompt engineering and RAG (Retrieval-Augmented Generation) matter for production systems.
 
 ---
 
 ## 3. Terminology Clarification
 
-### Foundation Models vs Base Models vs Language Models
+### Foundation Models vs Base Models vs Language Models vs Large Language Models
 
-These terms are often used interchangeably, but they describe **different dimensions** of a model.
+These terms are often used interchangeably, but they describe **different dimensions of a model**, not different products.
 
-Think of them as answering **different questions**:
+Each term answers a **different question**:
 
-* **Base Model** → *What training state is this model in?*
-* **Foundation Model** → *How broadly can this model be reused?*
-* **Language Model** → *What type of data does this model work with?*
+* **Base Model** → *What training state is the model in?*
+* **Foundation Model** → *How broadly can the model be reused?*
+* **Language Model (LM)** → *What type of data does the model work with?*
+* **Large Language Model (LLM)** → *How large and capable is the language model?*
 
-Understanding this distinction prevents confusion when working with Amazon Bedrock.
+Understanding these distinctions is critical to using **Amazon Bedrock correctly and confidently**.
 
 ---
 
 ### Practical Definitions
 
-| Term                           | One-liner                                                            | What It Describes |
-| ------------------------------ | -------------------------------------------------------------------- | ----------------- |
-| **Base Model**                 | A raw, pre-trained model before task-specific tuning or alignment    | Training state    |
-| **Foundation Model**           | A large, reusable model designed to support many tasks               | Reusability       |
-| **Language Model (LM)**        | A model that understands and generates text                          | Text modality     |
-| **Large Language Model (LLM)** | A large-scale language model with strong generalization capabilities | Scale             |
+| Term                           | One-liner                                                                     | What It Describes  |
+| ------------------------------ | ----------------------------------------------------------------------------- | ------------------ |
+| **Base Model**                 | A raw, pre-trained model before task-specific tuning or alignment             | Training state     |
+| **Foundation Model**           | A large, reusable model designed to support many downstream tasks             | Reusability        |
+| **Language Model (LM)**        | A model that understands and generates human language                         | Text modality      |
+| **Large Language Model (LLM)** | A large-scale language model with strong generalization and reasoning ability | Scale & capability |
 
-**Important Relationships:**
+---
 
-* Not all foundation models are language models
-* Foundation models may be base models or aligned/fine-tuned models
-* LLMs are a subset of language models
-* Amazon Bedrock uses **“Foundation Models”** because it supports text, image, embedding, and multimodal models
+### How These Terms Relate
+
+* **Base model** describes *where the model is in its training lifecycle*
+* **Foundation model** describes *how broadly the model can be applied*
+* **Language model** describes *what kind of data the model works with*
+* **LLM** describes *the size and capability of a language model*
+
+Important clarifications:
+
+* Not all foundation models are language models (some generate images or embeddings)
+* Many foundation models are **aligned or fine-tuned versions** of base models
+* LLMs are a **subset of language models**, not a separate category
+* Amazon Bedrock uses **"Foundation Models"** as the umbrella term because it supports:
+
+  * Text models
+  * Image models
+  * Embedding models
+  * Multimodal models
 
 ---
 
 ### Architect Takeaway
 
-When designing systems with Bedrock:
+When designing systems with Amazon Bedrock:
 
-* You **consume foundation models**
-* You do **not manage base models**
-* You may use **language models**, but not always
-* Think in terms of **capabilities, cost, and constraints**, not training internals
+* You **consume foundation models** via a managed service
+* You do **not manage base models or training pipelines**
+* You may use **LLMs**, but also non-language models (embeddings, images)
+* Design decisions should focus on **capabilities, cost, latency, and constraints**, not training internals
+
+> In Bedrock, the question is not *"How is the model trained?"*
+> It is *"Is this the right capability for my system design?"*
+
+---
+
+### Why This Matters for Bedrock
+
+This terminology clarity prevents common mistakes such as:
+
+* Treating all models as chat-based LLMs
+* Over-engineering with frameworks before understanding capabilities
+* Choosing models based on hype instead of task fit
+* Confusing training responsibilities with inference responsibilities
 
 ---
 
@@ -148,6 +289,54 @@ Generative AI refers to models that **produce new content** based on learned pat
 * **Parameter-driven** – behavior is influenced by model parameters
 
 This is fundamentally different from deterministic APIs.
+
+---
+
+### 4.1 Prompt Engineering (Awareness Only)
+
+Prompt engineering refers to the practice of **structuring inputs to foundation models** so that they produce useful, reliable, and cost-effective outputs.
+
+At a high level, a prompt acts as:
+
+* An **instruction**
+* A **context boundary**
+* A **behavioral constraint**
+
+In Amazon Bedrock, prompts directly influence:
+
+* Output quality
+* Token consumption (cost)
+* Consistency and variability
+* Hallucination risk
+
+Prompts are the primary control surface developers have over model behavior.
+
+> Prompt engineering is not about clever wording — it is about **designing an interface to a probabilistic system**.
+
+#### What We Will *Not* Cover Here
+
+This session intentionally does **not** cover prompt patterns, templates, guardrails, or RAG-specific prompt design.
+
+These are intentionally deferred to later sessions.
+
+#### Why Prompt Engineering Matters (At 10,000 Feet)
+
+Prompt engineering becomes critical because:
+
+* Foundation models are **probabilistic**, not deterministic
+* Longer prompts increase **token cost**
+* Poor prompts amplify **hallucinations**
+* Prompt design determines how well **retrieved context (RAG)** is used
+
+This is why prompt engineering is tightly coupled with:
+
+* Cost optimization
+* RAG design
+* Production stability
+
+> We will revisit prompt engineering in depth once we understand **models, tokens, and system boundaries**.
+>
+> **Architect-level framing:** "Prompt engineering is not a trick — it's an architectural concern. We'll treat it seriously, but not today."
 
 ---
 
@@ -283,7 +472,33 @@ Correct mental models prevent these failures.
 
 ---
 
-## 13. Output Artifact
+## 13. Mini Demo
+
+### Simple Prompt Example
+
+This demonstration shows a basic interaction with Amazon Bedrock using a simple prompt. It illustrates the concepts we've covered: models, tokens, and probabilistic outputs.
+
+![Simple Prompt Example](../images/S1/SimplePrompt.PNG)
+
+**Key Observations:**
+
+* The prompt is sent to a foundation model via Bedrock
+* The model processes the input tokens and generates output tokens
+* The response is probabilistic — running the same prompt may yield different outputs
+* Token count affects both cost and latency
+
+**What This Demonstrates:**
+
+* **Model behavior** — How foundation models respond to prompts
+* **Token processing** — Input and output tokens are counted
+* **Probabilistic nature** — Outputs vary based on model parameters
+* **Bedrock abstraction** — The complexity of model internals is hidden
+
+> This simple example sets the foundation for understanding more complex interactions in subsequent sessions.
+
+---
+
+## 14. Output Artifact
 
 ### Deliverable
 
@@ -294,10 +509,9 @@ Create a **one-page Bedrock Mental Model note** containing:
 3. Key vocabulary
 4. Core decision principles
 
-
 ---
 
-## 14. Key Takeaways
+## 15. Key Takeaways
 
 * Generative AI is probabilistic by nature
 * Foundation models are powerful but not magic
@@ -307,7 +521,7 @@ Create a **one-page Bedrock Mental Model note** containing:
 
 ---
 
-## 15. What's Next
+## 16. What's Next
 
 ### Session 02 – Amazon Bedrock Platform Deep Dive (Console-First)
 
@@ -320,7 +534,3 @@ Create a **one-page Bedrock Mental Model note** containing:
 ---
 
 **Session Status:** Complete ✅
-
----
-
-If you want, the next logical step is to **design Session 02** with the same consolidation and delivery discipline.
