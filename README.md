@@ -280,9 +280,13 @@ You can connect with the community to:
 
 **Related Resources**:
 
+* [Session Index Dashboard](docs/sessions/README.md) - Overview of all sessions and their status
 * [Master Plan](docs/02_master-plan.md) - Complete learning roadmap
 * [Repository Structure](docs/03_repository-structure.md) - Single source of truth for structure
-* [Session Template](docs/01_session-template.md) - Standard session format
+* [Session Template](docs/templates/session-template.md) - Standard session format
+* [Style Guide](docs/STYLE_GUIDE.md) - Content creation guidelines
+* [Code Examples](src/README.md) - Minimal illustrative code samples
+* [CHANGELOG](CHANGELOG.md) - Version history and changes
 
 ---
 
