@@ -174,7 +174,7 @@ This document provides detailed information about each learning session, includi
 
 When creating new sessions:
 
-1. Follow the [Session Template](../01_session-template.md)
+1. Follow the [Session Template](../templates/session-template.md)
 2. Use the naming convention: `NN_session-topic/01_overview.md`, `02_module-name.md`, etc.
 3. Update this README with session details
 4. Ensure all prerequisites are complete

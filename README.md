@@ -228,7 +228,7 @@ Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guide
 
 * [ ] Review [Contributing Guidelines](CONTRIBUTING.md)
 * [ ] Read the [Master Plan](docs/03_master-plan.md)
-* [ ] Follow the [Session Template](docs/01_session-template.md)
+* [ ] Follow the [Session Template](docs/templates/session-template.md)
 * [ ] Ensure content aligns with repository principles
 
 ---

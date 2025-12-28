@@ -72,7 +72,7 @@ We welcome contributions in the following areas:
 When creating or updating session content:
 
 - ✅ **Follow the 30-minute format**: Objective → Core Concepts → Hands-on → Artifact
-- ✅ **Use the session template**: Start from `docs/01_session-template.md`
+- ✅ **Use the session template**: Start from `docs/templates/session-template.md`
 - ✅ **Architecture-first approach**: Emphasize mental models before APIs
 - ✅ **Production-aware**: Include security, cost, and observability considerations
 - ✅ **Original content**: Transform, don't copy from sources

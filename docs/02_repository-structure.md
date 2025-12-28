@@ -1,4 +1,4 @@
-# Repository Structure
+﻿# Repository Structure
 
 **Version**: 1.0  
 **Last Updated**: December 27, 2025  
@@ -28,7 +28,7 @@ genai-aws-bedrock-in-practice/
 │   ├── prompts/                           # Reusable prompt templates
 │   └── PULL_REQUEST_TEMPLATE.md           # PR template
 ├── docs/                                  # Documentation hub
-│   ├── 01_session-template.md             # 30-minute session template
+│   ├── templates/                           # Templates for sessions and artifacts
 │   ├── 03_master-plan.md                  # Master plan and roadmap
 │   ├── 02_repository-structure.md         # This file - single source of truth
 │   ├── images/                            # Diagrams and visual assets
@@ -82,7 +82,7 @@ genai-aws-bedrock-in-practice/
 **Purpose**: Primary documentation hub  
 **Contents**:
 
-- **`01_session-template.md`**: Standard 30-minute session template
+- **`templates/session-template.md`**: Standard 30-minute session template (modular format)
 - **`03_master-plan.md`**: Complete learning roadmap, session plans, and repository principles
 - **`04_session-overview.md`**: **Single source of truth** for session roadmap and status
 - **`02_repository-structure.md`**: This file - single source of truth for repository structure
@@ -121,7 +121,7 @@ genai-aws-bedrock-in-practice/
 3. Hands-on / applied reasoning (12–15 minutes)
 4. Output artifact + recap (2–5 minutes)
 
-**Template**: `docs/01_session-template.md` provides the standard structure for all learning sessions
+**Template**: `docs/templates/session-template.md` provides the standard structure for all learning sessions
 
 **Current Sessions**:
 
@@ -163,7 +163,7 @@ genai-aws-bedrock-in-practice/
 
 - Master documents: `NN_descriptive-name.md` (e.g., `03_master-plan.md`)
 - Session files: `01_overview.md` (overview), `02_module-name.md`, `03_module-name.md`, etc. (e.g., `01_overview.md`, `02_core-mental-models.md`)
-- Session template: `01_session-template.md` (stored in `docs/`)
+- Session template: `templates/session-template.md` (modular format)
 
 ### Code Files
 
@@ -203,7 +203,7 @@ genai-aws-bedrock-in-practice/
 
 - **Master Plan**: `docs/03_master-plan.md` - Complete learning roadmap
 - **Session Overview**: `docs/04_session-overview.md` - Single source of truth for session roadmap
-- **Session Template**: `docs/01_session-template.md` - Standard session format
+- **Session Template**: `docs/templates/session-template.md` - Standard session format (modular)
 - **Repository README**: `README.md` - Main entry point (references this file)
 
 ---
