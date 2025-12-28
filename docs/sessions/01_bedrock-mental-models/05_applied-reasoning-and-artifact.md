@@ -123,4 +123,3 @@ This demonstration shows a basic interaction with Amazon Bedrock using a simple 
 * Inference parameters
 * Pricing and cost control
 * Security and governance
-
